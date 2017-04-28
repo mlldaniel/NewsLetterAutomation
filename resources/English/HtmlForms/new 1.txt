@@ -1,0 +1,30 @@
+String sqlMainTable = "CREATE TABLE IF NOT EXISTS "+tableName+" " +
+                     "(Id INTEGER PRIMARY KEY     AUTOINCREMENT," +
+                     " title           TEXT, " + 
+                     " link        TEXT, " + 
+                     " positionType        TEXT,"
+                + " packageName   TEXT,"
+                + " subpackageName   TEXT,"
+                + " csvFilePath    TEXT ,"
+                + " timeFrame    TEXT,"
+                + " forecastDate   TEXT,"
+                + " targetDate   TEXT,"
+                + " UNIQUE (csvFilePath) ON CONFLICT REPLACE)"; 
+        //Create CsvTable
+        String sqlCsvTable = "CREATE TABLE IF NOT EXISTS "+csvTableName+" " +
+                     "(Id INTEGER PRIMARY KEY     AUTOINCREMENT," +
+                     " positionNumber    INTEGER, " + 
+                     " forecastDate        TEXT, " + 
+                     " targetDate        TEXT,"
+                + " snp500Return   TEXT,"
+                + " mainTableId   INTEGER"
+                + " )"; 
+        //Create CsvRow
+        String sqlCsvRow = "CREATE TABLE IF NOT EXISTS "+csvRowName+" " +
+                     "(Id INTEGER PRIMARY KEY     AUTOINCREMENT," +
+                     " symbol    TEXT, " + 
+                     " prediction        TEXT, " + 
+                     " returnValue        TEXT,"
+                + " accuracy   TEXT,"
+                + " csvTableId   INTEGER"
+                + " )"; 

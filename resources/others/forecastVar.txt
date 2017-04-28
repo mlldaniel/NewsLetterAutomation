@@ -1,0 +1,25 @@
+	public static final int POSITION = 0;
+	public static final int TITLE = 1;
+	public static final int LINK = 2;
+	public static final int POSITIONTYPE = 3;
+	public static final int PACKAGENAME = 4;
+	public static final int SUBPACKAGENAME = 5;
+	public static final int CSVFILEPATH = 6;
+	public static final int TIMEFRAME = 7;
+	public static final int FORECASTDATE = 8;
+	public static final int TARGETDATE = 9;
+	public static final int TOPRETURN1 = 10;
+	public static final int TOPSTOCKNAME1 = 11;
+	public static final int TOPRETURN2 = 12;
+	public static final int TOPSTOCKNAME2 = 13;
+	public static final int TOPRETURN3 = 14;
+	public static final int TOPSTOCKNAME3 = 15;
+	public static final int AVGRETURN1 = 16;
+	public static final int AVGRETURN2 = 17;
+	public static final int SNP500RETURN = 18;
+	public static final int MARKETPREMIUM1 = 19;
+	public static final int MARKETPREMIUM2 = 20;
+	public static final int ACCURACY = 21;
+	public static final int TOTALNUMBER = 22;
+
+"position","title","link","positionType","packageName","subpackageName","csvFilePath","timeFrame","forecastDate","targetDate","topReturn1","topStockName1","topReturn2","topStockName2","topReturn3","topStockName3","avgReturn1","avgReturn2","snp500Return","marketPremium1","marketPremium2","accuracy","totalNumber"

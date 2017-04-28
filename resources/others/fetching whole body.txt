@@ -1,0 +1,1782 @@
+<style type="text/css">
+		body,#bodyTable,#bodyCell{
+			height:100% !important;
+			margin:0;
+			padding:0;
+			width:100% !important;
+		}
+		table{
+			border-collapse:collapse;
+		}
+		img,a img{
+			border:0;
+			outline:none;
+			text-decoration:none;
+		}
+		h1,h2,h3,h4,h5,h6{
+			margin:0;
+			padding:0;
+		}
+		p{
+			margin:1em 0;
+			padding:0;
+		}
+		a{
+			word-wrap:break-word;
+		}
+		.ReadMsgBody{
+			width:100%;
+		}
+		.ExternalClass{
+			width:100%;
+		}
+		.ExternalClass,.ExternalClass p,.ExternalClass span,.ExternalClass font,.ExternalClass td,.ExternalClass div{
+			line-height:100%;
+		}
+		table,td{
+			mso-table-lspace:0pt;
+			mso-table-rspace:0pt;
+		}
+		#outlook a{
+			padding:0;
+		}
+		img{
+			-ms-interpolation-mode:bicubic;
+		}
+		body,table,td,p,a,li,blockquote{
+			-ms-text-size-adjust:100%;
+			-webkit-text-size-adjust:100%;
+		}
+		#templatePreheader,#templateHeader,#templateBody,#templateColumns,.templateColumn,#templateFooter{
+			min-width:100%;
+		}
+		#bodyCell{
+			padding:20px;
+		}
+		.mcnImage{
+			vertical-align:bottom;
+		}
+		.mcnTextContent img{
+			height:auto !important;
+		}
+	/*
+	@tab Page
+	@section background style
+	@tip Set the background color and top border for your email. You may want to choose colors that match your company's branding.
+	*/
+		body,#bodyTable{
+			/*@editable*/background-color:#F2F2F2;
+		}
+	/*
+	@tab Page
+	@section background style
+	@tip Set the background color and top border for your email. You may want to choose colors that match your company's branding.
+	*/
+		#bodyCell{
+			/*@editable*/border-top:0;
+		}
+	/*
+	@tab Page
+	@section email border
+	@tip Set the border for your email.
+	*/
+		#templateContainer{
+			/*@editable*/border:0;
+		}
+	/*
+	@tab Page
+	@section heading 1
+	@tip Set the styling for all first-level headings in your emails. These should be the largest of your headings.
+	@style heading 1
+	*/
+		h1{
+			/*@editable*/color:#606060 !important;
+			display:block;
+			/*@editable*/font-family:Helvetica;
+			/*@editable*/font-size:40px;
+			/*@editable*/font-style:normal;
+			/*@editable*/font-weight:bold;
+			/*@editable*/line-height:125%;
+			/*@editable*/letter-spacing:-1px;
+			margin:0;
+			/*@editable*/text-align:left;
+		}
+	/*
+	@tab Page
+	@section heading 2
+	@tip Set the styling for all second-level headings in your emails.
+	@style heading 2
+	*/
+		h2{
+			/*@editable*/color:#404040 !important;
+			display:block;
+			/*@editable*/font-family:Helvetica;
+			/*@editable*/font-size:26px;
+			/*@editable*/font-style:normal;
+			/*@editable*/font-weight:bold;
+			/*@editable*/line-height:125%;
+			/*@editable*/letter-spacing:-.75px;
+			margin:0;
+			/*@editable*/text-align:left;
+		}
+	/*
+	@tab Page
+	@section heading 3
+	@tip Set the styling for all third-level headings in your emails.
+	@style heading 3
+	*/
+		h3{
+			/*@editable*/color:#606060 !important;
+			display:block;
+			/*@editable*/font-family:Helvetica;
+			/*@editable*/font-size:18px;
+			/*@editable*/font-style:normal;
+			/*@editable*/font-weight:bold;
+			/*@editable*/line-height:125%;
+			/*@editable*/letter-spacing:-.5px;
+			margin:0;
+			/*@editable*/text-align:left;
+		}
+	/*
+	@tab Page
+	@section heading 4
+	@tip Set the styling for all fourth-level headings in your emails. These should be the smallest of your headings.
+	@style heading 4
+	*/
+		h4{
+			/*@editable*/color:#808080 !important;
+			display:block;
+			/*@editable*/font-family:Helvetica;
+			/*@editable*/font-size:16px;
+			/*@editable*/font-style:normal;
+			/*@editable*/font-weight:bold;
+			/*@editable*/line-height:125%;
+			/*@editable*/letter-spacing:normal;
+			margin:0;
+			/*@editable*/text-align:left;
+		}
+	/*
+	@tab Preheader
+	@section preheader style
+	@tip Set the background color and borders for your email's preheader area.
+	*/
+		#templatePreheader{
+			/*@editable*/background-color:#FFFFFF;
+			/*@editable*/border-top:0;
+			/*@editable*/border-bottom:0;
+		}
+	/*
+	@tab Preheader
+	@section preheader text
+	@tip Set the styling for your email's preheader text. Choose a size and color that is easy to read.
+	*/
+		.preheaderContainer .mcnTextContent,.preheaderContainer .mcnTextContent p{
+			/*@editable*/color:#606060;
+			/*@editable*/font-family:Helvetica;
+			/*@editable*/font-size:11px;
+			/*@editable*/line-height:125%;
+			/*@editable*/text-align:left;
+		}
+	/*
+	@tab Preheader
+	@section preheader link
+	@tip Set the styling for your email's header links. Choose a color that helps them stand out from your text.
+	*/
+		.preheaderContainer .mcnTextContent a{
+			/*@editable*/color:#606060;
+			/*@editable*/font-weight:normal;
+			/*@editable*/text-decoration:underline;
+		}
+	/*
+	@tab Header
+	@section header style
+	@tip Set the background color and borders for your email's header area.
+	*/
+		#templateHeader{
+			/*@editable*/background-color:#FFFFFF;
+			/*@editable*/border-top:0;
+			/*@editable*/border-bottom:0;
+		}
+	/*
+	@tab Header
+	@section header text
+	@tip Set the styling for your email's header text. Choose a size and color that is easy to read.
+	*/
+		.headerContainer .mcnTextContent,.headerContainer .mcnTextContent p{
+			/*@editable*/color:#606060;
+			/*@editable*/font-family:Helvetica;
+			/*@editable*/font-size:15px;
+			/*@editable*/line-height:150%;
+			/*@editable*/text-align:left;
+		}
+	/*
+	@tab Header
+	@section header link
+	@tip Set the styling for your email's header links. Choose a color that helps them stand out from your text.
+	*/
+		.headerContainer .mcnTextContent a{
+			/*@editable*/color:#6DC6DD;
+			/*@editable*/font-weight:normal;
+			/*@editable*/text-decoration:underline;
+		}
+	/*
+	@tab Body
+	@section body style
+	@tip Set the background color and borders for your email's body area.
+	*/
+		#templateBody{
+			/*@editable*/background-color:#FFFFFF;
+			/*@editable*/border-top:0;
+			/*@editable*/border-bottom:0;
+		}
+	/*
+	@tab Body
+	@section body text
+	@tip Set the styling for your email's body text. Choose a size and color that is easy to read.
+	*/
+		.bodyContainer .mcnTextContent,.bodyContainer .mcnTextContent p{
+			/*@editable*/color:#606060;
+			/*@editable*/font-family:Helvetica;
+			/*@editable*/font-size:15px;
+			/*@editable*/line-height:150%;
+			/*@editable*/text-align:left;
+		}
+	/*
+	@tab Body
+	@section body link
+	@tip Set the styling for your email's body links. Choose a color that helps them stand out from your text.
+	*/
+		.bodyContainer .mcnTextContent a{
+			/*@editable*/color:#0909bd;
+			/*@editable*/font-weight:normal;
+			/*@editable*/text-decoration:underline;
+		}
+	/*
+	@tab Columns
+	@section column style
+	@tip Set the background color and borders for your email's columns area.
+	*/
+		#templateColumns{
+			/*@editable*/background-color:#FFFFFF;
+			/*@editable*/border-top:0;
+			/*@editable*/border-bottom:0;
+		}
+	/*
+	@tab Columns
+	@section left column text
+	@tip Set the styling for your email's left column text. Choose a size and color that is easy to read.
+	*/
+		.leftColumnContainer .mcnTextContent,.leftColumnContainer .mcnTextContent p{
+			/*@editable*/color:#606060;
+			/*@editable*/font-family:Helvetica;
+			/*@editable*/font-size:15px;
+			/*@editable*/line-height:150%;
+			/*@editable*/text-align:left;
+		}
+	/*
+	@tab Columns
+	@section left column link
+	@tip Set the styling for your email's left column links. Choose a color that helps them stand out from your text.
+	*/
+		.leftColumnContainer .mcnTextContent a{
+			/*@editable*/color:#0000bd;
+			/*@editable*/font-weight:normal;
+			/*@editable*/text-decoration:underline;
+		}
+	/*
+	@tab Columns
+	@section right column text
+	@tip Set the styling for your email's right column text. Choose a size and color that is easy to read.
+	*/
+		.rightColumnContainer .mcnTextContent,.rightColumnContainer .mcnTextContent p{
+			/*@editable*/color:#606060;
+			/*@editable*/font-family:Helvetica;
+			/*@editable*/font-size:15px;
+			/*@editable*/line-height:150%;
+			/*@editable*/text-align:left;
+		}
+	/*
+	@tab Columns
+	@section right column link
+	@tip Set the styling for your email's right column links. Choose a color that helps them stand out from your text.
+	*/
+		.rightColumnContainer .mcnTextContent a{
+			/*@editable*/color:#6c6cdd;
+			/*@editable*/font-weight:normal;
+			/*@editable*/text-decoration:underline;
+		}
+	/*
+	@tab Footer
+	@section footer style
+	@tip Set the background color and borders for your email's footer area.
+	*/
+		#templateFooter
+			/*@editable*/background-color:#FFFFFF;
+			/*@editable*/border-top:0;
+			/*@editable*/border{-bottom:0;
+		}
+	/*
+	@tab Footer
+	@section footer text
+	@tip Set the styling for your email's footer text. Choose a size and color that is easy to read.
+	*/
+		.footerContainer .mcnTextContent,.footerContainer .mcnTextContent p{
+			/*@editable*/color:#606060;
+			/*@editable*/font-family:Helvetica;
+			/*@editable*/font-size:11px;
+			/*@editable*/line-height:150%;
+			/*@editable*/text-align:left;
+		}
+	/*
+	@tab Footer
+	@section footer link
+	@tip Set the styling for your email's footer links. Choose a color that helps them stand out from your text.
+	*/
+		.footerContainer .mcnTextContent a{
+			/*@editable*/color:#606060;
+			/*@editable*/font-weight:normal;
+			/*@editable*/text-decoration:underline;
+		}
+	@media only screen and (max-width: 480px){
+		body,table,td,p,a,li,blockquote{
+			-webkit-text-size-adjust:none !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		body{
+			width:100% !important;
+			min-width:100% !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		td[id=bodyCell]{
+			padding:10px !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		table[class=mcnTextContentContainer]{
+			width:100% !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		.mcnBoxedTextContentContainer{
+			max-width:100% !important;
+			min-width:100% !important;
+			width:100% !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		table[class=mcpreview-image-uploader]{
+			width:100% !important;
+			display:none !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		img[class=mcnImage]{
+			width:100% !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		table[class=mcnImageGroupContentContainer]{
+			width:100% !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		td[class=mcnImageGroupContent]{
+			padding:9px !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		td[class=mcnImageGroupBlockInner]{
+			padding-bottom:0 !important;
+			padding-top:0 !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		tbody[class=mcnImageGroupBlockOuter]{
+			padding-bottom:9px !important;
+			padding-top:9px !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		table[class=mcnCaptionTopContent],table[class=mcnCaptionBottomContent]{
+			width:100% !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		table[class=mcnCaptionLeftTextContentContainer],table[class=mcnCaptionRightTextContentContainer],table[class=mcnCaptionLeftImageContentContainer],table[class=mcnCaptionRightImageContentContainer],table[class=mcnImageCardLeftTextContentContainer],table[class=mcnImageCardRightTextContentContainer]{
+			width:100% !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		td[class=mcnImageCardLeftImageContent],td[class=mcnImageCardRightImageContent]{
+			padding-right:18px !important;
+			padding-left:18px !important;
+			padding-bottom:0 !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		td[class=mcnImageCardBottomImageContent]{
+			padding-bottom:9px !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		td[class=mcnImageCardTopImageContent]{
+			padding-top:18px !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		table[class=mcnCaptionLeftContentOuter] td[class=mcnTextContent],table[class=mcnCaptionRightContentOuter] td[class=mcnTextContent]{
+			padding-top:9px !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		td[class=mcnCaptionBlockInner] table[class=mcnCaptionTopContent]:last-child td[class=mcnTextContent]{
+			padding-top:18px !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		td[class=mcnBoxedTextContentColumn]{
+			padding-left:18px !important;
+			padding-right:18px !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		td[class=columnsContainer]{
+			display:block !important;
+			max-width:600px !important;
+			width:100% !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		td[class=mcnTextContent]{
+			padding-right:18px !important;
+			padding-left:18px !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+	/*
+	@tab Mobile Styles
+	@section template width
+	@tip Make the template fluid for portrait or landscape view adaptability. If a fluid layout doesn't work for you, set the width to 300px instead.
+	*/
+		table[id=templateContainer],table[id=templatePreheader],table[id=templateHeader],table[id=templateColumns],table[class=templateColumn],table[id=templateBody],table[id=templateFooter]{
+			/*@tab Mobile Styles
+@section template width
+@tip Make the template fluid for portrait or landscape view adaptability. If a fluid layout doesn't work for you, set the width to 300px instead.*/max-width:600px !important;
+			/*@editable*/width:100% !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+	/*
+	@tab Mobile Styles
+	@section heading 1
+	@tip Make the first-level headings larger in size for better readability on small screens.
+	*/
+		h1{
+			/*@editable*/font-size:24px !important;
+			/*@editable*/line-height:125% !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+	/*
+	@tab Mobile Styles
+	@section heading 2
+	@tip Make the second-level headings larger in size for better readability on small screens.
+	*/
+		h2{
+			/*@editable*/font-size:20px !important;
+			/*@editable*/line-height:125% !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+	/*
+	@tab Mobile Styles
+	@section heading 3
+	@tip Make the third-level headings larger in size for better readability on small screens.
+	*/
+		h3{
+			/*@editable*/font-size:18px !important;
+			/*@editable*/line-height:125% !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+	/*
+	@tab Mobile Styles
+	@section heading 4
+	@tip Make the fourth-level headings larger in size for better readability on small screens.
+	*/
+		h4{
+			/*@editable*/font-size:16px !important;
+			/*@editable*/line-height:125% !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+	/*
+	@tab Mobile Styles
+	@section Boxed Text
+	@tip Make the boxed text larger in size for better readability on small screens. We recommend a font size of at least 16px.
+	*/
+		table[class=mcnBoxedTextContentContainer] td[class=mcnTextContent],td[class=mcnBoxedTextContentContainer] td[class=mcnTextContent] p{
+			/*@editable*/font-size:18px !important;
+			/*@editable*/line-height:125% !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+	/*
+	@tab Mobile Styles
+	@section Preheader Visibility
+	@tip Set the visibility of the email's preheader on small screens. You can hide it to save space.
+	*/
+		table[id=templatePreheader]{
+			/*@editable*/display:none !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+	/*
+	@tab Mobile Styles
+	@section Preheader Text
+	@tip Make the preheader text larger in size for better readability on small screens.
+	*/
+		td[class=preheaderContainer] td[class=mcnTextContent],td[class=preheaderContainer] td[class=mcnTextContent] p{
+			/*@editable*/font-size:14px !important;
+			/*@editable*/line-height:115% !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+	/*
+	@tab Mobile Styles
+	@section Header Text
+	@tip Make the header text larger in size for better readability on small screens.
+	*/
+		td[class=headerContainer] td[class=mcnTextContent],td[class=headerContainer] td[class=mcnTextContent] p{
+			/*@editable*/font-size:18px !important;
+			/*@editable*/line-height:125% !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+	/*
+	@tab Mobile Styles
+	@section Body Text
+	@tip Make the body text larger in size for better readability on small screens. We recommend a font size of at least 16px.
+	*/
+		td[class=bodyContainer] td[class=mcnTextContent],td[class=bodyContainer] td[class=mcnTextContent] p{
+			/*@editable*/font-size:18px !important;
+			/*@editable*/line-height:125% !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+	/*
+	@tab Mobile Styles
+	@section Left Column Text
+	@tip Make the left column text larger in size for better readability on small screens. We recommend a font size of at least 16px.
+	*/
+		td[class=leftColumnContainer] td[class=mcnTextContent],td[class=leftColumnContainer] td[class=mcnTextContent] p{
+			/*@editable*/font-size:18px !important;
+			/*@editable*/line-height:125% !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+	/*
+	@tab Mobile Styles
+	@section Right Column Text
+	@tip Make the right column text larger in size for better readability on small screens. We recommend a font size of at least 16px.
+	*/
+		td[class=rightColumnContainer] td[class=mcnTextContent],td[class=rightColumnContainer] td[class=mcnTextContent] p{
+			/*@editable*/font-size:18px !important;
+			/*@editable*/line-height:125% !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+	/*
+	@tab Mobile Styles
+	@section footer text
+	@tip Make the body content text larger in size for better readability on small screens.
+	*/
+		td[class=footerContainer] td[class=mcnTextContent],td[class=footerContainer] td[class=mcnTextContent] p{
+			/*@editable*/font-size:14px !important;
+			/*@editable*/line-height:115% !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		td[class=footerContainer] a[class=utilityLink]{
+			display:block !important;
+		}
+
+}</style><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+﻿<!-- NAME: 1:2 COLUMN -->
+    
+    
+<p>*|MC:SUBJECT|*</p>
+
+<table align="center" border="0" cellpadding="0" cellspacing="0" height="100%" id="bodyTable" width="100%">
+	<tbody>
+		<tr>
+			<td align="center" id="bodyCell" valign="top">
+				<!-- BEGIN TEMPLATE // -->
+
+				<table border="0" cellpadding="0" cellspacing="0" id="templateContainer" width="600">
+					<tbody>
+						<tr>
+							<td align="center" valign="top">
+								<!-- BEGIN PREHEADER // -->
+
+								<table border="0" cellpadding="0" cellspacing="0" id="templatePreheader" width="600">
+									<tbody>
+										<tr>
+											<td class="preheaderContainer" style="padding-top:9px;" valign="top">
+												<br>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+								<!-- // END PREHEADER -->
+							</td>
+						</tr>
+						<tr>
+							<td align="center" valign="top">
+								<!-- BEGIN HEADER // -->
+
+								<table border="0" cellpadding="0" cellspacing="0" id="templateHeader" width="600">
+									<tbody>
+										<tr>
+											<td class="headerContainer" valign="top">
+
+												<table border="0" cellpadding="0" cellspacing="0" class="mcnCaptionBlock" width="100%">
+													<tbody class="mcnCaptionBlockOuter">
+														<tr>
+															<td class="mcnCaptionBlockInner" style="padding:9px;" valign="top">
+
+																<table border="0" cellpadding="0" cellspacing="0" class="mcnCaptionRightContentOuter" width="100%">
+																	<tbody>
+																		<tr>
+																			<td class="mcnCaptionRightContentInner" style="padding:0 9px ;" valign="top">
+
+																				<table align="left" border="0" cellpadding="0" cellspacing="0" class="mcnCaptionRightImageContentContainer">
+																					<tbody>
+																						<tr>
+																							<td class="mcnCaptionRightImageContent" valign="top"><img alt="I Know First" src="https://gallery.mailchimp.com/f00d3ffe6a71a2b38671432df/images/758c4e92-a47c-44aa-b2e8-342c8e247bc3.jpg" width="264" style="max-width: 600px;" class="mcnImage fr-fic fr-dib"></td>
+																						</tr>
+																					</tbody>
+																				</table>
+
+																				<table align="right" border="0" cellpadding="0" cellspacing="0" class="mcnCaptionRightTextContentContainer" width="264">
+																					<tbody>
+																						<tr>
+																							<td class="mcnTextContent" style="text-align: center;" valign="top">
+																								<br>
+																							</td>
+																						</tr>
+																					</tbody>
+																				</table>
+																			</td>
+																		</tr>
+																	</tbody>
+																</table>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+
+												<table border="0" cellpadding="0" cellspacing="0" class="mcnTextBlock" style="min-width:100%;" width="100%">
+													<tbody class="mcnTextBlockOuter">
+														<tr>
+															<td class="mcnTextBlockInner" style="padding-top:9px;" valign="top">
+																<!--[if mso]>
+<table align="left" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100%;">
+<tr>
+<![endif]-->
+																<!--[if mso]>
+<td valign="top" width="600" style="width:600px;">
+<![endif]-->
+
+																<table align="left" border="0" cellpadding="0" cellspacing="0" class="mcnTextContentContainer" style="max-width:100%; min-width:100%;" width="100%">
+																	<tbody>
+																		<tr>
+																			<td class="mcnTextContent" style="padding-top:0; padding-right:18px; padding-bottom:9px; padding-left:18px;" valign="top">
+																				<div style="font-family: 'Trebuchet MS'; line-height: normal; text-align: center;">
+																					<div style="font-family: 'Trebuchet MS'; line-height: normal; text-align: center;">
+																						<br><span style="color:#0000FF"><strong>Stock Market Forecast Based on Our&nbsp;State-Of-The-Art&nbsp;Predictive Algorithm</strong></span></div>
+																					<div style="color: #000000;font-family: 'Trebuchet MS';font-size: 11px;line-height: normal;text-align: center;"><span style="font-size:14px"><span style="color:#FFA500"><strong style="color: #289443;">- January 22nd, 2017&nbsp;-</strong></span></span>
+																					</div>
+																				</div>
+																			</td>
+																		</tr>
+																	</tbody>
+																</table>
+																<!--[if mso]>
+</td>
+<![endif]-->
+																<!--[if mso]>
+</tr>
+</table>
+<![endif]-->
+															</td>
+														</tr>
+													</tbody>
+												</table>
+
+												<table border="0" cellpadding="0" cellspacing="0" class="mcnTextBlock" style="min-width:100%;" width="100%">
+													<tbody class="mcnTextBlockOuter">
+														<tr>
+															<td class="mcnTextBlockInner" style="padding-top:9px;" valign="top">
+																<!--[if mso]>
+<table align="left" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100%;">
+<tr>
+<![endif]-->
+																<!--[if mso]>
+<td valign="top" width="600" style="width:600px;">
+<![endif]-->
+
+																<table align="left" border="0" cellpadding="0" cellspacing="0" class="mcnTextContentContainer" style="max-width:100%; min-width:100%;" width="100%">
+																	<tbody>
+																		<tr>
+																			<td class="mcnTextContent" style="padding: 0px 18px 9px; font-family: Arial, &quot;Helvetica Neue&quot;, Helvetica, sans-serif;" valign="top">
+																				<div style="text-align: center;">
+																					<div style="color: #606060;font-style: normal;font-variant: normal;font-weight: normal;letter-spacing: normal;line-height: 22.5px;orphans: auto;text-indent: 0px;text-transform: none;white-space: normal;widows: auto;word-spacing: 0px;-webkit-text-stroke-width: 0px;text-align: center;background-color: #FFFFFF;"><span style="font-size:14px"><span style="font-family:lucida sans unicode,lucida grande,sans-serif"><span style="color: #606060;line-height: 22.5px;text-align: center;"><strong><em>Top Algorithmic Successes</em></strong></span></span>
+																						</span>
+																						<div style="text-align: left;">
+
+																							<ul>
+																								<li><span style="font-size:14px"><span style="font-family:lucida sans unicode,lucida grande,sans-serif"><a href="https://iknowfirst.com/fr-dividend-paying-stocks-based-on-artificial-intelligence-returns-up-to-321-93-in-1-year" target="_blank">Dividend Paying Stocks Based on Artificial Intelligence</a>: 323% In 1 Year</span></span>
+																								</li>
+																								<li>Swidlf: @j23j</li>
+																								<li><span style="font-size:14px"><span style="font-family:lucida sans unicode,lucida grande,sans-serif"><a href="https://iknowfirst.com/fr-stock-picking-algorithm-based-on-deep-learning-returns-up-to-325-00-in-1-year" target="_blank">Stock Picking Algorithm Based on Deep Learning</a>: 325% Return In 1 Year</span></span>
+																								</li>
+																								<li><span style="font-size:14px"><span style="font-family:lucida sans unicode,lucida grande,sans-serif"><a href="https://iknowfirst.com/fr-stock-analysis-based-on-artificial-intelligence-returns-up-to-100-98-in-1-year" target="_blank">Stock Analysis Based on Artificial Intelligence</a>: 101% Return In 1 Year</span></span>
+																								</li>
+																								<li><span style="font-size:14px"><span style="font-family:lucida sans unicode,lucida grande,sans-serif"><a href="https://iknowfirst.com/fr-algorithmic-trading-software-based-on-pattern-recognition-returns-up-to-30-77-in-3-days" target="_blank">Algorithmic Software Based on Pattern Recognition</a>: 31% Return In 3 Days</span></span>
+																								</li>
+																								<li><span style="font-size:14px"><span style="font-family:lucida sans unicode,lucida grande,sans-serif"><a href="https://iknowfirst.com/fr-most-undervalued-stocks-based-on-stock-prediction-algorithm-returns-up-to-30-77-in-3-days" target="_blank">Most Undervalued Stocks Based on Stock&nbsp;Algorithm</a>: 30% Return In 3 Days</span></span>
+																								</li>
+																								<li><span style="font-size:14px"><span style="font-family:lucida sans unicode,lucida grande,sans-serif"><a href="https://iknowfirst.com/fr-stock-forecasting-based-on-big-data-returns-up-to-26-45-in-3-days" target="_blank">Stock Forecasting Based on Big Data</a>: 26% Return In 3 Days</span></span>
+																								</li>
+																								<li><span style="font-size:14px"><span style="font-family:lucida sans unicode,lucida grande,sans-serif"><a href="https://iknowfirst.com/fr-transportation-stocks-based-on-artificial-intelligence-returns-up-to-14-25-in-3-days" target="_blank">Market Prediction Algorithm Based on Artificial Intelligence</a>: 14% In 3 Days</span></span>
+																								</li>
+																								<li><span style="font-size:14px"><span style="font-family:lucida sans unicode,lucida grande,sans-serif"><a href="https://iknowfirst.com/fr-stock-scanner-based-on-a-self-learning-algorithm-returns-up-to-20-55-in-7-days" target="_blank">Stock Scanner Based on Self-Learning Algorithm</a>: Over 20% Return&nbsp;</span></span>
+																								</li>
+																								<li><span style="font-size:14px"><span style="font-family:lucida sans unicode,lucida grande,sans-serif"><a href="https://iknowfirst.com/fr-black-box-trading-based-on-artificial-intelligence-returns-up-to-30-23-in-7-days" target="_blank">Black Box Trading Based on Artificial Intelligence</a>: 20% Return In 7 Days</span></span>
+																								</li>
+																								<li><span style="font-size:14px"><span style="font-family:lucida sans unicode,lucida grande,sans-serif"><a href="https://iknowfirst.com/fr-stock-market-trends-based-on-big-data-analytics-returns-up-to-14-25-in-7-days" target="_blank">Stock Market Trends Based on Big Data Analytics</a>: 14% Return In 7 Days</span></span>
+																								</li>
+																								<li><span style="font-size:14px"><span style="font-family:lucida sans unicode,lucida grande,sans-serif"><a href="https://iknowfirst.com/fr-exchange-rate-forecast-based-on-genetic-algorithms-almost-80-00-hit-ratio-in-7-days" target="_blank">Exchange Rate Forecast Based on Genetic Algorithms</a>: 80% Hit Ratio&nbsp;</span></span>
+																								</li>
+																								<li><span style="font-size:14px"><span style="font-family:lucida sans unicode,lucida grande,sans-serif"><a href="https://iknowfirst.com/fr-algotrader-based-on-predictive-analytics-returns-up-to-67-70-in-14-days" target="_blank">Algotrader Based on Predictive Analytics</a>: Over 67% Return In 14 Days</span></span>
+																								</li>
+																								<li><span style="font-size:14px"><span style="font-family:lucida sans unicode,lucida grande,sans-serif"><a href="https://iknowfirst.com/fr-trading-predictor-based-on-ai-returns-up-to-50-00-in-14-days" target="_blank">Trading Predictor Based on AI</a>: 50% Return In 14 Days</span></span>
+																								</li>
+																								<li><span style="font-size:14px"><span style="font-family:lucida sans unicode,lucida grande,sans-serif"><a href="https://iknowfirst.com/fr-stock-picking-algorithm-based-on-data-mining-returns-up-to-28-21-in-14-days" target="_blank">Stock Market Projections Based on Data Mining</a>: 28% Return In 14 Days</span></span>
+																								</li>
+																								<li><span style="font-size:14px"><span style="font-family:lucida sans unicode,lucida grande,sans-serif"><a href="https://iknowfirst.com/fr-algorithmic-trading-based-on-data-mining-returns-up-to-65-97-in-1-month" target="_blank">Algorithmic Trading Based on Data Mining</a>: Almost 66% Return In 1 Month</span></span>
+																								</li>
+																								<li><span style="font-size:14px"><span style="font-family:lucida sans unicode,lucida grande,sans-serif"><a href="https://iknowfirst.com/fr-stock-market-algorithm-based-on-genetic-algorithms-returns-up-to-17-47-in-1-month" target="_blank">Stock Algorithm Based on Genetic Algorithms</a>: 17% Return In 1 Month</span></span>
+																								</li>
+																								<li><span style="font-size:14px"><span style="font-family:lucida sans unicode,lucida grande,sans-serif"><a href="https://iknowfirst.com/fr-big-data-trading-based-on-algo-trading-returns-up-to-81-94-in-3-months" target="_blank">Big Data Trading Based on Algo Trading</a>: Almost 82% Return In 3 Months</span></span>
+																								</li>
+																								<li><span style="font-size:14px"><span style="font-family:lucida sans unicode,lucida grande,sans-serif"><a href="https://iknowfirst.com/fr-market-forecast-based-on-genetic-algorithms-returns-up-to-125-35-in-3-months" target="_blank">Market Forecast Based on Genetic Algorithms</a>: 125% Return In 3&nbsp;Months</span></span>
+																								</li>
+																								<li><span style="font-size:14px"><span style="font-family:lucida sans unicode,lucida grande,sans-serif"><a href="https://iknowfirst.com/fr-best-stocks-under-10-based-on-artificial-intelligence-returns-up-to-119-40-in-3-months" target="_blank">Best Stocks Under 10 Based on Artificial Intelligence</a>: 119% In 3 Months</span></span>
+																								</li>
+																								<li><span style="font-size:14px"><span style="font-family:lucida sans unicode,lucida grande,sans-serif"><a href="https://iknowfirst.com/algar-stock-forecast-daily-stock-selection-based-on-ai-algorithm-for-january-7th-2016-january-2017" target="_blank">Stock Forecast</a>: Daily Stock Selection From January 7th till January 1st, 2017</span></span>
+																								</li>
+																							</ul>
+																						</div>
+																					</div>
+																				</div>
+																			</td>
+																		</tr>
+																	</tbody>
+																</table>
+																<!--[if mso]>
+</td>
+<![endif]-->
+																<!--[if mso]>
+</tr>
+</table>
+<![endif]-->
+															</td>
+														</tr>
+													</tbody>
+												</table>
+
+												<table border="0" cellpadding="0" cellspacing="0" class="mcnButtonBlock" style="min-width:100%;" width="100%">
+													<tbody class="mcnButtonBlockOuter">
+														<tr>
+															<td align="center" class="mcnButtonBlockInner" style="padding-top:0; padding-right:18px; padding-bottom:18px; padding-left:18px;" valign="top">
+
+																<table border="0" cellpadding="0" cellspacing="0" class="mcnButtonContentContainer" style="border-collapse: separate !important;border: 2px solid #707070;border-radius: 5px;background-color: #210EF1;" width="100%">
+																	<tbody>
+																		<tr>
+																			<td align="center" class="mcnButtonContent" style="font-family: &quot;Lucida Sans Unicode&quot;, &quot;Lucida Grande&quot;, sans-serif; font-size: 24px; padding: 24px;" valign="middle"><a class="mcnButton " href="http://lpage.iknowfirst.com/" style="font-weight: bold;letter-spacing: 0px;line-height: 100%;text-align: center;text-decoration: none;color: #FFFFFF;" target="_blank" title="Stock Forecast Based On AI :  Top 20 Stocks For This Week  ❯❯  ">Stock Forecast Based On AI : Top 20 Stocks For This Week ❯❯&nbsp;</a></td>
+																		</tr>
+																	</tbody>
+																</table>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+
+												<table border="0" cellpadding="0" cellspacing="0" class="mcnButtonBlock" style="min-width:100%;" width="100%">
+													<tbody class="mcnButtonBlockOuter">
+														<tr>
+															<td align="center" class="mcnButtonBlockInner" style="padding-top:0; padding-right:18px; padding-bottom:18px; padding-left:18px;" valign="top">
+
+																<table border="0" cellpadding="0" cellspacing="0" class="mcnButtonContentContainer" style="border-collapse: separate !important;border: 2px solid #707070;border-radius: 5px;background-color: #210EF1;" width="100%">
+																	<tbody>
+																		<tr>
+																			<td align="center" class="mcnButtonContent" style="font-family: &quot;Lucida Sans Unicode&quot;, &quot;Lucida Grande&quot;, sans-serif; font-size: 24px; padding: 24px;" valign="middle"><a class="mcnButton " href="http://lpage.iknowfirst.com/" style="font-weight: bold;letter-spacing: 0px;line-height: 100%;text-align: center;text-decoration: none;color: #FFFFFF;" target="_blank" title="Stock Picking Using Artificial Intelligence❯❯ 20 Undervalued Stocks + Algorithm to Trade Short-Term Stocks and Outperformed The S&P 500 ">Stock Picking Using Artificial Intelligence❯❯ 20 Undervalued Stocks + Algorithm to Trade Short-Term Stocks and Outperformed The S&amp;P 500&nbsp;</a></td>
+																		</tr>
+																	</tbody>
+																</table>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+
+												<table border="0" cellpadding="0" cellspacing="0" class="mcnButtonBlock" style="min-width:100%;" width="100%">
+													<tbody class="mcnButtonBlockOuter">
+														<tr>
+															<td align="center" class="mcnButtonBlockInner" style="padding-top:0; padding-right:18px; padding-bottom:18px; padding-left:18px;" valign="top">
+
+																<table border="0" cellpadding="0" cellspacing="0" class="mcnButtonContentContainer" style="border-collapse: separate !important;border: 2px solid #707070;border-radius: 5px;background-color: #2419A2;" width="100%">
+																	<tbody>
+																		<tr>
+																			<td align="center" class="mcnButtonContent" style="font-family: &quot;Lucida Sans Unicode&quot;, &quot;Lucida Grande&quot;, sans-serif; font-size: 24px; padding: 24px;" valign="middle"><a class="mcnButton " href="http://lpage.iknowfirst.com/" style="font-weight: bold;letter-spacing: 0px;line-height: 100%;text-align: center;text-decoration: none;color: #FFFFFF;" target="_blank" title="AMZN vs AAPL: Stock Picking Based on Machine Learning Algorithms + Algorithmic Trading Strategy: AMD, TSLA, HAL, MSFT+ Starbucks Stock Forecast: Buy or Sell Before Q4 2016 Earnings?">AMZN vs AAPL: Stock Picking Based on Machine Learning Algorithms + Algorithmic Trading Strategy: AMD, TSLA, HAL, MSFT+ Starbucks Stock Forecast: Buy or Sell Before Q4 2016 Earnings?</a></td>
+																		</tr>
+																	</tbody>
+																</table>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+
+												<table border="0" cellpadding="0" cellspacing="0" class="mcnTextBlock" style="min-width:100%;" width="100%">
+													<tbody class="mcnTextBlockOuter">
+														<tr>
+															<td class="mcnTextBlockInner" style="padding-top:9px;" valign="top">
+																<!--[if mso]>
+<table align="left" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100%;">
+<tr>
+<![endif]-->
+																<!--[if mso]>
+<td valign="top" width="600" style="width:600px;">
+<![endif]-->
+
+																<table align="left" border="0" cellpadding="0" cellspacing="0" class="mcnTextContentContainer" style="max-width:100%; min-width:100%;" width="100%">
+																	<tbody>
+																		<tr>
+																			<td class="mcnTextContent" style="padding: 0px 18px 9px; font-family: &quot;Lucida Sans Unicode&quot;, &quot;Lucida Grande&quot;, sans-serif;" valign="top"><span style="font-size:14px"><span style="font-family:lucida sans unicode,lucida grande,sans-serif"><strong style="font-family:lucida sans unicode,lucida grande,sans-serif; font-size:14px">1. Top Algorithmic Predictions Yield 325% In 1 Year</strong><br>&nbsp;This past week&#39;s top forecast came from this <a href="https://iknowfirst.com/fr-dividend-paying-stocks-based-on-artificial-intelligence-returns-up-to-321-93-in-1-year" style="font-family: &quot;lucida sans unicode&quot;, &quot;lucida grande&quot;, sans-serif; font-size: 14px;" target="_blank">Dividend Stocks forecast</a> with a <strong>one-hundred percent</strong> <strong>accuracy&nbsp;</strong>and three stocks returning over <strong>100%</strong>. The highest return came from <strong>VALE&nbsp;</strong>at almost <strong>322%</strong>, and the forecast had an overall average of <strong>92.33%</strong>. Additional high returns came from this <a href="https://iknowfirst.com/fr-stock-picking-algorithm-based-on-deep-learning-returns-up-to-325-00-in-1-year" style="font-family: &quot;lucida sans unicode&quot;, &quot;lucida grande&quot;, sans-serif; font-size: 14px;" target="_blank">Risk Conscious&nbsp;Stocks forecast</a> with returns reaching <strong>325%</strong> in 1 year. Investors looking for exposure to a basket of stocks, had returns reaching <strong>100.98%</strong> from this <a href="https://iknowfirst.com/fr-stock-analysis-based-on-artificial-intelligence-returns-up-to-100-98-in-1-year" style="font-family: &quot;lucida sans unicode&quot;, &quot;lucida grande&quot;, sans-serif; font-size: 14px;" target="_blank">ETFs Forecast</a>.<br>&nbsp;<br>&nbsp;<strong>2. Short Term Forecasts Return Almost 31%</strong><br>&nbsp;I Know First&#39;s top 3 day forecast came from this <a href="https://iknowfirst.com/fr-algorithmic-trading-software-based-on-pattern-recognition-returns-up-to-30-77-in-3-days" style="font-family: &quot;lucida sans unicode&quot;, &quot;lucida grande&quot;, sans-serif; font-size: 14px;" target="_blank">Medicine Stocks forecast</a>, with an overall average of <strong>5.65%&nbsp;</strong>and returns reaching <strong>30.77%</strong> <strong>in Just 3 days</strong> from CLSN. Additionally, this <a href="https://iknowfirst.com/fr-most-undervalued-stocks-based-on-stock-prediction-algorithm-returns-up-to-30-77-in-3-days" style="font-family: &quot;lucida sans unicode&quot;, &quot;lucida grande&quot;, sans-serif; font-size: 14px;" target="_blank">Low Short Ratio Fundamental Stocks forecast</a>, had a high return of over 30% and a market premium of 5.26%. Those seeking to stocks with the algorithm&#39;s top signal strength had returns of 26.45% in 3 days from this <a href="https://iknowfirst.com/fr-stock-forecasting-based-on-big-data-returns-up-to-26-45-in-3-days" style="font-family: &quot;lucida sans unicode&quot;, &quot;lucida grande&quot;, sans-serif; font-size: 14px;" target="_blank">Top Stocks forecast</a>. The AI-based algorithm had successfully forecasted over a <strong>14%</strong> return with this <a href="https://iknowfirst.com/fr-transportation-stocks-based-on-artificial-intelligence-returns-up-to-14-25-in-3-days" target="_blank">Transportation&nbsp;Stocks forecast</a>.<br>&nbsp;<br>&nbsp;<strong>3. 7 Day Forecasts Reach Over 30% Return&nbsp;</strong><br>&nbsp;This <a href="https://iknowfirst.com/fr-stock-scanner-based-on-a-self-learning-algorithm-returns-up-to-20-55-in-7-days" target="_blank">Low Price High Volume Stocks</a><a href="https://iknowfirst.com/fr-stock-scanner-based-on-a-self-learning-algorithm-returns-up-to-20-55-in-7-days" target="_blank">&nbsp;forecast&nbsp;</a>was I Know First&#39;s top 7 day prediction this week, with <strong>four predictions</strong> b<strong>over a 12% return in just 7 days</strong>. The highest return came from <strong>SGMO&nbsp;</strong>at <strong>20.55%</strong>. Additionally, value investors were able to earn up to <strong>30.23%&nbsp;</strong>from this <a href="https://iknowfirst.com/fr-black-box-trading-based-on-artificial-intelligence-returns-up-to-30-23-in-7-days" target="_blank">High Short Ratio Fundamental Stocks forecast</a>. I Know First&#39;s self-learning algorithm had predicted returns which yielded up to <strong>14.25%</strong> from this <a href="https://iknowfirst.com/fr-stock-market-trends-based-on-big-data-analytics-returns-up-to-14-25-in-7-days" target="_blank">Transportation Stocks forecast</a>. Those seeking to hedge forex risk and/or to practice carry trade strategies, had an <strong>80% hit ratio&nbsp;</strong>from this <a href="https://iknowfirst.com/fr-exchange-rate-forecast-based-on-genetic-algorithms-almost-80-00-hit-ratio-in-7-days" target="_blank">Currency Forecast</a>.</span></span>
+																			</td>
+																		</tr>
+																	</tbody>
+																</table>
+																<!--[if mso]>
+</td>
+<![endif]-->
+																<!--[if mso]>
+</tr>
+</table>
+<![endif]-->
+															</td>
+														</tr>
+													</tbody>
+												</table>
+
+												<table border="0" cellpadding="0" cellspacing="0" class="mcnButtonBlock" style="min-width:100%;" width="100%">
+													<tbody class="mcnButtonBlockOuter">
+														<tr>
+															<td align="center" class="mcnButtonBlockInner" style="padding-top:0; padding-right:18px; padding-bottom:18px; padding-left:18px;" valign="top">
+
+																<table border="0" cellpadding="0" cellspacing="0" class="mcnButtonContentContainer" style="border-collapse: separate !important;border: 2px solid #707070;border-radius: 5px;background-color: #2629E2;" width="100%">
+																	<tbody>
+																		<tr>
+																			<td align="center" class="mcnButtonContent" style="font-family: &quot;Lucida Sans Unicode&quot;, &quot;Lucida Grande&quot;, sans-serif; font-size: 24px; padding: 24px;" valign="middle"><a class="mcnButton " href="http://lpage.iknowfirst.com/apple" style="font-weight: bold;letter-spacing: 0px;line-height: 100%;text-align: center;text-decoration: none;color: #FFFFFF;" target="_blank" title="AAPL Forecast: Buy Or Sell? ❯❯">AAPL Forecast: Buy Or Sell? ❯❯</a></td>
+																		</tr>
+																	</tbody>
+																</table>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+
+												<table border="0" cellpadding="0" cellspacing="0" class="mcnButtonBlock" style="min-width:100%;" width="100%">
+													<tbody class="mcnButtonBlockOuter">
+														<tr>
+															<td align="center" class="mcnButtonBlockInner" style="padding-top:0; padding-right:18px; padding-bottom:18px; padding-left:18px;" valign="top">
+
+																<table border="0" cellpadding="0" cellspacing="0" class="mcnButtonContentContainer" style="border-collapse: separate !important;border: 2px solid #707070;border-radius: 5px;background-color: #119111;" width="100%">
+																	<tbody>
+																		<tr>
+																			<td align="center" class="mcnButtonContent" style="font-family: &quot;Lucida Sans Unicode&quot;, &quot;Lucida Grande&quot;, sans-serif; font-size: 24px; padding: 24px;" valign="middle"><a class="mcnButton " href="http://lpage.iknowfirst.com/" style="font-weight: bold;letter-spacing: 0px;line-height: 100%;text-align: center;text-decoration: none;color: #FFFFFF;" target="_blank" title="Experience The Algorithm With a Special 30 Day Trial : Get Today’s Algorithmic Forecast & 20 Stocks to Buy  ❯❯">Experience The Algorithm With a Special 30 Day Trial : Get Today&rsquo;s Algorithmic Forecast &amp; 20 Stocks to Buy ❯❯</a></td>
+																		</tr>
+																	</tbody>
+																</table>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+
+												<table border="0" cellpadding="0" cellspacing="0" class="mcnButtonBlock" style="min-width:100%;" width="100%">
+													<tbody class="mcnButtonBlockOuter">
+														<tr>
+															<td align="center" class="mcnButtonBlockInner" style="padding-top:0; padding-right:18px; padding-bottom:18px; padding-left:18px;" valign="top">
+
+																<table border="0" cellpadding="0" cellspacing="0" class="mcnButtonContentContainer" style="border-collapse: separate !important;border: 2px solid #707070;border-radius: 5px;background-color: #1A06F3;" width="100%">
+																	<tbody>
+																		<tr>
+																			<td align="center" class="mcnButtonContent" style="font-family: &quot;Lucida Sans Unicode&quot;, &quot;Lucida Grande&quot;, sans-serif; font-size: 24px; padding: 24px;" valign="middle"><a class="mcnButton " href="http://lpage.iknowfirst.com/" style="font-weight: bold;letter-spacing: 0px;line-height: 100%;text-align: center;text-decoration: none;color: #FFFFFF;" target="_blank" title="Yahoo and Ford Stock Forecast: Buy or Sell Before  Earnings?">Yahoo and Ford Stock Forecast: Buy or Sell Before Earnings?</a></td>
+																		</tr>
+																	</tbody>
+																</table>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+
+												<table border="0" cellpadding="0" cellspacing="0" class="mcnTextBlock" style="min-width:100%;" width="100%">
+													<tbody class="mcnTextBlockOuter">
+														<tr>
+															<td class="mcnTextBlockInner" style="padding-top:9px;" valign="top">
+																<!--[if mso]>
+<table align="left" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100%;">
+<tr>
+<![endif]-->
+																<!--[if mso]>
+<td valign="top" width="600" style="width:600px;">
+<![endif]-->
+
+																<table align="left" border="0" cellpadding="0" cellspacing="0" class="mcnTextContentContainer" style="max-width:100%; min-width:100%;" width="100%">
+																	<tbody>
+																		<tr>
+																			<td class="mcnTextContent" style="padding-top:0; padding-right:18px; padding-bottom:9px; padding-left:18px;" valign="top"><span style="font-size:14px"><span style="font-family:lucida sans unicode,lucida grande,sans-serif"><strong style="font-family:lucida sans unicode,lucida grande,sans-serif; font-size:14px">4. Almost 68% ROI In 14 Days</strong><br>&nbsp;In 14 Days, I Know First&#39;s AI-based algorithm had forecasted a <strong>67.77%</strong> return from <strong>KBLB&nbsp;</strong>with this <a href="https://iknowfirst.com/fr-algotrader-based-on-predictive-analytics-returns-up-to-67-70-in-14-days" style="font-family: &quot;lucida sans unicode&quot;, &quot;lucida grande&quot;, sans-serif; font-size: 14px;" target="_blank">Small Cap Stocks forecast</a>. The forecast had an overall return of <strong>12.49%</strong>, achieving a market premium of 11.19%. Furthermore, this <a href="https://iknowfirst.com/fr-trading-predictor-based-on-ai-returns-up-to-50-00-in-14-days" style="font-family: &quot;lucida sans unicode&quot;, &quot;lucida grande&quot;, sans-serif; font-size: 14px;" target="_blank">Low Short Ratio Fundamentals Stock forecast</a> gave investors returns up to <strong>50%</strong> <strong>in 14 days</strong>, and an overall average of 10.25%. Those seeking to track how the management of a firm buy or sell their own stock, were able to achieve almost a 10% overall average from this <a href="https://iknowfirst.com/fr-stock-picking-algorithm-based-on-data-mining-returns-up-to-28-21-in-14-days" style="font-family: &quot;lucida sans unicode&quot;, &quot;lucida grande&quot;, sans-serif; font-size: 14px;" target="_blank">Insider Trading forecast</a>.<br>&nbsp; <br>&nbsp;<strong>5. 1 Month Predictions Yield Almost 66%</strong><br>&nbsp;Investors were able to reach, in 1 month, a <strong>65.97%&nbsp;</strong>return in from <strong>TGB</strong> with this <a href="https://iknowfirst.com/fr-algorithmic-trading-based-on-data-mining-returns-up-to-65-97-in-1-month" style="font-family: &quot;lucida sans unicode&quot;, &quot;lucida grande&quot;, sans-serif; font-size: 14px;" target="_blank">Low Short Ratio Fundamental Stocks forecast</a>. The forecast had an overall average of 10.96%, reaching an alpha above the S&amp;P 500 Index by 10.57%. Additional high 1 month returns came from this <a href="https://iknowfirst.com/fr-stock-market-algorithm-based-on-genetic-algorithms-returns-up-to-17-47-in-1-month" style="font-family: &quot;lucida sans unicode&quot;, &quot;lucida grande&quot;, sans-serif; font-size: 14px;" target="_blank">Brazil Stocks forecast</a>, which had an overall average of <strong>12.18%&nbsp;</strong>and returns up to 17.47%. <br>&nbsp;<br>&nbsp;<strong>6. Investors Achieve&nbsp;Over 125% Return In 3 Months</strong><br>&nbsp;With a <strong>100% accuracy</strong>, five out ten forecasts had achieved returns over <strong>22%</strong> in this <a href="https://iknowfirst.com/fr-big-data-trading-based-on-algo-trading-returns-up-to-81-94-in-3-months" target="_blank">Energy Stocks forecast</a>. The highest return was at <strong>82%</strong> and the forecast had an overall average <strong>33.41%</strong>. Additionally, this <a href="https://iknowfirst.com/fr-market-forecast-based-on-genetic-algorithms-returns-up-to-125-35-in-3-months" target="_blank">Low Price To Book Ratio Fundamentals Stock forecast&nbsp;</a>had returns reach <strong>125.34%</strong> from <strong>MTL</strong>. I Know First&#39;s AI-based algorithm had forecasted returns over <strong>119%&nbsp;</strong>and an overall average of <strong>27.04%</strong> from this <a href="https://iknowfirst.com/fr-best-stocks-under-10-based-on-artificial-intelligence-returns-up-to-119-40-in-3-months" target="_blank">Stocks Under 10 Dollars forecast</a>. <br>&nbsp;<br>&nbsp;<strong style="font-family:lucida sans unicode,lucida grande,sans-serif; font-size:14px">7. Swing Trading Strategies Reach Over 77% In 1 Year&nbsp;</strong><br>&nbsp;I Know First&#39;s algorithmic indicators can be used to backtest various short term trading strategies. The top strategy had yielded up to a <strong>64.79% alpha</strong> above the S&amp;P500 Index, from January, 2016 till January 1st, 2017. <a href="https://iknowfirst.com/algar-stock-forecast-daily-stock-selection-based-on-ai-algorithm-for-january-7th-2016-january-2017" style="font-family: &quot;lucida sans unicode&quot;, &quot;lucida grande&quot;, sans-serif; font-size: 14px;" target="_blank">Read the full trade report</a> for a more detailed analysis with charts and graphs, depicting a high reward to risk payoff with low Betas and high Sharpe Ratios.</span></span>
+																				<br><span style="display:none">&nbsp;</span></td>
+																		</tr>
+																	</tbody>
+																</table>
+																<!--[if mso]>
+</td>
+<![endif]-->
+																<!--[if mso]>
+</tr>
+</table>
+<![endif]-->
+															</td>
+														</tr>
+													</tbody>
+												</table>
+
+												<table border="0" cellpadding="0" cellspacing="0" class="mcnTextBlock" style="min-width:100%;" width="100%">
+													<tbody class="mcnTextBlockOuter">
+														<tr>
+															<td class="mcnTextBlockInner" style="padding-top:9px;" valign="top">
+																<!--[if mso]>
+<table align="left" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100%;">
+<tr>
+<![endif]-->
+																<!--[if mso]>
+<td valign="top" width="600" style="width:600px;">
+<![endif]-->
+
+																<table align="left" border="0" cellpadding="0" cellspacing="0" class="mcnTextContentContainer" style="max-width:100%; min-width:100%;" width="100%">
+																	<tbody>
+																		<tr>
+																			<td class="mcnTextContent" style="padding: 0px 18px 9px; font-family: &quot;Lucida Sans Unicode&quot;, &quot;Lucida Grande&quot;, sans-serif;" valign="top">
+																				<br>
+																			</td>
+																		</tr>
+																	</tbody>
+																</table>
+																<!--[if mso]>
+</td>
+<![endif]-->
+																<!--[if mso]>
+</tr>
+</table>
+<![endif]-->
+															</td>
+														</tr>
+													</tbody>
+												</table>
+
+												<table border="0" cellpadding="0" cellspacing="0" class="mcnButtonBlock" style="min-width:100%;" width="100%">
+													<tbody class="mcnButtonBlockOuter">
+														<tr>
+															<td align="center" class="mcnButtonBlockInner" style="padding-top:0; padding-right:18px; padding-bottom:18px; padding-left:18px;" valign="top">
+
+																<table border="0" cellpadding="0" cellspacing="0" class="mcnButtonContentContainer" style="border-collapse: separate !important;border: 2px solid #707070;border-radius: 5px;background-color: #084C9E;" width="100%">
+																	<tbody>
+																		<tr>
+																			<td align="center" class="mcnButtonContent" style="font-family: &quot;Lucida Sans Unicode&quot;, &quot;Lucida Grande&quot;, sans-serif; font-size: 24px; padding: 24px;" valign="middle"><a class="mcnButton " href="https://www.bluesnap.com/jsp/buynow.jsp?contractId=3245130&currency=USD" style="font-weight: bold;letter-spacing: 0px;line-height: 100%;text-align: center;text-decoration: none;color: #F0F1F0;" target="_blank" title="Special Triple Forecast Bundle Number 1: Get the Currencies + Top 10 Stock Picks + Commodities">Special Triple Forecast Bundle Number 1: Get the Currencies + Top 10 Stock Picks + Commodities</a></td>
+																		</tr>
+																	</tbody>
+																</table>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+
+												<table border="0" cellpadding="0" cellspacing="0" class="mcnButtonBlock" style="min-width:100%;" width="100%">
+													<tbody class="mcnButtonBlockOuter">
+														<tr>
+															<td align="center" class="mcnButtonBlockInner" style="padding-top:0; padding-right:18px; padding-bottom:18px; padding-left:18px;" valign="top">
+
+																<table border="0" cellpadding="0" cellspacing="0" class="mcnButtonContentContainer" style="border-collapse: separate !important;border: 2px solid #707070;border-radius: 5px;background-color: #5BB804;">
+																	<tbody>
+																		<tr>
+																			<td align="center" class="mcnButtonContent" style="font-family: &quot;Lucida Sans Unicode&quot;, &quot;Lucida Grande&quot;, sans-serif; font-size: 24px; padding: 24px;" valign="middle"><a class="mcnButton " href="https://www.bluesnap.com/jsp/buynow.jsp?contractId=3251388&currency=USD" style="font-weight: bold;letter-spacing: normal;line-height: 100%;text-align: center;text-decoration: none;color: #FFFFFF;" target="_blank" title="Special Triple Forecast Bundle Number 2: Get The Small Cap + Top 10 Picks + Daily ETF Bundle">Special Triple Forecast Bundle Number 2: Get The Small Cap + Top 10 Picks + Daily ETF Bundle</a></td>
+																		</tr>
+																	</tbody>
+																</table>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+
+												<table border="0" cellpadding="0" cellspacing="0" class="mcnButtonBlock" style="min-width:100%;" width="100%">
+													<tbody class="mcnButtonBlockOuter">
+														<tr>
+															<td align="center" class="mcnButtonBlockInner" style="padding-top:0; padding-right:18px; padding-bottom:18px; padding-left:18px;" valign="top">
+
+																<table border="0" cellpadding="0" cellspacing="0" class="mcnButtonContentContainer" style="border-collapse: separate !important;border: 2px solid #707070;border-radius: 5px;background-color: #3630DA;" width="100%">
+																	<tbody>
+																		<tr>
+																			<td align="center" class="mcnButtonContent" style="font-family: &quot;Lucida Sans Unicode&quot;, &quot;Lucida Grande&quot;, sans-serif; font-size: 24px; padding: 24px;" valign="middle"><a class="mcnButton " href="http://iknowfirst.com/introducing_the_i_know_first_financial_advisor_customized_solution" style="font-weight: bold;letter-spacing: 0px;line-height: 100%;text-align: center;text-decoration: none;color: #FFFFFF;" target="_blank" title="Introducing The I Know First Financial Advisor Customized AlgorithmIc Solution❯❯">Introducing The I Know First Financial Advisor Customized AlgorithmIc Solution❯❯</a></td>
+																		</tr>
+																	</tbody>
+																</table>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+
+												<table border="0" cellpadding="0" cellspacing="0" class="mcnBoxedTextBlock" style="min-width:100%;" width="100%">
+													<!--[if gte mso 9]>
+<table align="center" border="0" cellspacing="0" cellpadding="0" width="100%">
+<![endif]-->
+													<tbody class="mcnBoxedTextBlockOuter">
+														<tr>
+															<td class="mcnBoxedTextBlockInner" valign="top">
+																<!--[if gte mso 9]>
+<td align="center" valign="top" ">
+<![endif]-->
+
+																<table align="left" border="0" cellpadding="0" cellspacing="0" class="mcnBoxedTextContentContainer" style="min-width:100%;" width="100%">
+																	<tbody>
+																		<tr>
+																			<td style="padding-top:9px; padding-left:18px; padding-bottom:9px; padding-right:18px;">
+
+																				<table border="0" cellpadding="18" cellspacing="0" class="mcnTextContentContainer" style="min-width: 100% !important;background-color: #EEEEEE;" width="100%">
+																					<tbody>
+																						<tr>
+																							<td class="mcnTextContent" style="color: #000000;font-family: &quot;Lucida Sans Unicode&quot;, &quot;Lucida Grande&quot;, sans-serif;font-size: 14px;font-weight: normal;line-height: 18px;text-align: center;" valign="top">
+
+																								<ol>
+																									<li style="text-align: left;"><span style="font-family:lucida sans unicode,lucida grande,sans-serif"><span style="font-size:14px">Earlier in 2016, <a href="https://iknowfirst.com/u-s-steel-stock-forecast-innovating-steel" target="_blank">on July 13th, 2016</a>, an I Know First analyst wrote a bullish article regarding U.S. Steel Corporation (X). She explained that macro economic improvements and operational improvements would help X shares recover. The article complimented I Know First&#39;s bullish algorithmic forecast. Since then, <strong>X shares have risen by 58% to date</strong>.</span></span>
+																									</li>
+																									<li style="text-align: left;"><span style="font-family:lucida sans unicode,lucida grande,sans-serif"><span style="font-size:14px"><a href="https://iknowfirst.com/rsar-netflix-stock-forecast-for-2017" target="_blank">Before Netflix&#39;s (NFLX) Q4 earnings report</a>, an I Know First analyst wrote a 2017 outlook for NFLX in accordance with I Know First&#39;s bullish algorithmic prediction. The analyst explained that NFLX&#39;s investment into original content and global expansion would help the firm grow. <strong>Since the prediction, NFLX shares have risen by almost 6</strong>%.</span></span>
+																									</li>
+																									<li style="text-align: left;"><span style="font-family:lucida sans unicode,lucida grande,sans-serif"><span style="font-size:14px">On August 3rd, 2016, an I Know First analyst wrote a bullish article regarding Apple Inc. (AAPL). The analyst discussed AAPL&#39;s Q3 earnings and what to expect in Q4 with the iPhone 7 launch. I Know First&#39;s AI-based algorithm had as well issued a bullish prediction on July 27th, and since then, AAPL shares <strong>have risen 24.13% to date</strong>.</span></span>
+																									</li>
+																									<li style="text-align: left;"><span style="font-family:lucida sans unicode,lucida grande,sans-serif"><span style="font-size:14px">One of I Know First&#39;s top financial analyst issued a bullish rating on NVDA shares <a href="https://iknowfirst.com/ndva-stock-predictions-nvidia-should-also-take-lead-in-mobile-centric-artificial-intelligence" target="_blank">on June 22nd, 2016</a>; in accordance with I Know First&#39;s self-learning algorithmic prediction. The analyst explained that their GPU development using Artificial Intelligence would help propel the company to further growth. <strong>NVDA shares have risen by almost 119%</strong> since the algorithmic prediction.&nbsp;</span></span>
+																									</li>
+																								</ol>
+																							</td>
+																						</tr>
+																					</tbody>
+																				</table>
+																			</td>
+																		</tr>
+																	</tbody>
+																</table>
+																<!--[if gte mso 9]>
+</td>
+<![endif]-->
+																<!--[if gte mso 9]>
+                </tr>
+                </table>
+<![endif]-->
+															</td>
+														</tr>
+													</tbody>
+												</table>
+
+												<table border="0" cellpadding="0" cellspacing="0" class="mcnButtonBlock" style="min-width:100%;" width="100%">
+													<tbody class="mcnButtonBlockOuter">
+														<tr>
+															<td align="center" class="mcnButtonBlockInner" style="padding-top:0; padding-right:18px; padding-bottom:18px; padding-left:18px;" valign="top">
+
+																<table border="0" cellpadding="0" cellspacing="0" class="mcnButtonContentContainer" style="border-collapse: separate !important;border: 2px solid #707070;border-radius: 5px;background-color: #084C9E;" width="100%">
+																	<tbody>
+																		<tr>
+																			<td align="center" class="mcnButtonContent" style="font-family: &quot;Lucida Sans Unicode&quot;, &quot;Lucida Grande&quot;, sans-serif; font-size: 24px; padding: 24px;" valign="middle"><a class="mcnButton " href="http://lpage.iknowfirst.com/" style="font-weight: bold;letter-spacing: 0px;line-height: 100%;text-align: center;text-decoration: none;color: #FFFFFF;" target="_blank" title="Get Today's Top 10 Stock Picks Based on Algorithms">Get Today&#39;s Top 10 Stock Picks Based on Algorithms</a></td>
+																		</tr>
+																	</tbody>
+																</table>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+
+												<table border="0" cellpadding="0" cellspacing="0" class="mcnButtonBlock" style="min-width:100%;" width="100%">
+													<tbody class="mcnButtonBlockOuter">
+														<tr>
+															<td align="center" class="mcnButtonBlockInner" style="padding-top:0; padding-right:18px; padding-bottom:18px; padding-left:18px;" valign="top">
+
+																<table border="0" cellpadding="0" cellspacing="0" class="mcnButtonContentContainer" style="border-collapse: separate !important;border: 2px solid #707070;border-radius: 5px;background-color: #110E67;" width="100%">
+																	<tbody>
+																		<tr>
+																			<td align="center" class="mcnButtonContent" style="font-family: &quot;Lucida Sans Unicode&quot;, &quot;Lucida Grande&quot;, sans-serif; font-size: 24px; padding: 24px;" valign="middle"><a class="mcnButton " href="http://lpage.iknowfirst.com/sp-500-forecast?gclid=CNPqrevAoc8CFU42gQodATsF8g" style="font-weight: bold;letter-spacing: 0px;line-height: 100%;text-align: center;text-decoration: none;color: #FFFFFF;" target="_blank" title="S&P 500 Forecast For This Week: Get Daily S&P 500 Forecast ❯❯">S&amp;P 500 Forecast For This Week: Get Daily S&amp;P 500 Forecast ❯❯</a></td>
+																		</tr>
+																	</tbody>
+																</table>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+
+												<table border="0" cellpadding="0" cellspacing="0" class="mcnBoxedTextBlock" style="min-width:100%;" width="100%">
+													<!--[if gte mso 9]>
+<table align="center" border="0" cellspacing="0" cellpadding="0" width="100%">
+<![endif]-->
+													<tbody class="mcnBoxedTextBlockOuter">
+														<tr>
+															<td class="mcnBoxedTextBlockInner" valign="top">
+																<!--[if gte mso 9]>
+<td align="center" valign="top" ">
+<![endif]-->
+
+																<table align="left" border="0" cellpadding="0" cellspacing="0" class="mcnBoxedTextContentContainer" style="min-width:100%;" width="100%">
+																	<tbody>
+																		<tr>
+																			<td style="padding-top:9px; padding-left:18px; padding-bottom:9px; padding-right:18px;">
+
+																				<table border="0" cellpadding="18" cellspacing="0" class="mcnTextContentContainer" style="min-width: 100% !important;background-color: #FFFFFF;" width="100%">
+																					<tbody>
+																						<tr>
+																							<td class="mcnTextContent" style="color: #000000;font-family: Helvetica;font-size: 14px;font-weight: normal;line-height: 18px;text-align: center;" valign="top">
+																								<div style="text-align: center;"><span style="font-size:14px"><span style="font-family:lucida sans unicode,lucida grande,sans-serif"><strong>Algorithmic Performance Review &amp; Articles</strong></span></span>
+																								</div>
+
+																								<ul>
+																									<li style="text-align: left;"><span style="font-size:14px"><span style="font-family:lucida sans unicode,lucida grande,sans-serif"><a href="https://iknowfirst.com/rsrar-apple-stock-forecast-swot-analysis-of-apple" target="_blank">Apple Stock Forecast</a>: SWOT Analysis For Apple&nbsp;</span></span>
+																									</li>
+																									<li style="text-align: left;"><span style="font-size:14px"><span style="font-family:lucida sans unicode,lucida grande,sans-serif"><a href="https://iknowfirst.com/rsar-quantum-trading-goldman-sachs-emerges-into-the-field-of-ai" target="_blank">Quantum Trading</a>: Goldman Sachs Emerges Into The Field of AI</span></span>
+																									</li>
+																									<li style="text-align: left;"><span style="font-size:14px"><span style="font-family:lucida sans unicode,lucida grande,sans-serif"><a href="https://iknowfirst.com/stock-market-forecast-creating-a-model-for-chaos-mapping-and-predictions" target="_blank">Stock Market Forecast</a>: Model For Chaos Mapping &amp; Predictions</span></span>
+																									</li>
+																									<li style="text-align: left;"><span style="font-size:14px"><span style="font-family:lucida sans unicode,lucida grande,sans-serif"><a href="https://iknowfirst.com/rsar-amd-stock-forecast-defying-critics" target="_blank">AMD Stock Forecast</a>: Defying The Critics</span></span>
+																									</li>
+																									<li style="text-align: left;"><span style="font-size:14px"><span style="font-family:lucida sans unicode,lucida grande,sans-serif"><a href="https://iknowfirst.com/rsrar-tesla-stock-forecast-for-2017" target="_blank">Tesla Stock Forecast&nbsp;</a>For 2017</span></span>
+																									</li>
+																									<li style="text-align: left;"><span style="font-size:14px"><span style="font-family:lucida sans unicode,lucida grande,sans-serif"><a href="https://iknowfirst.com/rsar-netflix-stock-forecast-for-2017" target="_blank">Netflix Stock Forecast&nbsp;</a>For 2017</span></span>
+																									</li>
+																									<li style="text-align: left;"><span style="font-size:14px"><span style="font-family:lucida sans unicode,lucida grande,sans-serif"><a href="https://iknowfirst.com/rsrar-quantum-trading-econophysics-can-help-predict-financial-markets" target="_blank">Quantum Trading</a>: Econophysics Can Help Predict Financial Markets</span></span>
+																									</li>
+																									<li style="text-align: left;"><span style="font-size:14px"><span style="font-family:lucida sans unicode,lucida grande,sans-serif">I Know First <a href="https://iknowfirst.com/i-know-first-featured-in-financial-business-magazine" target="_blank">Featured In Financial Business Magazine</a></span></span>
+																									</li>
+																									<li style="text-align: left;"><span style="font-size:14px"><span style="font-family:lucida sans unicode,lucida grande,sans-serif"><a href="https://iknowfirst.com/i-know-first-about-the-latest-in-artificial-intelligence-trading" target="_blank">I Know First</a> About The Latest In Artificial Intelligence Trading</span></span>
+																									</li>
+																									<li style="text-align: left;"><span style="font-size:14px"><span style="font-family:lucida sans unicode,lucida grande,sans-serif"><a href="https://iknowfirst.com/rsrar-trend-following-financials" target="_blank">Trend Following Financials&nbsp;</a></span></span>
+																									</li>
+																									<li style="text-align: left;"><span style="font-size:14px"><span style="font-family:lucida sans unicode,lucida grande,sans-serif"><a href="https://iknowfirst.com/rsar-ai-hedge-fund-bridgewater-using-ai-to-increase-profits-and-productivity" target="_blank">AI Hedge Fund</a>: Bridgewater Using AI To Increase Profits &amp; Productivity&nbsp;</span></span>
+																									</li>
+																									<li style="text-align: left;"><span style="font-size:14px"><span style="font-family:lucida sans unicode,lucida grande,sans-serif"><a href="https://iknowfirst.com/rsar-cbs-stock-analysis-rewarding-shareholders" target="_blank">CBS Stock Analysis</a>: Rewarding Shareholders</span></span>
+																									</li>
+																									<li style="text-align: left;"><span style="font-size:14px"><span style="font-family:lucida sans unicode,lucida grande,sans-serif"><a href="https://iknowfirst.com/rsar-jpm-stock-analysis-jpmorgan-set-to-surge-in-2017" target="_blank">JPM Stock Analysis</a>: JPMorgan Set To Surge In 2017</span></span>
+																									</li>
+																									<li style="text-align: left;"><span style="font-size:14px"><span style="font-family:lucida sans unicode,lucida grande,sans-serif"><a href="https://iknowfirst.com/rsar-allergan-stock-analysis-renewing-confidence-in-2017" target="_blank">Allergan Stock Analysis</a>: Renewing Confidence In 2017</span></span>
+																									</li>
+																									<li style="text-align: left;"><span style="font-size:14px"><span style="font-family:lucida sans unicode,lucida grande,sans-serif"><a href="https://iknowfirst.com/rsar-verizon-stock-analysis-5g-developments-and-acquisition" target="_blank">Verizon Stock Analysis</a>: 5G Developments &amp; Acquisitions&nbsp;</span></span>
+																									</li>
+																									<li style="text-align: left;"><span style="font-size:14px"><span style="font-family:lucida sans unicode,lucida grande,sans-serif"><a href="https://iknowfirst.com/rsar-top-performing-stocks-2016" target="_blank">Top Performing Stocks&nbsp;</a>In 2016</span></span>
+																									</li>
+																									<li style="text-align: left;"><span style="font-size:14px"><span style="font-family:lucida sans unicode,lucida grande,sans-serif"><a href="https://iknowfirst.com/rsar-commodity-price-forecast-based-on-barons-2017-commodity-outlook" target="_blank">Commodity Forecast</a>: Baron&#39;s Outlook In Accordance With I Know First&nbsp;</span></span>
+																									</li>
+																									<li style="text-align: left;"><span style="font-size:14px"><span style="font-family:lucida sans unicode,lucida grande,sans-serif"><a href="https://iknowfirst.com/rsrar-blackberry-stock-prediction-not-a-promising-road-ahead" target="_blank">Blackberry Stock Prediction</a>: Not A Promising Road Ahead</span></span>
+																									</li>
+																									<li style="text-align: left;"><span style="font-size:14px"><span style="font-family:lucida sans unicode,lucida grande,sans-serif"><a href="https://iknowfirst.com/rsar-bac-stock-forecast-bank-of-america-benefits-from-increase-in-interest-rates" target="_blank">BAC Stock Forecast</a>: Bank of America Benefits From Increase In Rates</span></span>
+																									</li>
+																									<li style="text-align: left;"><span style="font-size:14px"><span style="font-family:lucida sans unicode,lucida grande,sans-serif"><a href="https://iknowfirst.com/the-big-data-solution-for-wall-street" target="_blank">The &quot;Big Data&quot; Solution</a> For Wall Street</span></span>
+																									</li>
+																									<li style="text-align: left;"><span style="font-size:14px"><span style="font-family:lucida sans unicode,lucida grande,sans-serif"><a href="https://iknowfirst.com/rsar-interest-rate-projections-as-interest-rates-rise-current-bull-market-may-falter" target="_blank">Interest Rate Projections</a>: As Interest Rates Rise, Bull Market May Falter</span></span>
+																									</li>
+																									<li style="text-align: left;"><span style="font-size:14px"><span style="font-family:lucida sans unicode,lucida grande,sans-serif"><a href="https://iknowfirst.com/rsar-biopharm-stock-prediction-kerx-developing-new-ways-to-treat-patients-with-ckd" target="_blank">Biopharm&nbsp;Stock Prediction</a>: KERX Developing Ways To Treat Patients&nbsp;</span></span>
+																									</li>
+																								</ul>
+																							</td>
+																						</tr>
+																					</tbody>
+																				</table>
+																			</td>
+																		</tr>
+																	</tbody>
+																</table>
+																<!--[if gte mso 9]>
+</td>
+<![endif]-->
+																<!--[if gte mso 9]>
+                </tr>
+                </table>
+<![endif]-->
+															</td>
+														</tr>
+													</tbody>
+												</table>
+
+												<table border="0" cellpadding="0" cellspacing="0" class="mcnBoxedTextBlock" style="min-width:100%;" width="100%">
+													<!--[if gte mso 9]>
+<table align="center" border="0" cellspacing="0" cellpadding="0" width="100%">
+<![endif]-->
+													<tbody class="mcnBoxedTextBlockOuter">
+														<tr>
+															<td class="mcnBoxedTextBlockInner" valign="top">
+																<!--[if gte mso 9]>
+<td align="center" valign="top" ">
+<![endif]-->
+
+																<table align="left" border="0" cellpadding="0" cellspacing="0" class="mcnBoxedTextContentContainer" style="min-width:100%;" width="100%">
+																	<tbody>
+																		<tr>
+																			<td style="padding-top:9px; padding-left:18px; padding-bottom:9px; padding-right:18px;">
+
+																				<table border="0" cellpadding="18" cellspacing="0" class="mcnTextContentContainer" style="min-width: 100% !important;background-color: #EBEBEB;border: 1px solid #999999;" width="100%">
+																					<tbody>
+																						<tr>
+																							<td class="mcnTextContent" valign="top">
+																								<div style="text-align: center;">
+																									<div style="line-height: 20.8px; text-align: center;">
+																										<div style="line-height: 20.8px; text-align: center;"><span style="font-size:14px"><span style="font-family:arial,helvetica neue,helvetica,sans-serif"><strong>Algorithmic Trading: <a href="http://iknowfirst.com/algorithmic-swing-trading" target="_blank">Swing Trading Based on Machine learning</a></strong></span></span>
+																											<br>&nbsp;</div><span style="font-size:14px; line-height:20.8px">Following the development of Dr. Lipa Roitman&#39;s understanding of relying on the 5-day simple moving average as a secondary trigger for entry and exit, the I Know First R&amp;D team has developed a complementary model to support his thesis. We tested the model from July 1<sup>st</sup>&nbsp; 2014 to June 30<sup>th</sup> 2015, a period of one year.<br>&nbsp;Using the strategy <strong>stock</strong> investors made a <strong>return of 34%</strong>. The strategies annual deviation was 18.17% which results in a <strong>Sharpe ratio of 1.77</strong>.<br>&nbsp;Similarly the strategy <strong>Interest Rate</strong> investors made a <strong>return of 40.11%.</strong> The strategies annual deviation was 20.33% which results in a <strong>Sharpe ratio of 1.87</strong>.<br>&nbsp;With <strong>currencies</strong> we filter our to G10 pairs and apply a 10x leverage. Here the strategy worked particularly well resulting in a total return of <strong>504%</strong>, annual standard deviation of 36.73% and <strong>Sharpe ration of 13.46</strong>.</span>
+																										<br style="line-height: 20.8px;">
+																										<br style="line-height: 20.8px;"><span style="font-size:14px; line-height:20.8px">You can find the full report and data &amp; the combined hedge fund stats&nbsp;</span><span style="font-size:19px; line-height:20.8px"><strong><a href="http://iknowfirst.com/algorithmic-swing-trading">HERE</a></strong></span><span style="line-height:20.8px">.</span></div>
+																									<div>&nbsp;</div>
+																								</div>
+																							</td>
+																						</tr>
+																					</tbody>
+																				</table>
+																			</td>
+																		</tr>
+																	</tbody>
+																</table>
+																<!--[if gte mso 9]>
+</td>
+<![endif]-->
+																<!--[if gte mso 9]>
+                </tr>
+                </table>
+<![endif]-->
+															</td>
+														</tr>
+													</tbody>
+												</table>
+
+												<table border="0" cellpadding="0" cellspacing="0" class="mcnButtonBlock" style="min-width:100%;" width="100%">
+													<tbody class="mcnButtonBlockOuter">
+														<tr>
+															<td align="center" class="mcnButtonBlockInner" style="padding-top:0; padding-right:18px; padding-bottom:18px; padding-left:18px;" valign="top">
+
+																<table border="0" cellpadding="0" cellspacing="0" class="mcnButtonContentContainer" style="border-collapse: separate !important;border: 2px solid #707070;border-radius: 5px;background-color: #5BB804;" width="100%">
+																	<tbody>
+																		<tr>
+																			<td align="center" class="mcnButtonContent" style="font-family: &quot;Lucida Sans Unicode&quot;, &quot;Lucida Grande&quot;, sans-serif; font-size: 18px; padding: 24px;" valign="middle"><a class="mcnButton " href="http://lpage.iknowfirst.com/" style="font-weight: bold;letter-spacing: 0px;line-height: 100%;text-align: center;text-decoration: none;color: #FFFFFF;" target="_blank" title="How To React After Federal Reserve Rate Hike?">How To React After Federal Reserve Rate Hike?</a></td>
+																		</tr>
+																	</tbody>
+																</table>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+
+												<table border="0" cellpadding="0" cellspacing="0" class="mcnTextBlock" style="min-width:100%;" width="100%">
+													<tbody class="mcnTextBlockOuter">
+														<tr>
+															<td class="mcnTextBlockInner" style="padding-top:9px;" valign="top">
+																<!--[if mso]>
+<table align="left" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100%;">
+<tr>
+<![endif]-->
+																<!--[if mso]>
+<td valign="top" width="600" style="width:600px;">
+<![endif]-->
+
+																<table align="left" border="0" cellpadding="0" cellspacing="0" class="mcnTextContentContainer" style="max-width:100%; min-width:100%;" width="100%">
+																	<tbody>
+																		<tr>
+																			<td class="mcnTextContent" style="padding-top:0; padding-right:18px; padding-bottom:9px; padding-left:18px;" valign="top">
+																				<div style="text-align: center;">
+																					<div style="text-align: left;">
+																						<div style="text-align: center; ">
+																							<div style="text-align: center;"><span style="font-size:14px"><span style="font-family:lucida sans unicode,lucida grande,sans-serif"><em style="color: #000000;font-family: lucida sans unicode,lucida grande,sans-serif;font-size: x-large;line-height: normal;">Routine&nbsp;Algorithmic&nbsp;Performance</em><br>&nbsp;<em style="line-height:1.6em"><span style="line-height:1.6em">I Know First provides</span> <a href="http://iknowfirst.com/algorithmic-services-based-on-predictive-analytics/" style="font-family: 'lucida sans unicode', 'lucida grande', sans-serif; font-size: 14px;" target="_blank">retail investors</a>, <a href="http://iknowfirst.com/introducing_the_i_know_first_hedge_fund_solution/" style="font-family: 'lucida sans unicode', 'lucida grande', sans-serif; font-size: 14px;" target="_blank">hedge fund managers</a>, <a href="http://iknowfirst.com/the-i-know-first-family-office-solution/" style="font-family: 'lucida sans unicode', 'lucida grande', sans-serif; font-size: 14px;" target="_blank">family&nbsp;office managers</a> &amp; <a href="http://iknowfirst.com/introducing_the_i_know_first_financial_advisor_customized_solution/" style="font-family: 'lucida sans unicode', 'lucida grande', sans-serif; font-size: 14px;" target="_blank">financial advisors</a> with tailored algorithmic services.&nbsp;</em>
+																								</span>
+																								</span>
+
+																								<ul dir="ltr">
+																									<li style="text-align: left;"><span style="font-size:14px"><span style="font-family:lucida sans unicode,lucida grande,sans-serif"><a href="https://iknowfirst.com/fr-dividend-paying-stocks-based-on-artificial-intelligence-returns-up-to-321-93-in-1-year" target="_blank">Dividend Stocks Based on Artificial Intelligence</a>: 312% Return In 1 Year</span></span>
+																									</li>
+																									<li style="text-align: left;"><span style="font-size:14px"><span style="font-family:lucida sans unicode,lucida grande,sans-serif"><a href="https://iknowfirst.com/fr-stock-predictor-based-on-pattern-recognition-returns-up-to-114-63-in-3-months" target="_blank">Stock Predictor Based on Pattern Recognition</a>: 115% Return In 3 Months</span></span>
+																									</li>
+																									<li style="text-align: left;"><span style="font-size:14px"><span style="font-family:lucida sans unicode,lucida grande,sans-serif"><a href="https://iknowfirst.com/fr-daily-stock-market-predictions-based-on-ai-returns-up-to-36-41-in-14-days" target="_blank">Daily Stock Market Predictions Based on AI</a>: Over 36% Return In 14 Days</span></span>
+																									</li>
+																									<li style="text-align: left;"><span style="font-size:14px"><span style="font-family:lucida sans unicode,lucida grande,sans-serif"><a href="https://iknowfirst.com/fr-best-low-pe-stocks-based-on-data-mining-returns-up-to-21-84-in-7-days" target="_blank">Best Low PE Stocks Based on Data Mining</a>: Almost 22% Return In 7 Days</span></span>
+																									</li>
+																									<li style="text-align: left;"><span style="font-size:14px"><span style="font-family:lucida sans unicode,lucida grande,sans-serif"><a href="https://iknowfirst.com/fr-market-forecasts-based-on-ai-returns-up-to-18-27-in-14-days" target="_blank">Market Forecasts Based on AI</a>: Over 18% Return In 14 Days</span></span>
+																									</li>
+																									<li style="text-align: left;"><span style="font-size:14px"><span style="font-family:lucida sans unicode,lucida grande,sans-serif"><a href="https://iknowfirst.com/fr-best-hong-kong-stocks-based-on-algorithmic-trading-returns-up-to-17-70-in-7-days" target="_blank">Best Hong Kong Stocks Based on Algorithmic Trading</a>: 18% Return In 7 Days</span></span>
+																									</li>
+																									<li style="text-align: left;"><span style="font-size:14px"><span style="font-family:lucida sans unicode,lucida grande,sans-serif"><a href="https://iknowfirst.com/fr-stock-market-predictions-based-on-algo-trading-returns-up-to-67-17-in-1-month" target="_blank">Stock Market Predictions Based on Algo Trading</a>: 67% Return In 1 Month</span></span>
+																									</li>
+																									<li style="text-align: left;"><span style="font-size:14px"><span style="font-family:lucida sans unicode,lucida grande,sans-serif"><a href="https://iknowfirst.com/fr-quantitative-trading-based-on-a-self-learning-algorithm-returns-up-to-68-68-in-3-months" target="_blank">Quantitative Trading Based on Self-Learning Algorithm</a>: Almost 69% Return&nbsp;</span></span>
+																									</li>
+																									<li style="text-align: left;"><span style="font-size:14px"><span style="font-family:lucida sans unicode,lucida grande,sans-serif"><a href="https://iknowfirst.com/fr-stock-price-prediction-based-on-artificial-intelligence-returns-up-to-17-90-in-14-days" target="_blank">Stock Price Prediction Based on Artificial Intelligence</a>: 18% Return In 14 Days</span></span>
+																									</li>
+																									<li style="text-align: left;"><span style="font-size:14px"><span style="font-family:lucida sans unicode,lucida grande,sans-serif"><a href="https://iknowfirst.com/fr-stock-picking-algorithm-based-on-deep-learning-returns-up-to-325-00-in-1-year" target="_blank">Stock Picking Algorithm Based on Deep Learning</a>: 325% Return In 1 Year</span></span>
+																									</li>
+																									<li style="text-align: left;"><span style="font-size:14px"><span style="font-family:lucida sans unicode,lucida grande,sans-serif"><a href="https://iknowfirst.com/fr-algotrader-based-on-predictive-analytics-returns-up-to-67-70-in-14-days" target="_blank">Algotrader Based on Predictive Analytics</a>: Almost 68% Return In 14 Days</span></span>
+																									</li>
+																									<li style="text-align: left;"><span style="font-size:14px"><span style="font-family:lucida sans unicode,lucida grande,sans-serif"><a href="https://iknowfirst.com/fr-stock-forecasting-based-on-big-data-returns-up-to-26-45-in-3-days" target="_blank">Stock Forecasting Based on Big Data</a>: Over 26% Return In 3 Days</span></span>
+																									</li>
+																									<li style="text-align: left;"><span style="font-size:14px"><span style="font-family:lucida sans unicode,lucida grande,sans-serif"><a href="https://iknowfirst.com/fr-systematic-trading-based-on-data-mining-returns-up-to-47-00-in-14-days" target="_blank">Systematic Trading Based on Data Mining</a>: 47% Return In 14 Days</span></span>
+																									</li>
+																									<li style="text-align: left;"><span style="font-size:14px"><span style="font-family:lucida sans unicode,lucida grande,sans-serif"><a href="https://iknowfirst.com/fr-algorithmic-trading-software-based-on-pattern-recognition-returns-up-to-30-77-in-3-days" target="_blank">Algorithmic Trading Software Based on Pattern Recognition</a>: 31% In 3&nbsp;Days</span></span>
+																									</li>
+																									<li style="text-align: left;"><span style="font-size:14px"><span style="font-family:lucida sans unicode,lucida grande,sans-serif"><a href="https://iknowfirst.com/fr-most-undervalued-stocks-based-on-stock-prediction-algorithm-returns-up-to-30-77-in-3-days" target="_blank">Most Undervalued Stocks Based on Stock Prediction Algorithm</a>: Over 30%&nbsp;</span></span>
+																									</li>
+																									<li style="text-align: left;"><span style="font-size:14px"><span style="font-family:lucida sans unicode,lucida grande,sans-serif"><a href="https://iknowfirst.com/fr-stock-picking-algorithm-based-on-data-mining-returns-up-to-28-21-in-14-days" target="_blank">Stock Market Projections Based on Data Mining</a>: 28% Return In 14 Days</span></span>
+																									</li>
+																									<li style="text-align: left;"><span style="font-size:14px"><span style="font-family:lucida sans unicode,lucida grande,sans-serif"><a href="https://iknowfirst.com/fr-machine-learning-trading-based-on-ai-returns-up-to-67-70-in-14-days" target="_blank">Machine Learning Trading Based on AI</a>: Almost 68% Return In 14 Days</span></span>
+																									</li>
+																									<li style="text-align: left;"><span style="font-size:14px"><span style="font-family:lucida sans unicode,lucida grande,sans-serif"><a href="https://iknowfirst.com/fr-stock-market-analysis-based-on-algorithmic-trading-returns-up-to-30-77-in-3-days" target="_blank">Stock Market Analysis Based on Algorithmic Trading</a>: 31% Return In 3 Days</span></span>
+																									</li>
+																									<li style="text-align: left;"><span style="font-size:14px"><span style="font-family:lucida sans unicode,lucida grande,sans-serif"><a href="https://iknowfirst.com/fr-top-dividend-stocks-based-on-algo-trading-returns-up-to-132-72-in-1-year" target="_blank">Top Dividend Stocks Based on Algo Trading</a>: Almost 133% Return In 1 Year</span></span>
+																									</li>
+																									<li style="text-align: left;"><span style="font-size:14px"><span style="font-family:lucida sans unicode,lucida grande,sans-serif"><a href="https://iknowfirst.com/fr-market-predictions-based-on-artificial-intelligence-returns-up-to-16-30-in-7-days" target="_blank">Market Predictions Based on Artificial Intelligence</a>: 16% Return In 7 Days</span></span>
+																									</li>
+																									<li style="text-align: left;"><span style="font-size:14px"><span style="font-family:lucida sans unicode,lucida grande,sans-serif"><a href="https://iknowfirst.com/fr-short-term-stocks-to-buy-based-on-ai-returns-up-to-11-39-in-3-days" target="_blank">Short Term Stocks To Buy Based on AI</a>: Over 11% Return In 3 Days</span></span>
+																									</li>
+																									<li style="text-align: left;"><span style="font-size:14px"><span style="font-family:lucida sans unicode,lucida grande,sans-serif"><a href="https://iknowfirst.com/fr-stock-market-outlook-based-on-algorithmic-trading-returns-up-to-47-00-in-14-days" target="_blank">Stock Market Outlook Based on Algorithmic Trading</a>: 47% Return In 14 Days</span></span>
+																									</li>
+																									<li style="text-align: left;"><span style="font-size:14px"><span style="font-family:lucida sans unicode,lucida grande,sans-serif"><a href="https://iknowfirst.com/fr-swing-trading-based-on-algo-trading-returns-up-to-25-91-in-3-days" target="_blank">Swing Trading Based on Algo Trading</a>: Almost 26% Return In 3 Days</span></span>
+																									</li>
+																									<li style="text-align: left;"><span style="font-size:14px"><span style="font-family:lucida sans unicode,lucida grande,sans-serif"><a href="https://iknowfirst.com/fr-stock-scanner-based-on-a-self-learning-algorithm-returns-up-to-20-55-in-7-days" target="_blank">Stock Scanner Based on Self-Learning Algorithm</a>: Over 20% Return In 7 Days</span></span>
+																									</li>
+																									<li style="text-align: left;"><span style="font-size:14px"><span style="font-family:lucida sans unicode,lucida grande,sans-serif"><a href="https://iknowfirst.com/fr-market-forecast-based-on-genetic-algorithms-returns-up-to-125-35-in-3-months" target="_blank">Market Forecast Based on Genetic Algorithms</a>: 125% Return In 3 Months</span></span>
+																									</li>
+																									<li style="text-align: left;"><span style="font-size:14px"><span style="font-family:lucida sans unicode,lucida grande,sans-serif"><a href="https://iknowfirst.com/fr-black-box-trading-based-on-artificial-intelligence-returns-up-to-30-23-in-7-days" target="_blank">Black Box Trading Based on Artificial Intelligence</a>: 30% Return In 7 Days</span></span>
+																									</li>
+																									<li style="text-align: left;"><span style="font-size:14px"><span style="font-family:lucida sans unicode,lucida grande,sans-serif"><a href="https://iknowfirst.com/fr-stock-predictions-based-on-machine-learning-returns-up-to-25-91-in-3-days" target="_blank">Stock Predictions Based on Machine Learning</a>: Almost 26% Return In 3 Days</span></span>
+																									</li>
+																								</ul>
+																							</div>
+																						</div>
+																					</div>
+																				</div>
+																			</td>
+																		</tr>
+																	</tbody>
+																</table>
+																<!--[if mso]>
+</td>
+<![endif]-->
+																<!--[if mso]>
+</tr>
+</table>
+<![endif]-->
+															</td>
+														</tr>
+													</tbody>
+												</table>
+
+												<table border="0" cellpadding="0" cellspacing="0" class="mcnButtonBlock" style="min-width:100%;" width="100%">
+													<tbody class="mcnButtonBlockOuter">
+														<tr>
+															<td align="center" class="mcnButtonBlockInner" style="padding-top:0; padding-right:18px; padding-bottom:18px; padding-left:18px;" valign="top">
+
+																<table border="0" cellpadding="0" cellspacing="0" class="mcnButtonContentContainer" style="border-collapse: separate !important;border: 2px solid #707070;border-radius: 5px;background-color: #084C9E;" width="100%">
+																	<tbody>
+																		<tr>
+																			<td align="center" class="mcnButtonContent" style="font-family: &quot;Lucida Sans Unicode&quot;, &quot;Lucida Grande&quot;, sans-serif; font-size: 24px; padding: 24px;" valign="middle"><a class="mcnButton " href="http://lpage.iknowfirst.com/" style="font-weight: bold;letter-spacing: 0px;line-height: 100%;text-align: center;text-decoration: none;color: #FFFFFF;" target="_blank" title="10 Stocks to Buy Based On Genetic Algorithms">10 Stocks to Buy Based On Genetic Algorithms</a></td>
+																		</tr>
+																	</tbody>
+																</table>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+
+												<table border="0" cellpadding="0" cellspacing="0" class="mcnBoxedTextBlock" style="min-width:100%;" width="100%">
+													<!--[if gte mso 9]>
+<table align="center" border="0" cellspacing="0" cellpadding="0" width="100%">
+<![endif]-->
+													<tbody class="mcnBoxedTextBlockOuter">
+														<tr>
+															<td class="mcnBoxedTextBlockInner" valign="top">
+																<!--[if gte mso 9]>
+<td align="center" valign="top" ">
+<![endif]-->
+
+																<table align="left" border="0" cellpadding="0" cellspacing="0" class="mcnBoxedTextContentContainer" style="min-width:100%;" width="100%">
+																	<tbody>
+																		<tr>
+																			<td style="padding-top:9px; padding-left:18px; padding-bottom:9px; padding-right:18px;">
+
+																				<table border="0" cellpadding="18" cellspacing="0" class="mcnTextContentContainer" style="min-width: 100% !important;background-color: #EBEBEB;border: 1px solid #999999;" width="100%">
+																					<tbody>
+																						<tr>
+																							<td class="mcnTextContent" valign="top">
+
+																								<p style="text-align: center;line-height: 19px;color: #0A0A0A;font-family: 'Times New Roman';font-size: medium;"><strong>Upgrade Notes: Introducing the new Algorithmic Strategy Interface</strong></p>
+
+																								<p style="text-align: center;line-height: 19px;color: #0A0A0A;font-family: 'Times New Roman';font-size: medium;">I Know First&nbsp;R&amp;D&nbsp;team is happy to announce that we are now supporting a highly interactive user interface to support your strategy and automate processes. This guide will review some of the new features and how to use them.</p>
+
+																								<p style="text-align: center;line-height: 19px;color: #0A0A0A;font-family: 'Times New Roman';font-size: medium;">Many of our subscribers read the article &ldquo;<a href="http://iknowfirst.com/know-first-algorithm-performance-analysis-part-2" style="color: #2BB975;text-decoration: none;" target="_blank">I Know First Algorithm Performance Analysis (Part 2)</a>&rdquo; which discussed how to integrate algorithmic signals with market momentum to lower your risk and maximize your returns. Since then we have released various <a href="https://www.youtube.com/watch?v=ANtomWVTxB8" style="color: #2BB975;text-decoration: none;" target="_blank">videos</a> and <a href="http://iknowfirst.com/i-know-first-hedge-fund-simulation-39-5-return-in-7-month" style="color: #2BB975;text-decoration: none;" target="_blank">articles</a> discussing this strategy.</p>
+
+																								<p style="text-align: center;line-height: 19px;color: #0A0A0A;font-family: 'Times New Roman';font-size: medium;">Many implemented it, however were a little deterred by the complexity of it, as it really does require you to follow the price of every recommendation on a daily basis. Our team has tediously been working to integrate a module into excel which would allow you to trade according to the 5-day simple moving average swing model with ease.&nbsp;</p>
+
+																								<p style="text-align: center;line-height: 19px;color: #0A0A0A;font-family: 'Times New Roman';font-size: medium;"><a href="http://iknowfirst.com/introducing-the-new-algorithmic-strategy-interface" style="color: #1155CC;" target="_blank"><span style="color: #6DA2D1;">Read More Here</span></a></p>
+																							</td>
+																						</tr>
+																					</tbody>
+																				</table>
+																			</td>
+																		</tr>
+																	</tbody>
+																</table>
+																<!--[if gte mso 9]>
+</td>
+<![endif]-->
+																<!--[if gte mso 9]>
+                </tr>
+                </table>
+<![endif]-->
+															</td>
+														</tr>
+													</tbody>
+												</table>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+								<!-- // END HEADER -->
+							</td>
+						</tr>
+						<tr>
+							<td align="center" valign="top">
+								<!-- BEGIN BODY // -->
+
+								<table border="0" cellpadding="0" cellspacing="0" id="templateBody" width="600">
+									<tbody>
+										<tr>
+											<td class="bodyContainer" valign="top">
+
+												<table border="0" cellpadding="0" cellspacing="0" class="mcnTextBlock" style="min-width:100%;" width="100%">
+													<tbody class="mcnTextBlockOuter">
+														<tr>
+															<td class="mcnTextBlockInner" style="padding-top:9px;" valign="top">
+																<!--[if mso]>
+<table align="left" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100%;">
+<tr>
+<![endif]-->
+																<!--[if mso]>
+<td valign="top" width="600" style="width:600px;">
+<![endif]-->
+
+																<table align="left" border="0" cellpadding="0" cellspacing="0" class="mcnTextContentContainer" style="max-width:100%; min-width:100%;" width="100%">
+																	<tbody>
+																		<tr>
+																			<td class="mcnTextContent" style="padding-top:0; padding-right:18px; padding-bottom:9px; padding-left:18px;" valign="top">
+																				<div style="text-align: center;"><span style="font-size:14px"><span style="font-family:lucida sans unicode,lucida grande,sans-serif"><span style="color: #0000FF;line-height: 1.6em;text-align: left;">Commodities</span><span style="color: #0000CD;line-height: 1.6em;text-align: left;">&nbsp;</span>| <span style="color: #DAA520;line-height: 1.6em;text-align: left;">Gold</span> | <span style="color: #008000;line-height: 1.6em;text-align: left;">Currencies</span></span>
+																					</span>
+																				</div>
+
+																				<ul>
+																					<li><span style="font-size:14px"><span style="font-family:lucida sans unicode,lucida grande,sans-serif"><a href="https://gold-prediction.com/2017/01/22/fr-gold-price-outlook-based-on-ai-over-3-return-in-14-days/" target="_blank">Gold Price Outlook Based on AI</a>: Over 3% Return In 14 Days</span></span>
+																					</li>
+																					<li><span style="font-size:14px"><span style="font-family:lucida sans unicode,lucida grande,sans-serif"><a href="https://gold-prediction.com/2017/01/19/fr-top-commodities-based-on-machine-learning-almost-6-return-in-14-days/" target="_blank">Top Commodities Based on Machine Learning</a>: Almost 6% Return In 14 Days</span></span>
+																					</li>
+																					<li><span style="font-size:14px"><span style="font-family:lucida sans unicode,lucida grande,sans-serif"><a href="https://gold-prediction.com/2017/01/19/fr-gold-forecast-based-on-predictive-analytics-almost-5-return-in-14-days/" target="_blank">Gold Forecast Based on Predictive Analytics</a>: Almost 5% Return In 14 Days</span></span>
+																					</li>
+																					<li><span style="font-size:14px"><span style="font-family:lucida sans unicode,lucida grande,sans-serif"><a href="https://gold-prediction.com/2017/01/18/gold-prediction-based-stock-prediction-algorithm-almost-4-return-7-days/" target="_blank">Gold Prediction Based on Stock Prediction Algorithm</a>: 4% Return In 7 Days</span></span>
+																					</li>
+																					<li><span style="font-size:14px"><span style="font-family:lucida sans unicode,lucida grande,sans-serif"><a href="https://gold-prediction.com/2017/01/18/fr-commodity-prediction-based-on-big-data-analytics-over-4-return-in-7-days/" target="_blank">Commodity Predictions Based on Big Data Analytics</a>:&nbsp;4% Return In 7 Days</span></span>
+																					</li>
+																					<li><span style="font-size:14px"><span style="font-family:lucida sans unicode,lucida grande,sans-serif"><a href="https://gold-prediction.com/2017/01/16/gold-news-trump-uncertainty-sends-investors-rushing-gold/" target="_blank">Gold News</a>: Trump Uncertainty Sends Investors Rushing To Gold</span></span>
+																					</li>
+																					<li><span style="font-size:14px"><span style="font-family:lucida sans unicode,lucida grande,sans-serif"><a href="https://gold-prediction.com/2017/01/16/fr-gold-outlook-based-on-deep-learning-almost-2-return-in-7-days/" target="_blank">Gold Outlook Based on Deep Learning</a>: Almost 2% Return In 7 Days</span></span>
+																					</li>
+																					<li><span style="font-size:14px"><span style="font-family:lucida sans unicode,lucida grande,sans-serif"><a href="https://gold-prediction.com/2017/01/12/gold-price-forecast-based-ai/" target="_blank">Gold Price Forecast Based on AI</a>: Almost 3% Return In 7 Days</span></span>
+																					</li>
+																					<li><span style="font-size:14px"><span style="font-family:lucida sans unicode,lucida grande,sans-serif"><a href="https://gold-prediction.com/2017/01/12/fr-commodity-outlook-based-on-artificial-intelligence-almost-6-return-in-7-days/" target="_blank">Commodity Outlook Based on Artificial Intelligence</a>: 6% Return In&nbsp;7 Days</span></span>
+																					</li>
+																					<li><span style="font-size:14px"><span style="font-family:lucida sans unicode,lucida grande,sans-serif"><a href="https://gold-prediction.com/2017/01/11/commodity-forecast-based-self-learning-algorithm/" target="_blank">Commodity Forecast</a> Based on Self-Learning Algorithm</span></span>
+																					</li>
+																					<li><span style="font-size:14px"><span style="font-family:lucida sans unicode,lucida grande,sans-serif"><a href="https://gold-prediction.com/2017/01/11/fr-gold-price-outlook-based-on-algorithmic-trading-almost-5-return-in-14-days/" target="_blank">Gold Price Outlook Based on Algorithmic Trading</a>: 5% Return In 14 Days</span></span>
+																					</li>
+																				</ul>
+																			</td>
+																		</tr>
+																	</tbody>
+																</table>
+																<!--[if mso]>
+</td>
+<![endif]-->
+																<!--[if mso]>
+</tr>
+</table>
+<![endif]-->
+															</td>
+														</tr>
+													</tbody>
+												</table>
+
+												<table border="0" cellpadding="0" cellspacing="0" class="mcnTextBlock" style="min-width:100%;" width="100%">
+													<tbody class="mcnTextBlockOuter">
+														<tr>
+															<td class="mcnTextBlockInner" style="padding-top:9px;" valign="top">
+																<!--[if mso]>
+<table align="left" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100%;">
+<tr>
+<![endif]-->
+																<!--[if mso]>
+<td valign="top" width="600" style="width:600px;">
+<![endif]-->
+
+																<table align="left" border="0" cellpadding="0" cellspacing="0" class="mcnTextContentContainer" style="max-width:100%; min-width:100%;" width="100%">
+																	<tbody>
+																		<tr>
+																			<td class="mcnTextContent" style="padding-top:0; padding-right:18px; padding-bottom:9px; padding-left:18px;" valign="top">
+																				<div style="text-align: center;">
+
+																					<h3 class="null" dir="ltr" style="text-align: center;"><span style="font-size:14px"><span style="font-family:lucida sans unicode,lucida grande,sans-serif">Apple Stock News</span></span>
+																					</h3>
+
+																					<ul dir="ltr">
+																						<li style="text-align: left;"><span style="font-size:14px"><span style="font-family:lucida sans unicode,lucida grande,sans-serif"><a href="https://apple-stock-news.com/2017/01/apple-stock-news-apples-unlikely-lawsuit/" target="_blank">Apple Stock News</a>: Apple&#39;s Unlikely Lawsuit</span></span>
+																						</li>
+																						<li style="text-align: left;"><span style="font-size:14px"><span style="font-family:lucida sans unicode,lucida grande,sans-serif"><a href="https://apple-stock-news.com/2017/01/apple-stock-news-negotiations-india-progress/" target="_blank">Apple Stock News</a>: Further Negotiations With India Are In Progress&nbsp;</span></span>
+																						</li>
+																						<li style="text-align: left;"><span style="font-size:14px"><span style="font-family:lucida sans unicode,lucida grande,sans-serif"><a href="https://apple-stock-news.com/2017/01/apple-stock-news-uk-app-purchasers-face-25-hike/" target="_blank">Apple Stock News</a>: UK App Purchases Face 25% Hike</span></span>
+																						</li>
+																						<li style="text-align: left;"><span style="font-size:14px"><span style="font-family:lucida sans unicode,lucida grande,sans-serif"><a href="https://apple-stock-news.com/2017/01/apple-stock-news-a-look-into-iphone-8/" target="_blank">Apple Stock News</a>: A Look Into iPhone 8</span></span>
+																						</li>
+																						<li style="text-align: left;"><span style="font-size:14px"><span style="font-family:lucida sans unicode,lucida grande,sans-serif"><a href="https://apple-stock-news.com/2017/01/apple-stock-news-1-trillion-within-reach/" target="_blank">Apple Stock News</a>: $1 Trillion In Reach?</span></span>
+																						</li>
+																						<li style="text-align: left;"><span style="font-size:14px"><span style="font-family:lucida sans unicode,lucida grande,sans-serif"><a href="https://apple-stock-news.com/2017/01/apple-stock-news-iphones-10-year-birthday/" target="_blank">Apple Stock News</a>: iPhone&#39;s 10 Year Birthday&nbsp;</span></span>
+																						</li>
+																						<li style="text-align: left;"><span style="font-size:14px"><span style="font-family:lucida sans unicode,lucida grande,sans-serif"><a href="https://apple-stock-news.com/2017/01/apple-stock-news-is-apple-still-a-solid-investment/" target="_blank">Apple Stock News</a>: Is Apple Still A Solid Investment?</span></span>
+																						</li>
+																						<li style="text-align: left;"><span style="font-family:lucida sans unicode,lucida grande,sans-serif"><span style="font-size:14px"><a href="https://apple-stock-news.com/2017/01/apple-stock-news-possible-acquisitions-pushing-apple-revenue-forward/" target="_blank">Apple Stock News</a>: Possible Acquisitions Pushing Apple Revenue Forward</span></span>
+																						</li>
+																						<li style="text-align: left;"><span style="font-family:lucida sans unicode,lucida grande,sans-serif"><span style="font-size:14px"><a href="https://apple-stock-news.com/2017/01/apple-stock-news-aapls-q4-estimated-earnings/" target="_blank">Apple Stock News</a>: AAPL&#39;s Q4 Estimated Earnings&nbsp;</span></span>
+																						</li>
+																						<li style="text-align: left;"><span style="font-family:lucida sans unicode,lucida grande,sans-serif"><span style="font-size:14px"><a href="https://apple-stock-news.com/2017/01/apple-stock-news-aapl-in-2017/" target="_blank">Apple Stock News</a>: AAPL In 2017</span></span>
+																						</li>
+																						<li style="text-align: left;"><span style="font-size:14px"><span style="font-family:lucida sans unicode,lucida grande,sans-serif"><a href="https://apple-stock-news.com/2016/12/apple-stock-news-the-new-year-new-earnings/" target="_blank">Apple Stock News</a>: The New Year, New Earnings</span></span>
+																						</li>
+																						<li style="text-align: left;"><span style="font-size:14px"><span style="font-family:lucida sans unicode,lucida grande,sans-serif"><a href="https://apple-stock-news.com/2016/12/apple-stock-news-will-there-be-a-loss-of-upcoming-spring-release/" target="_blank">Apple Stock News</a>: Will There Be A Loss of Upcoming Spring Release?</span></span>
+																						</li>
+																						<li style="text-align: left;"><span style="font-size:14px"><span style="font-family:lucida sans unicode,lucida grande,sans-serif"><a href="https://apple-stock-news.com/2016/12/apple-stock-news-nokia-and-apple-face-off/" target="_blank">Apple Stock News</a>: Nokia &amp; Apple Face Off</span></span>
+																						</li>
+																						<li style="text-align: left;"><span style="font-size:14px"><span style="font-family:lucida sans unicode,lucida grande,sans-serif"><a href="https://apple-stock-news.com/2016/12/apple-stock-news-apple-manufacturing-expansion-into-india/" target="_blank">Apple Stock News</a>: Apple Manufacturing Expansion Into India</span></span>
+																						</li>
+																						<li style="text-align: left;"><span style="font-size:14px"><span style="font-family:lucida sans unicode,lucida grande,sans-serif"><a href="https://apple-stock-news.com/2016/12/apple-stock-news-apple-is-the-master-of-mystery/" target="_blank">Apple Stock News</a>: Apple Is The Master of Mystery&nbsp;</span></span>
+																						</li>
+																					</ul>
+																				</div>
+																			</td>
+																		</tr>
+																	</tbody>
+																</table>
+																<!--[if mso]>
+</td>
+<![endif]-->
+																<!--[if mso]>
+</tr>
+</table>
+<![endif]-->
+															</td>
+														</tr>
+													</tbody>
+												</table>
+
+												<table border="0" cellpadding="0" cellspacing="0" class="mcnButtonBlock" style="min-width:100%;" width="100%">
+													<tbody class="mcnButtonBlockOuter">
+														<tr>
+															<td align="center" class="mcnButtonBlockInner" style="padding-top:0; padding-right:18px; padding-bottom:18px; padding-left:18px;" valign="top">
+
+																<table border="0" cellpadding="0" cellspacing="0" class="mcnButtonContentContainer" style="border-collapse: separate !important;border: 2px solid #707070;border-radius: 5px;background-color: #5BB804;">
+																	<tbody>
+																		<tr>
+																			<td align="center" class="mcnButtonContent" style="font-family: &quot;Lucida Sans Unicode&quot;, &quot;Lucida Grande&quot;, sans-serif; font-size: 24px; padding: 24px;" valign="middle"><a class="mcnButton " href="http://lpage.iknowfirst.com/apple" style="font-weight: bold;letter-spacing: 0px;line-height: 100%;text-align: center;text-decoration: none;color: #FFFFFF;" target="_blank" title="AAPL Stock Forecast: What To Expect From AAPL?">AAPL Stock Forecast: What To Expect From AAPL?</a></td>
+																		</tr>
+																	</tbody>
+																</table>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+
+												<table border="0" cellpadding="0" cellspacing="0" class="mcnDividerBlock" style="min-width:100%;" width="100%">
+													<tbody class="mcnDividerBlockOuter">
+														<tr>
+															<td class="mcnDividerBlockInner" style="min-width: 100%; padding: 0.5px 18px;">
+
+																<table border="0" cellpadding="0" cellspacing="0" class="mcnDividerContent" style="min-width: 100%;border-top: 1px solid #999999;" width="100%">
+																	<tbody>
+																		<tr>
+																			<td>
+																				<br>
+																			</td>
+																		</tr>
+																	</tbody>
+																</table>
+																<!--            
+                <td class="mcnDividerBlockInner" style="padding: 18px;">
+                <hr class="mcnDividerContent" style="border-bottom-color:none; border-left-color:none; border-right-color:none; border-bottom-width:0; border-left-width:0; border-right-width:0; margin-top:0; margin-right:0; margin-bottom:0; margin-left:0;" />
+--></td>
+														</tr>
+													</tbody>
+												</table>
+
+												<table border="0" cellpadding="0" cellspacing="0" class="mcnDividerBlock" style="min-width:100%;" width="100%">
+													<tbody class="mcnDividerBlockOuter">
+														<tr>
+															<td class="mcnDividerBlockInner" style="min-width: 100%; padding: 0.5px 18px;">
+
+																<table border="0" cellpadding="0" cellspacing="0" class="mcnDividerContent" style="min-width:100%;" width="100%">
+																	<tbody>
+																		<tr>
+																			<td>
+																				<br>
+																			</td>
+																		</tr>
+																	</tbody>
+																</table>
+																<!--            
+                <td class="mcnDividerBlockInner" style="padding: 18px;">
+                <hr class="mcnDividerContent" style="border-bottom-color:none; border-left-color:none; border-right-color:none; border-bottom-width:0; border-left-width:0; border-right-width:0; margin-top:0; margin-right:0; margin-bottom:0; margin-left:0;" />
+--></td>
+														</tr>
+													</tbody>
+												</table>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+								<!-- // END BODY -->
+							</td>
+						</tr>
+						<tr>
+							<td align="center" valign="top">
+								<!-- BEGIN COLUMNS // -->
+
+								<table border="0" cellpadding="0" cellspacing="0" id="templateColumns" width="600">
+									<tbody>
+										<tr>
+											<td align="left" class="columnsContainer" valign="top" width="50%">
+
+												<table border="0" cellpadding="0" cellspacing="0" class="templateColumn" width="100%">
+													<tbody>
+														<tr>
+															<td class="leftColumnContainer" valign="top">
+																<br>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+											</td>
+											<td align="left" class="columnsContainer" valign="top" width="50%">
+
+												<table border="0" cellpadding="0" cellspacing="0" class="templateColumn" width="100%">
+													<tbody>
+														<tr>
+															<td class="rightColumnContainer" valign="top">
+																<br>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+								<!-- // END COLUMNS -->
+							</td>
+						</tr>
+						<tr>
+							<td align="center" valign="top">
+								<!-- BEGIN FOOTER // -->
+
+								<table border="0" cellpadding="0" cellspacing="0" id="templateFooter" width="600">
+									<tbody>
+										<tr>
+											<td class="footerContainer" style="padding-bottom:9px;" valign="top">
+
+												<table border="0" cellpadding="0" cellspacing="0" class="mcnDividerBlock" style="min-width:100%;" width="100%">
+													<tbody class="mcnDividerBlockOuter">
+														<tr>
+															<td class="mcnDividerBlockInner" style="min-width: 100%; padding: 0.5px 18px;">
+
+																<table border="0" cellpadding="0" cellspacing="0" class="mcnDividerContent" style="min-width: 100%;border-top: 1px solid #999999;" width="100%">
+																	<tbody>
+																		<tr>
+																			<td>
+																				<br>
+																			</td>
+																		</tr>
+																	</tbody>
+																</table>
+																<!--            
+                <td class="mcnDividerBlockInner" style="padding: 18px;">
+                <hr class="mcnDividerContent" style="border-bottom-color:none; border-left-color:none; border-right-color:none; border-bottom-width:0; border-left-width:0; border-right-width:0; margin-top:0; margin-right:0; margin-bottom:0; margin-left:0;" />
+--></td>
+														</tr>
+													</tbody>
+												</table>
+
+												<table border="0" cellpadding="0" cellspacing="0" class="mcnTextBlock" style="min-width:100%;" width="100%">
+													<tbody class="mcnTextBlockOuter">
+														<tr>
+															<td class="mcnTextBlockInner" style="padding-top:9px;" valign="top">
+																<!--[if mso]>
+<table align="left" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100%;">
+<tr>
+<![endif]-->
+																<!--[if mso]>
+<td valign="top" width="600" style="width:600px;">
+<![endif]-->
+
+																<table align="left" border="0" cellpadding="0" cellspacing="0" class="mcnTextContentContainer" style="max-width:100%; min-width:100%;" width="100%">
+																	<tbody>
+																		<tr>
+																			<td class="mcnTextContent" style="padding-top:0; padding-right:18px; padding-bottom:9px; padding-left:18px;" valign="top">
+																				<div dir="ltr" style="text-align: center;"><em>Copyright &copy; 2014 &nbsp;I Know First: Daily Market Forecast All rights reserved.</em></div>
+																			</td>
+																		</tr>
+																	</tbody>
+																</table>
+																<!--[if mso]>
+</td>
+<![endif]-->
+																<!--[if mso]>
+</tr>
+</table>
+<![endif]-->
+															</td>
+														</tr>
+													</tbody>
+												</table>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+								<!-- // END FOOTER -->
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<!-- // END TEMPLATE -->
+			</td>
+		</tr>
+	</tbody>
+</table>

@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="1.8.0_51" class="java.beans.XMLDecoder">
+ <object class="java.util.ArrayList">
+  <void method="add">
+   <object class="tab.layout.LayoutTableItem">
+    <void property="position">
+     <int>0</int>
+    </void>
+    <void property="preview">
+     <string>&lt;html&gt;
+ &lt;head&gt;&lt;/head&gt;
+ &lt;body&gt;
+  &lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; width=&quot;100%&quot; class=&quot;mcnTextBlock&quot; style=&quot;min-width:100%;&quot;&gt; 
+   &lt;tbody class=&quot;mcnTextBlockOuter&quot;&gt; 
+    &lt;tr&gt; 
+     &lt;td valign=&quot;top&quot; class=&quot;mcnTextBlockInner&quot; style=&quot;padding-top:9px;&quot;&gt; 
+      &lt;!--[if mso]&gt;&#13;
+				&lt;table align=&quot;left&quot; border=&quot;0&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot; width=&quot;100%&quot; style=&quot;width:100%;&quot;&gt;&#13;
+				&lt;tr&gt;&#13;
+				&lt;![endif]--&gt; 
+      &lt;!--[if mso]&gt;&#13;
+				&lt;td valign=&quot;top&quot; width=&quot;600&quot; style=&quot;width:600px;&quot;&gt;&#13;
+				&lt;![endif]--&gt; 
+      &lt;table align=&quot;left&quot; border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; style=&quot;max-width:100%; min-width:100%;&quot; width=&quot;100%&quot; class=&quot;mcnTextContentContainer&quot;&gt; 
+       &lt;tbody&gt;
+        &lt;tr&gt; 
+         &lt;td valign=&quot;top&quot; class=&quot;mcnTextContent&quot; style=&quot;padding: 0px 18px 9px; font-family: Arial, &amp;quot;Helvetica Neue&amp;quot;, Helvetica, sans-serif;&quot;&gt; 
+          &lt;div style=&quot;text-align: center;&quot;&gt; 
+           &lt;div style=&quot;color: #606060;font-style: normal;font-variant: normal;font-weight: normal;letter-spacing: normal;line-height: 22.5px;orphans: auto;text-indent: 0px;text-transform: none;white-space: normal;widows: auto;word-spacing: 0px;-webkit-text-stroke-width: 0px;text-align: center;background-color: #FFFFFF;&quot;&gt; 
+            &lt;span name=&quot;ForecastTableTitle&quot;&gt; &lt;span style=&quot;font-size:14px&quot;&gt; &lt;span style=&quot;font-family:lucida sans unicode,lucida grande,sans-serif&quot;&gt; &lt;span style=&quot;color: #606060;line-height: 22.5px;text-align: center;&quot;&gt; &lt;strong&gt;&lt;em&gt;Top Algorithmic Successes&lt;/em&gt;&lt;/strong&gt;&lt;/span&gt; &lt;/span&gt; &lt;/span&gt; &lt;/span&gt; 
+            &lt;div style=&quot;text-align: left;&quot;&gt; 
+             &lt;ul name=&quot;ForecastTableContent&quot;&gt;   
+              &lt;li&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:lucida sans unicode,lucida grande,sans-serif&quot;&gt;&lt;a href=&quot;http://iknowfirst.com/fr-bargain-stocks-based-on-big-data-returns-up-to-10-08-in-3-days&quot; target=&quot;_blank&quot;&gt;Bargain Stocks Based on Big Data&lt;/a&gt;: &lt;span name=&quot;unlinkedTitle&quot;&gt;Returns up to 10.08% in 3 Days&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;     
+              &lt;li&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:lucida sans unicode,lucida grande,sans-serif&quot;&gt;&lt;a href=&quot;http://iknowfirst.com/fr-best-stocks-under-10-based-on-pattern-recognition-returns-up-to-30-94-in-1-month&quot; target=&quot;_blank&quot;&gt;Best Stocks Under 10 Based on Pattern Recognition&lt;/a&gt;: &lt;span name=&quot;unlinkedTitle&quot;&gt;Returns up to 30.94% in 1 Month&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;     
+              &lt;li&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:lucida sans unicode,lucida grande,sans-serif&quot;&gt;&lt;a href=&quot;http://iknowfirst.com/fr-bargain-stocks-based-on-stock-prediction-algorithm-returns-up-to-31-35-in-14-days&quot; target=&quot;_blank&quot;&gt;Bargain Stocks Based on Stock Prediction Algorithm&lt;/a&gt;: &lt;span name=&quot;unlinkedTitle&quot;&gt;Returns up to 31.35% in 14 Days&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;     
+              &lt;li&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:lucida sans unicode,lucida grande,sans-serif&quot;&gt;&lt;a href=&quot;http://iknowfirst.com/fr-s&amp;amp;p-outlook-based-on-data-mining-returns-up-to-25-13-in-14-days&quot; target=&quot;_blank&quot;&gt;S&amp;amp;P Outlook Based on Data Mining&lt;/a&gt;: &lt;span name=&quot;unlinkedTitle&quot;&gt;Returns up to 25.13% in 14 Days&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;     
+              &lt;li&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:lucida sans unicode,lucida grande,sans-serif&quot;&gt;&lt;a href=&quot;http://iknowfirst.com/fr-underperforming-stocks-based-on-ai-returns-up-to-21-33-in-14-days&quot; target=&quot;_blank&quot;&gt;Underperforming Stocks Based on AI&lt;/a&gt;: &lt;span name=&quot;unlinkedTitle&quot;&gt;Returns up to 21.33% in 14 Days&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;     
+              &lt;li&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:lucida sans unicode,lucida grande,sans-serif&quot;&gt;&lt;a href=&quot;http://iknowfirst.com/fr-transportation-stocks-based-on-algorithmic-trading-returns-up-to-27-20-in-1-month&quot; target=&quot;_blank&quot;&gt;Transportation Stocks Based on Algorithmic Trading&lt;/a&gt;: &lt;span name=&quot;unlinkedTitle&quot;&gt;Returns up to 27.20% in 1 Month&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;     
+              &lt;li&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:lucida sans unicode,lucida grande,sans-serif&quot;&gt;&lt;a href=&quot;http://iknowfirst.com/fr-commodity-prediction-based-on-algo-trading-returns-up-to-7-99-in-7-days&quot; target=&quot;_blank&quot;&gt;Commodity Prediction Based on Algo Trading&lt;/a&gt;: &lt;span name=&quot;unlinkedTitle&quot;&gt;Returns up to 7.99% in 7 Days&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;     
+              &lt;li&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:lucida sans unicode,lucida grande,sans-serif&quot;&gt;&lt;a href=&quot;http://iknowfirst.com/fr-basic-industry-stocks-based-on-a-self-learning-algorithm-returns-up-to-65-21-in-1-month&quot; target=&quot;_blank&quot;&gt;Basic Industry Stocks Based on a Self-learning Algorithm&lt;/a&gt;: &lt;span name=&quot;unlinkedTitle&quot;&gt;Returns up to 65.21% in 1 Month&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;     
+              &lt;li&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:lucida sans unicode,lucida grande,sans-serif&quot;&gt;&lt;a href=&quot;http://iknowfirst.com/fr-best-basic-materials-stocks-based-on-genetic-algorithms-returns-up-to-8-46-in-3-days&quot; target=&quot;_blank&quot;&gt;Best Basic Materials Stocks Based on Genetic Algorithms&lt;/a&gt;: &lt;span name=&quot;unlinkedTitle&quot;&gt;Returns up to 8.46% in 3 Days&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;     
+              &lt;li&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:lucida sans unicode,lucida grande,sans-serif&quot;&gt;&lt;a href=&quot;http://iknowfirst.com/fr-basic-materials-stocks-based-on-machine-learning-returns-up-to-12-60-in-7-days&quot; target=&quot;_blank&quot;&gt;Basic Materials Stocks Based on Machine Learning&lt;/a&gt;: &lt;span name=&quot;unlinkedTitle&quot;&gt;Returns up to 12.60% in 7 Days&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;     
+              &lt;li&gt;&lt;span style=&quot;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:lucida sans unicode,lucida grande,sans-serif&quot;&gt;&lt;a href=&quot;http://iknowfirst.com/fr-52-week-low-stocks-based-on-artificial-intelligence-returns-up-to-25-13-in-14-days&quot; target=&quot;_blank&quot;&gt;52 Week Low Stocks Based on Artificial Intelligence&lt;/a&gt;: &lt;span name=&quot;unlinkedTitle&quot;&gt;Returns up to 25.13% in 14 Days&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;  
+             &lt;/ul&gt; 
+            &lt;/div&gt; 
+           &lt;/div&gt; 
+          &lt;/div&gt; &lt;/td&gt; 
+        &lt;/tr&gt; 
+       &lt;/tbody&gt;
+      &lt;/table&gt; 
+      &lt;!--[if mso]&gt;&#13;
+				&lt;/td&gt;&#13;
+				&lt;![endif]--&gt; 
+      &lt;!--[if mso]&gt;&#13;
+				&lt;/tr&gt;&#13;
+				&lt;/table&gt;&#13;
+				&lt;![endif]--&gt; &lt;/td&gt; 
+    &lt;/tr&gt; 
+   &lt;/tbody&gt; 
+  &lt;/table&gt;
+ &lt;/body&gt;
+&lt;/html&gt;</string>
+    </void>
+    <void property="type">
+     <string>forecastTable</string>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="tab.layout.LayoutTableItem">
+    <void property="parametersNeeded">
+     <string>&lt;categoriesToExclude&gt;###ForForecast.xml###&lt;/categoriesToExclude&gt;
+&lt;resourceName&gt;ikf_All_export_jan2017.xml&lt;/resourceName&gt;
+&lt;border&gt;&lt;/border&gt;
+&lt;background-color&gt;&lt;/background-color&gt;</string>
+    </void>
+    <void property="position">
+     <int>1</int>
+    </void>
+    <void property="preview">
+     <string>&lt;html&gt;
+ &lt;head&gt;&lt;/head&gt;
+ &lt;body&gt;
+  &lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; width=&quot;100%&quot; class=&quot;mcnBoxedTextBlock&quot; style=&quot;min-width:100%;&quot;&gt; 
+   &lt;!--[if gte mso 9]&gt;&#13;
+	&lt;table align=&quot;center&quot; border=&quot;0&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot; width=&quot;100%&quot;&gt;&#13;
+	&lt;![endif]--&gt; 
+   &lt;tbody class=&quot;mcnBoxedTextBlockOuter&quot;&gt; 
+    &lt;tr&gt; 
+     &lt;td valign=&quot;top&quot; class=&quot;mcnBoxedTextBlockInner&quot;&gt; 
+      &lt;!--[if gte mso 9]&gt;&#13;
+				&lt;td align=&quot;center&quot; valign=&quot;top&quot; &quot;&gt;&#13;
+				&lt;![endif]--&gt; 
+      &lt;table align=&quot;left&quot; border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; width=&quot;100%&quot; style=&quot;min-width:100%;&quot; class=&quot;mcnBoxedTextContentContainer&quot;&gt; 
+       &lt;tbody&gt;
+        &lt;tr&gt; 
+         &lt;td style=&quot;padding-top:9px; padding-left:18px; padding-bottom:9px; padding-right:18px;&quot;&gt; 
+          &lt;table name=&quot;mainBody&quot; border=&quot;0&quot; cellpadding=&quot;18&quot; cellspacing=&quot;0&quot; class=&quot;mcnTextContentContainer&quot; width=&quot;100%&quot; style=&quot;min-width: 100% !important;background-color: #FFFFFF;&quot;&gt; 
+           &lt;tbody&gt;
+            &lt;tr&gt; 
+             &lt;td valign=&quot;top&quot; class=&quot;mcnTextContent&quot; style=&quot;color: #000000;font-family: Helvetica;font-size: 14px;font-weight: normal;line-height: 18px;text-align: center;&quot;&gt; 
+              &lt;div name=&quot;title&quot;&gt;   
+               &lt;div style=&quot;text-align:right;&quot;&gt; 
+                &lt;span style=&quot;font-family:Vivaldi;&quot;&gt;Test text&lt;/span&gt; 
+               &lt;/div&gt;  
+              &lt;/div&gt; 
+              &lt;ul name=&quot;ContentList&quot;&gt;   
+               &lt;li style=&quot;text-align: left;&quot;&gt; &lt;span style=&quot;font-size:14px&quot;&gt; &lt;span style=&quot;font-family:lucida sans unicode,lucida grande,sans-serif&quot;&gt; &lt;a href=&quot;https://iknowfirst.com/__trashed&quot; target=&quot;_blank&quot;&gt;Previsões de Mercado&lt;/a&gt;: &lt;span name=&quot;unlinkedTitle&quot;&gt;Seleção diária de ações baseada no algoritmo de IA para 7 de Janeiro - Jan 2016 a Jan 2017&lt;/span&gt;&amp;nbsp; &lt;/span&gt; &lt;/span&gt; &lt;/li&gt;     
+               &lt;li style=&quot;text-align: left;&quot;&gt; &lt;span style=&quot;font-size:14px&quot;&gt; &lt;span style=&quot;font-family:lucida sans unicode,lucida grande,sans-serif&quot;&gt; &lt;a href=&quot;https://iknowfirst.com/__trashed-2&quot; target=&quot;_blank&quot;&gt;&lt;/a&gt;: &lt;span name=&quot;unlinkedTitle&quot;&gt;&lt;/span&gt;&amp;nbsp; &lt;/span&gt; &lt;/span&gt; &lt;/li&gt;     
+               &lt;li style=&quot;text-align: left;&quot;&gt; &lt;span style=&quot;font-size:14px&quot;&gt; &lt;span style=&quot;font-family:lucida sans unicode,lucida grande,sans-serif&quot;&gt; &lt;a href=&quot;https://iknowfirst.com/fr-swing-trading-based-on-algo-trading-returns-up-to-25-91-in-3-days__trashed&quot; target=&quot;_blank&quot;&gt;Swing Trading Based on Algo Trading&lt;/a&gt;: &lt;span name=&quot;unlinkedTitle&quot;&gt;Returns up to 25.91% in 3 Days&lt;/span&gt;&amp;nbsp; &lt;/span&gt; &lt;/span&gt; &lt;/li&gt;     
+               &lt;li style=&quot;text-align: left;&quot;&gt; &lt;span style=&quot;font-size:14px&quot;&gt; &lt;span style=&quot;font-family:lucida sans unicode,lucida grande,sans-serif&quot;&gt; &lt;a href=&quot;https://iknowfirst.com/fr-stock-scanner-based-on-a-self-learning-algorithm-returns-up-to-20-55-in-7-days__trashed&quot; target=&quot;_blank&quot;&gt;Stock Scanner Based on a Self-learning Algorithm&lt;/a&gt;: &lt;span name=&quot;unlinkedTitle&quot;&gt;Returns up to 20.55% in 7 Days&lt;/span&gt;&amp;nbsp; &lt;/span&gt; &lt;/span&gt; &lt;/li&gt;     
+               &lt;li style=&quot;text-align: left;&quot;&gt; &lt;span style=&quot;font-size:14px&quot;&gt; &lt;span style=&quot;font-family:lucida sans unicode,lucida grande,sans-serif&quot;&gt; &lt;a href=&quot;https://iknowfirst.com/fr-daily-stock-market-predictions-based-on-machine-learning-returns-up-to-4-46-in-7-days__trashed&quot; target=&quot;_blank&quot;&gt;Daily Stock Market Predictions Based on Machine Learning&lt;/a&gt;: &lt;span name=&quot;unlinkedTitle&quot;&gt;Returns up to 4.46% in 7 Days&lt;/span&gt;&amp;nbsp; &lt;/span&gt; &lt;/span&gt; &lt;/li&gt;     
+               &lt;li style=&quot;text-align: left;&quot;&gt; &lt;span style=&quot;font-size:14px&quot;&gt; &lt;span style=&quot;font-family:lucida sans unicode,lucida grande,sans-serif&quot;&gt; &lt;a href=&quot;https://iknowfirst.com/fr-bullish-stocks-to-buy-based-on-artificial-intelligence-returns-up-to-72-56-in-14-days&quot; target=&quot;_blank&quot;&gt;Bullish Stocks To Buy Based on Artificial Intelligence&lt;/a&gt;: &lt;span name=&quot;unlinkedTitle&quot;&gt;Returns up to 72.56% in 14 Days&lt;/span&gt;&amp;nbsp; &lt;/span&gt; &lt;/span&gt; &lt;/li&gt;     
+               &lt;li style=&quot;text-align: left;&quot;&gt; &lt;span style=&quot;font-size:14px&quot;&gt; &lt;span style=&quot;font-family:lucida sans unicode,lucida grande,sans-serif&quot;&gt; &lt;a href=&quot;https://iknowfirst.com/fr-stock-trends-based-on-big-data-analytics-returns-up-to-7-24-in-3-days&quot; target=&quot;_blank&quot;&gt;Stock Trends Based on Big Data Analytics&lt;/a&gt;: &lt;span name=&quot;unlinkedTitle&quot;&gt;Returns up to 7.24% in 3 Days&lt;/span&gt;&amp;nbsp; &lt;/span&gt; &lt;/span&gt; &lt;/li&gt;     
+               &lt;li style=&quot;text-align: left;&quot;&gt; &lt;span style=&quot;font-size:14px&quot;&gt; &lt;span style=&quot;font-family:lucida sans unicode,lucida grande,sans-serif&quot;&gt; &lt;a href=&quot;https://iknowfirst.com/fr-best-brazil-stocks-based-on-artificial-intelligence-returns-up-to-7-24-in-3-days&quot; target=&quot;_blank&quot;&gt;Best Brazil Stocks Based on Artificial Intelligence&lt;/a&gt;: &lt;span name=&quot;unlinkedTitle&quot;&gt;Returns up to 7.24% in 3 Days&lt;/span&gt;&amp;nbsp; &lt;/span&gt; &lt;/span&gt; &lt;/li&gt;     
+               &lt;li style=&quot;text-align: left;&quot;&gt; &lt;span style=&quot;font-size:14px&quot;&gt; &lt;span style=&quot;font-family:lucida sans unicode,lucida grande,sans-serif&quot;&gt; &lt;a href=&quot;https://iknowfirst.com/fr-best-short-term-stocks-based-on-ai-returns-up-to-9-71-in-7-days&quot; target=&quot;_blank&quot;&gt;Best Short Term Stocks Based on AI&lt;/a&gt;: &lt;span name=&quot;unlinkedTitle&quot;&gt;Returns up to 9.71% in 7 Days&lt;/span&gt;&amp;nbsp; &lt;/span&gt; &lt;/span&gt; &lt;/li&gt;     
+               &lt;li style=&quot;text-align: left;&quot;&gt; &lt;span style=&quot;font-size:14px&quot;&gt; &lt;span style=&quot;font-family:lucida sans unicode,lucida grande,sans-serif&quot;&gt; &lt;a href=&quot;https://iknowfirst.com/rsar-nike-stock-forecast-bcg-matrix-swot-indicate-long-term-value&quot; target=&quot;_blank&quot;&gt;Nike Stock Forecast&lt;/a&gt;: &lt;span name=&quot;unlinkedTitle&quot;&gt;BCG Matrix &amp;amp; SWOT Indicate Long Term Value&lt;/span&gt;&amp;nbsp; &lt;/span&gt; &lt;/span&gt; &lt;/li&gt;     
+               &lt;li style=&quot;text-align: left;&quot;&gt; &lt;span style=&quot;font-size:14px&quot;&gt; &lt;span style=&quot;font-family:lucida sans unicode,lucida grande,sans-serif&quot;&gt; &lt;a href=&quot;https://iknowfirst.com/qw-quick-win-by-the-algorithm-csxs-unexpected-offer-from-competitor&quot; target=&quot;_blank&quot;&gt;Quick Win by the Algorithm&lt;/a&gt;: &lt;span name=&quot;unlinkedTitle&quot;&gt;CSX&apos;s Unexpected Offer from Competitor&lt;/span&gt;&amp;nbsp; &lt;/span&gt; &lt;/span&gt; &lt;/li&gt;     
+               &lt;li style=&quot;text-align: left;&quot;&gt; &lt;span style=&quot;font-size:14px&quot;&gt; &lt;span style=&quot;font-family:lucida sans unicode,lucida grande,sans-serif&quot;&gt; &lt;a href=&quot;https://iknowfirst.com/know-first-reviews-weekly-algorithmic-performance-january-23-2017&quot; target=&quot;_blank&quot;&gt;I Know First Reviews Weekly Algorithmic Performance&lt;/a&gt;: &lt;span name=&quot;unlinkedTitle&quot;&gt;January 23, 2017&lt;/span&gt;&amp;nbsp; &lt;/span&gt; &lt;/span&gt; &lt;/li&gt;     
+               &lt;li style=&quot;text-align: left;&quot;&gt; &lt;span style=&quot;font-size:14px&quot;&gt; &lt;span style=&quot;font-family:lucida sans unicode,lucida grande,sans-serif&quot;&gt; &lt;a href=&quot;https://iknowfirst.com/algar-algorithmic-forecast-performance-analysis-of-brazilian-stocks-with-high-rates-of-return&quot; target=&quot;_blank&quot;&gt;Algorithmic Forecast Performance&lt;/a&gt;: &lt;span name=&quot;unlinkedTitle&quot;&gt;Analysis of Brazilian stocks with high rates of return&lt;/span&gt;&amp;nbsp; &lt;/span&gt; &lt;/span&gt; &lt;/li&gt;     
+               &lt;li style=&quot;text-align: left;&quot;&gt; &lt;span style=&quot;font-size:14px&quot;&gt; &lt;span style=&quot;font-family:lucida sans unicode,lucida grande,sans-serif&quot;&gt; &lt;a href=&quot;https://iknowfirst.com/top-3-stock-valuation-methods-plus-algorithmic-valuation-tool&quot; target=&quot;_blank&quot;&gt;Top 3 Stock Valuation Methods Plus the Algorithmic Valuation Tool&lt;/a&gt;: &lt;span name=&quot;unlinkedTitle&quot;&gt;&lt;/span&gt;&amp;nbsp; &lt;/span&gt; &lt;/span&gt; &lt;/li&gt;     
+               &lt;li style=&quot;text-align: left;&quot;&gt; &lt;span style=&quot;font-size:14px&quot;&gt; &lt;span style=&quot;font-family:lucida sans unicode,lucida grande,sans-serif&quot;&gt; &lt;a href=&quot;https://iknowfirst.com/fr-stock-analysis-based-on-artificial-intelligence-returns-up-to-100-98-in-1-year&quot; target=&quot;_blank&quot;&gt;Best Etfs Based on Artificial Intelligence&lt;/a&gt;: &lt;span name=&quot;unlinkedTitle&quot;&gt;Returns up to 100.98% in 1 Year&lt;/span&gt;&amp;nbsp; &lt;/span&gt; &lt;/span&gt; &lt;/li&gt;     
+               &lt;li style=&quot;text-align: left;&quot;&gt; &lt;span style=&quot;font-size:14px&quot;&gt; &lt;span style=&quot;font-family:lucida sans unicode,lucida grande,sans-serif&quot;&gt; &lt;a href=&quot;https://iknowfirst.com/fr-high-volume-shares-based-on-stock-prediction-algorithm-returns-up-to-72-85-in-14-days&quot; target=&quot;_blank&quot;&gt;High Volume Shares Based on Stock Prediction Algorithm&lt;/a&gt;: &lt;span name=&quot;unlinkedTitle&quot;&gt;Returns up to 72.85% in 14 Days&lt;/span&gt;&amp;nbsp; &lt;/span&gt; &lt;/span&gt; &lt;/li&gt;     
+               &lt;li style=&quot;text-align: left;&quot;&gt; &lt;span style=&quot;font-size:14px&quot;&gt; &lt;span style=&quot;font-family:lucida sans unicode,lucida grande,sans-serif&quot;&gt; &lt;a href=&quot;https://iknowfirst.com/fr-currency-predictions-based-on-genetic-algorithms-almost-62-96-hit-ratio-in-14-days&quot; target=&quot;_blank&quot;&gt;Currency Predictions Based on Genetic Algorithms&lt;/a&gt;: &lt;span name=&quot;unlinkedTitle&quot;&gt;Almost 62.96% Hit Ratio in 14 Days&lt;/span&gt;&amp;nbsp; &lt;/span&gt; &lt;/span&gt; &lt;/li&gt;     
+               &lt;li style=&quot;text-align: left;&quot;&gt; &lt;span style=&quot;font-size:14px&quot;&gt; &lt;span style=&quot;font-family:lucida sans unicode,lucida grande,sans-serif&quot;&gt; &lt;a href=&quot;https://iknowfirst.com/qw-quick-win-by-the-algorithm-kblb-surges-on-military-contract-development&quot; target=&quot;_blank&quot;&gt;Quick Win by the Algorithm&lt;/a&gt;: &lt;span name=&quot;unlinkedTitle&quot;&gt;KBLB Surges on Military Contract Development&lt;/span&gt;&amp;nbsp; &lt;/span&gt; &lt;/span&gt; &lt;/li&gt;     
+               &lt;li style=&quot;text-align: left;&quot;&gt; &lt;span style=&quot;font-size:14px&quot;&gt; &lt;span style=&quot;font-family:lucida sans unicode,lucida grande,sans-serif&quot;&gt; &lt;a href=&quot;https://iknowfirst.com/fr-stock-forecasting-based-on-big-data-returns-up-to-26-45-in-3-days&quot; target=&quot;_blank&quot;&gt;Stock Forecasting Based on Big Data&lt;/a&gt;: &lt;span name=&quot;unlinkedTitle&quot;&gt;Returns up to 26.45% in 3 Days&lt;/span&gt;&amp;nbsp; &lt;/span&gt; &lt;/span&gt; &lt;/li&gt;     
+               &lt;li style=&quot;text-align: left;&quot;&gt; &lt;span style=&quot;font-size:14px&quot;&gt; &lt;span style=&quot;font-family:lucida sans unicode,lucida grande,sans-serif&quot;&gt; &lt;a href=&quot;https://iknowfirst.com/rsar-quantum-trading-goldman-sachs-emerges-into-the-field-of-ai&quot; target=&quot;_blank&quot;&gt;Quantum Trading&lt;/a&gt;: &lt;span name=&quot;unlinkedTitle&quot;&gt;Goldman Sachs Emerges into the Field of AI&lt;/span&gt;&amp;nbsp; &lt;/span&gt; &lt;/span&gt; &lt;/li&gt;     
+               &lt;li style=&quot;text-align: left;&quot;&gt; &lt;span style=&quot;font-size:14px&quot;&gt; &lt;span style=&quot;font-family:lucida sans unicode,lucida grande,sans-serif&quot;&gt; &lt;a href=&quot;https://iknowfirst.com/algar-stock-forecast-daily-stock-selection-based-on-ai-algorithm-for-january-7th-2016-january-2017&quot; target=&quot;_blank&quot;&gt;Stock Forecasts&lt;/a&gt;: &lt;span name=&quot;unlinkedTitle&quot;&gt;Daily Stock Selection Based On AI Algorithm for January 7th, 2016-January, 2017&lt;/span&gt;&amp;nbsp; &lt;/span&gt; &lt;/span&gt; &lt;/li&gt;     
+               &lt;li style=&quot;text-align: left;&quot;&gt; &lt;span style=&quot;font-size:14px&quot;&gt; &lt;span style=&quot;font-family:lucida sans unicode,lucida grande,sans-serif&quot;&gt; &lt;a href=&quot;https://iknowfirst.com/i_know_first_i24_news_feature&quot; target=&quot;_blank&quot;&gt;Stock Market Forecast&lt;/a&gt;: &lt;span name=&quot;unlinkedTitle&quot;&gt;The Markets Are Still Predictable (I Know First TV News Feature)&lt;/span&gt;&amp;nbsp; &lt;/span&gt; &lt;/span&gt; &lt;/li&gt;     
+               &lt;li style=&quot;text-align: left;&quot;&gt; &lt;span style=&quot;font-size:14px&quot;&gt; &lt;span style=&quot;font-family:lucida sans unicode,lucida grande,sans-serif&quot;&gt; &lt;a href=&quot;https://iknowfirst.com/fr-forex-forecast-based-on-a-self-learning-algorithm-almost-73-08-hit-ratio-in-7-days&quot; target=&quot;_blank&quot;&gt;Forex Forecast Based on a Self-learning Algorithm&lt;/a&gt;: &lt;span name=&quot;unlinkedTitle&quot;&gt;Almost 73.08% Hit Ratio in 7 Days&lt;/span&gt;&amp;nbsp; &lt;/span&gt; &lt;/span&gt; &lt;/li&gt;     
+               &lt;li style=&quot;text-align: left;&quot;&gt; &lt;span style=&quot;font-size:14px&quot;&gt; &lt;span style=&quot;font-family:lucida sans unicode,lucida grande,sans-serif&quot;&gt; &lt;a href=&quot;https://iknowfirst.com/fr-exchange-rate-forecast-based-on-genetic-algorithms-almost-80-00-hit-ratio-in-7-days&quot; target=&quot;_blank&quot;&gt;Exchange Rate Forecast Based on Genetic Algorithms&lt;/a&gt;: &lt;span name=&quot;unlinkedTitle&quot;&gt;Almost 80% Hit Ratio in 7 Days&lt;/span&gt;&amp;nbsp; &lt;/span&gt; &lt;/span&gt; &lt;/li&gt;     
+               &lt;li style=&quot;text-align: left;&quot;&gt; &lt;span style=&quot;font-size:14px&quot;&gt; &lt;span style=&quot;font-family:lucida sans unicode,lucida grande,sans-serif&quot;&gt; &lt;a href=&quot;https://iknowfirst.com/rsrar-conocophillips-profitable-investment&quot; target=&quot;_blank&quot;&gt;Is ConocoPhillips a profitable investment?&lt;/a&gt;: &lt;span name=&quot;unlinkedTitle&quot;&gt;&lt;/span&gt;&amp;nbsp; &lt;/span&gt; &lt;/span&gt; &lt;/li&gt;     
+               &lt;li style=&quot;text-align: left;&quot;&gt; &lt;span style=&quot;font-size:14px&quot;&gt; &lt;span style=&quot;font-family:lucida sans unicode,lucida grande,sans-serif&quot;&gt; &lt;a href=&quot;https://iknowfirst.com/fr-swing-trading-based-on-algo-trading-returns-up-to-25-91-in-3-days&quot; target=&quot;_blank&quot;&gt;Swing Trading Based on Algo Trading&lt;/a&gt;: &lt;span name=&quot;unlinkedTitle&quot;&gt;Returns up to 25.91% in 3 Days&lt;/span&gt;&amp;nbsp; &lt;/span&gt; &lt;/span&gt; &lt;/li&gt;     
+               &lt;li style=&quot;text-align: left;&quot;&gt; &lt;span style=&quot;font-size:14px&quot;&gt; &lt;span style=&quot;font-family:lucida sans unicode,lucida grande,sans-serif&quot;&gt; &lt;a href=&quot;https://iknowfirst.com/fr-stock-scanner-based-on-a-self-learning-algorithm-returns-up-to-20-55-in-7-days&quot; target=&quot;_blank&quot;&gt;Stock Scanner Based on a Self-learning Algorithm&lt;/a&gt;: &lt;span name=&quot;unlinkedTitle&quot;&gt;Returns up to 20.55% in 7 Days&lt;/span&gt;&amp;nbsp; &lt;/span&gt; &lt;/span&gt; &lt;/li&gt;     
+               &lt;li style=&quot;text-align: left;&quot;&gt; &lt;span style=&quot;font-size:14px&quot;&gt; &lt;span style=&quot;font-family:lucida sans unicode,lucida grande,sans-serif&quot;&gt; &lt;a href=&quot;https://iknowfirst.com/algar-i-know-first-reviews-weekly-algorithmic-performance-january-16-2017&quot; target=&quot;_blank&quot;&gt;I Know First Reviews Weekly Algorithmic Performance&lt;/a&gt;: &lt;span name=&quot;unlinkedTitle&quot;&gt;January 16, 2017&lt;/span&gt;&amp;nbsp; &lt;/span&gt; &lt;/span&gt; &lt;/li&gt;     
+               &lt;li style=&quot;text-align: left;&quot;&gt; &lt;span style=&quot;font-size:14px&quot;&gt; &lt;span style=&quot;font-family:lucida sans unicode,lucida grande,sans-serif&quot;&gt; &lt;a href=&quot;https://iknowfirst.com/qw-quick-win-by-the-algorithm-uec-rises-as-inauguration-day-approaches&quot; target=&quot;_blank&quot;&gt;Quick Win by the Algorithm&lt;/a&gt;: &lt;span name=&quot;unlinkedTitle&quot;&gt;UEC Rises As Inauguration Day Approaches&lt;/span&gt;&amp;nbsp; &lt;/span&gt; &lt;/span&gt; &lt;/li&gt;     
+               &lt;li style=&quot;text-align: left;&quot;&gt; &lt;span style=&quot;font-size:14px&quot;&gt; &lt;span style=&quot;font-family:lucida sans unicode,lucida grande,sans-serif&quot;&gt; &lt;a href=&quot;https://iknowfirst.com/rsrar-apple-stock-forecast-swot-analysis-of-apple&quot; target=&quot;_blank&quot;&gt;Apple Stock Forecast&lt;/a&gt;: &lt;span name=&quot;unlinkedTitle&quot;&gt;SWOT Analysis of Apple&lt;/span&gt;&amp;nbsp; &lt;/span&gt; &lt;/span&gt; &lt;/li&gt;     
+               &lt;li style=&quot;text-align: left;&quot;&gt; &lt;span style=&quot;font-size:14px&quot;&gt; &lt;span style=&quot;font-family:lucida sans unicode,lucida grande,sans-serif&quot;&gt; &lt;a href=&quot;https://iknowfirst.com/fr-sp-500-outlook-based-on-pattern-recognition-returns-up-to-163-77-in-1-year&quot; target=&quot;_blank&quot;&gt;Best Stock Screener Based on Pattern Recognition&lt;/a&gt;: &lt;span name=&quot;unlinkedTitle&quot;&gt;Returns up to 163.77% in 1 Year&lt;/span&gt;&amp;nbsp; &lt;/span&gt; &lt;/span&gt; &lt;/li&gt;     
+               &lt;li style=&quot;text-align: left;&quot;&gt; &lt;span style=&quot;font-size:14px&quot;&gt; &lt;span style=&quot;font-family:lucida sans unicode,lucida grande,sans-serif&quot;&gt; &lt;a href=&quot;https://iknowfirst.com/stock-market-forecast-creating-a-model-for-chaos-mapping-and-predictions&quot; target=&quot;_blank&quot;&gt;Stock Market Forecast&lt;/a&gt;: &lt;span name=&quot;unlinkedTitle&quot;&gt;Creating a Model for Chaos Mapping and Predictions&lt;/span&gt;&amp;nbsp; &lt;/span&gt; &lt;/span&gt; &lt;/li&gt;     
+               &lt;li style=&quot;text-align: left;&quot;&gt; &lt;span style=&quot;font-size:14px&quot;&gt; &lt;span style=&quot;font-family:lucida sans unicode,lucida grande,sans-serif&quot;&gt; &lt;a href=&quot;https://iknowfirst.com/fr-currency-forecast-based-on-a-self-learning-algorithm-almost-61-54-hit-ratio-in-3-months&quot; target=&quot;_blank&quot;&gt;Currency Forecast Based on a Self-learning Algorithm&lt;/a&gt;: &lt;span name=&quot;unlinkedTitle&quot;&gt;Almost 61.54% Hit Ratio in 3 Months&lt;/span&gt;&amp;nbsp; &lt;/span&gt; &lt;/span&gt; &lt;/li&gt;     
+               &lt;li style=&quot;text-align: left;&quot;&gt; &lt;span style=&quot;font-size:14px&quot;&gt; &lt;span style=&quot;font-family:lucida sans unicode,lucida grande,sans-serif&quot;&gt; &lt;a href=&quot;https://iknowfirst.com/fr-stock-market-algorithm-based-on-genetic-algorithms-returns-up-to-17-47-in-1-month&quot; target=&quot;_blank&quot;&gt;Stock Market Algorithm Based on Genetic Algorithms&lt;/a&gt;: &lt;span name=&quot;unlinkedTitle&quot;&gt;Returns up to 17.47% in 1 Month&lt;/span&gt;&amp;nbsp; &lt;/span&gt; &lt;/span&gt; &lt;/li&gt;     
+               &lt;li style=&quot;text-align: left;&quot;&gt; &lt;span style=&quot;font-size:14px&quot;&gt; &lt;span style=&quot;font-family:lucida sans unicode,lucida grande,sans-serif&quot;&gt; &lt;a href=&quot;https://iknowfirst.com/qw-quick-win-algorithm-aria-72-49-3-days&quot; target=&quot;_blank&quot;&gt;Quick Win by the Algorithm&lt;/a&gt;: &lt;span name=&quot;unlinkedTitle&quot;&gt;ARIA up to 72.49% in 3 Days&lt;/span&gt;&amp;nbsp; &lt;/span&gt; &lt;/span&gt; &lt;/li&gt;     
+               &lt;li style=&quot;text-align: left;&quot;&gt; &lt;span style=&quot;font-size:14px&quot;&gt; &lt;span style=&quot;font-family:lucida sans unicode,lucida grande,sans-serif&quot;&gt; &lt;a href=&quot;https://iknowfirst.com/qw-quick-win-by-the-algorithm-gol-win-288-81-in-3-months&quot; target=&quot;_blank&quot;&gt;Quick Win by the Algorithm&lt;/a&gt;: &lt;span name=&quot;unlinkedTitle&quot;&gt;GOL win 288.81% in 3 months&lt;/span&gt;&amp;nbsp; &lt;/span&gt; &lt;/span&gt; &lt;/li&gt;     
+               &lt;li style=&quot;text-align: left;&quot;&gt; &lt;span style=&quot;font-size:14px&quot;&gt; &lt;span style=&quot;font-family:lucida sans unicode,lucida grande,sans-serif&quot;&gt; &lt;a href=&quot;https://iknowfirst.com/rsar-amd-stock-forecast-defying-critics&quot; target=&quot;_blank&quot;&gt;AMD Stock Forecast&lt;/a&gt;: &lt;span name=&quot;unlinkedTitle&quot;&gt;Defying Critics&lt;/span&gt;&amp;nbsp; &lt;/span&gt; &lt;/span&gt; &lt;/li&gt;     
+               &lt;li style=&quot;text-align: left;&quot;&gt; &lt;span style=&quot;font-size:14px&quot;&gt; &lt;span style=&quot;font-family:lucida sans unicode,lucida grande,sans-serif&quot;&gt; &lt;a href=&quot;https://iknowfirst.com/fr-market-forecast-based-on-big-data-analytics-returns-up-to-72-49-in-3-days&quot; target=&quot;_blank&quot;&gt;Market Forecast Based on Big Data Analytics&lt;/a&gt;: &lt;span name=&quot;unlinkedTitle&quot;&gt;Returns up to 72.49% in 3 Days&lt;/span&gt;&amp;nbsp; &lt;/span&gt; &lt;/span&gt; &lt;/li&gt;     
+               &lt;li style=&quot;text-align: left;&quot;&gt; &lt;span style=&quot;font-size:14px&quot;&gt; &lt;span style=&quot;font-family:lucida sans unicode,lucida grande,sans-serif&quot;&gt; &lt;a href=&quot;https://iknowfirst.com/fr-currency-ranking-based-on-pattern-recognition-almost-61-54-hit-ratio-in-3-months&quot; target=&quot;_blank&quot;&gt;Currency Ranking Based on Pattern Recognition&lt;/a&gt;: &lt;span name=&quot;unlinkedTitle&quot;&gt;Almost 61.54% Hit Ratio in 3 Months&lt;/span&gt;&amp;nbsp; &lt;/span&gt; &lt;/span&gt; &lt;/li&gt;     
+               &lt;li style=&quot;text-align: left;&quot;&gt; &lt;span style=&quot;font-size:14px&quot;&gt; &lt;span style=&quot;font-family:lucida sans unicode,lucida grande,sans-serif&quot;&gt; &lt;a href=&quot;https://iknowfirst.com/fr-best-currency-based-on-stock-prediction-algorithm-almost-80-77-hit-ratio-in-3-days&quot; target=&quot;_blank&quot;&gt;Best Currency Based on Stock Prediction Algorithm&lt;/a&gt;: &lt;span name=&quot;unlinkedTitle&quot;&gt;Almost 80.77% Hit Ratio in 3 Days&lt;/span&gt;&amp;nbsp; &lt;/span&gt; &lt;/span&gt; &lt;/li&gt;     
+               &lt;li style=&quot;text-align: left;&quot;&gt; &lt;span style=&quot;font-size:14px&quot;&gt; &lt;span style=&quot;font-family:lucida sans unicode,lucida grande,sans-serif&quot;&gt; &lt;a href=&quot;https://iknowfirst.com/fr-stock-market-prediction-software-based-on-ai-returns-up-to-17-65-in-14-days&quot; target=&quot;_blank&quot;&gt;Stock Market Prediction Software Based on AI&lt;/a&gt;: &lt;span name=&quot;unlinkedTitle&quot;&gt;Returns up to 17.65% in 14 Days&lt;/span&gt;&amp;nbsp; &lt;/span&gt; &lt;/span&gt; &lt;/li&gt;     
+               &lt;li style=&quot;text-align: left;&quot;&gt; &lt;span style=&quot;font-size:14px&quot;&gt; &lt;span style=&quot;font-family:lucida sans unicode,lucida grande,sans-serif&quot;&gt; &lt;a href=&quot;https://iknowfirst.com/fr-brazil-stocks-based-on-algorithmic-trading-returns-up-to-19-35-in-1-month&quot; target=&quot;_blank&quot;&gt;Brazil Stocks Based on Algorithmic Trading&lt;/a&gt;: &lt;span name=&quot;unlinkedTitle&quot;&gt;Returns up to 19.35% in 1 Month&lt;/span&gt;&amp;nbsp; &lt;/span&gt; &lt;/span&gt; &lt;/li&gt;     
+               &lt;li style=&quot;text-align: left;&quot;&gt; &lt;span style=&quot;font-size:14px&quot;&gt; &lt;span style=&quot;font-family:lucida sans unicode,lucida grande,sans-serif&quot;&gt; &lt;a href=&quot;https://iknowfirst.com/qw-quick-win-by-the-algorithm-ddd-climbs-over-17-in-7-days&quot; target=&quot;_blank&quot;&gt;Quick Win by the Algorithm&lt;/a&gt;: &lt;span name=&quot;unlinkedTitle&quot;&gt;DDD Climbs Over 17% in 7 Days&lt;/span&gt;&amp;nbsp; &lt;/span&gt; &lt;/span&gt; &lt;/li&gt;     
+               &lt;li style=&quot;text-align: left;&quot;&gt; &lt;span style=&quot;font-size:14px&quot;&gt; &lt;span style=&quot;font-family:lucida sans unicode,lucida grande,sans-serif&quot;&gt; &lt;a href=&quot;https://iknowfirst.com/rsar-netflix-stock-forecast-for-2017&quot; target=&quot;_blank&quot;&gt;Netflix Stock Forecast for 2017&lt;/a&gt;: &lt;span name=&quot;unlinkedTitle&quot;&gt;&lt;/span&gt;&amp;nbsp; &lt;/span&gt; &lt;/span&gt; &lt;/li&gt;     
+               &lt;li style=&quot;text-align: left;&quot;&gt; &lt;span style=&quot;font-size:14px&quot;&gt; &lt;span style=&quot;font-family:lucida sans unicode,lucida grande,sans-serif&quot;&gt; &lt;a href=&quot;https://iknowfirst.com/rsrar-tesla-stock-forecast-for-2017&quot; target=&quot;_blank&quot;&gt;Tesla Stock Forecast for 2017&lt;/a&gt;: &lt;span name=&quot;unlinkedTitle&quot;&gt;&lt;/span&gt;&amp;nbsp; &lt;/span&gt; &lt;/span&gt; &lt;/li&gt;     
+               &lt;li style=&quot;text-align: left;&quot;&gt; &lt;span style=&quot;font-size:14px&quot;&gt; &lt;span style=&quot;font-family:lucida sans unicode,lucida grande,sans-serif&quot;&gt; &lt;a href=&quot;https://iknowfirst.com/fr-sp-500-forecast-based-on-deep-learning-returns-up-to-138-79-in-1-year&quot; target=&quot;_blank&quot;&gt;S&amp;amp;P 500 Forecast Based on Deep Learning&lt;/a&gt;: &lt;span name=&quot;unlinkedTitle&quot;&gt;Returns up to 138.79% in 1 Year&lt;/span&gt;&amp;nbsp; &lt;/span&gt; &lt;/span&gt; &lt;/li&gt;     
+               &lt;li style=&quot;text-align: left;&quot;&gt; &lt;span style=&quot;font-size:14px&quot;&gt; &lt;span style=&quot;font-family:lucida sans unicode,lucida grande,sans-serif&quot;&gt; &lt;a href=&quot;https://iknowfirst.com/fr-brazilian-stocks-based-on-machine-learning-returns-up-to-19-41-in-14-days&quot; target=&quot;_blank&quot;&gt;Brazilian Stocks Based on Machine Learning&lt;/a&gt;: &lt;span name=&quot;unlinkedTitle&quot;&gt;Returns up to 19.41% in 14 Days&lt;/span&gt;&amp;nbsp; &lt;/span&gt; &lt;/span&gt; &lt;/li&gt;     
+               &lt;li style=&quot;text-align: left;&quot;&gt; &lt;span style=&quot;font-size:14px&quot;&gt; &lt;span style=&quot;font-family:lucida sans unicode,lucida grande,sans-serif&quot;&gt; &lt;a href=&quot;https://iknowfirst.com/qw-quick-win-by-the-algorithm-new-vp-leads-to-47-37-increase-in-ptx&quot; target=&quot;_blank&quot;&gt;Quick Win by the Algorithm&lt;/a&gt;: &lt;span name=&quot;unlinkedTitle&quot;&gt;New VP leads to 47.37% Increase in PTX&lt;/span&gt;&amp;nbsp; &lt;/span&gt; &lt;/span&gt; &lt;/li&gt;     
+               &lt;li style=&quot;text-align: left;&quot;&gt; &lt;span style=&quot;font-size:14px&quot;&gt; &lt;span style=&quot;font-family:lucida sans unicode,lucida grande,sans-serif&quot;&gt; &lt;a href=&quot;https://iknowfirst.com/qw-quick-win-by-the-algorithm-crnt-moves-above-38-in-one-week&quot; target=&quot;_blank&quot;&gt;Quick Win by the Algorithm&lt;/a&gt;: &lt;span name=&quot;unlinkedTitle&quot;&gt;CRNT Moves above 38% in One Week&lt;/span&gt;&amp;nbsp; &lt;/span&gt; &lt;/span&gt; &lt;/li&gt;     
+               &lt;li style=&quot;text-align: left;&quot;&gt; &lt;span style=&quot;font-size:14px&quot;&gt; &lt;span style=&quot;font-family:lucida sans unicode,lucida grande,sans-serif&quot;&gt; &lt;a href=&quot;https://iknowfirst.com/qw-quick-win-by-the-algorithm-pfbc-gained-41-87-in-3-months&quot; target=&quot;_blank&quot;&gt;Quick Win by the Algorithm&lt;/a&gt;: &lt;span name=&quot;unlinkedTitle&quot;&gt;PFBC gained 41.87% in 3 months&lt;/span&gt;&amp;nbsp; &lt;/span&gt; &lt;/span&gt; &lt;/li&gt;     
+               &lt;li style=&quot;text-align: left;&quot;&gt; &lt;span style=&quot;font-size:14px&quot;&gt; &lt;span style=&quot;font-family:lucida sans unicode,lucida grande,sans-serif&quot;&gt; &lt;a href=&quot;https://iknowfirst.com/rsar-ai-hedge-fund-hedge-funds-with-machine-learning-capabilities&quot; target=&quot;_blank&quot;&gt;AI Hedge Fund&lt;/a&gt;: &lt;span name=&quot;unlinkedTitle&quot;&gt;Hedge Funds With Machine Learning Capabilities&lt;/span&gt;&amp;nbsp; &lt;/span&gt; &lt;/span&gt; &lt;/li&gt;     
+               &lt;li style=&quot;text-align: left;&quot;&gt; &lt;span style=&quot;font-size:14px&quot;&gt; &lt;span style=&quot;font-family:lucida sans unicode,lucida grande,sans-serif&quot;&gt; &lt;a href=&quot;https://iknowfirst.com/rsrar-quantum-trading-econophysics-can-help-predict-financial-markets&quot; target=&quot;_blank&quot;&gt;Quantum Trading&lt;/a&gt;: &lt;span name=&quot;unlinkedTitle&quot;&gt;Econophysics Can Help Predict Financial Markets&lt;/span&gt;&amp;nbsp; &lt;/span&gt; &lt;/span&gt; &lt;/li&gt;     
+               &lt;li style=&quot;text-align: left;&quot;&gt; &lt;span style=&quot;font-size:14px&quot;&gt; &lt;span style=&quot;font-family:lucida sans unicode,lucida grande,sans-serif&quot;&gt; &lt;a href=&quot;https://iknowfirst.com/fr-best-brazilian-stocks-based-on-genetic-algorithms-returns-up-to-13-83-in-14-days&quot; target=&quot;_blank&quot;&gt;Best Brazilian Stocks Based on Genetic Algorithms&lt;/a&gt;: &lt;span name=&quot;unlinkedTitle&quot;&gt;Returns up to 13.83% in 14 Days&lt;/span&gt;&amp;nbsp; &lt;/span&gt; &lt;/span&gt; &lt;/li&gt;     
+               &lt;li style=&quot;text-align: left;&quot;&gt; &lt;span style=&quot;font-size:14px&quot;&gt; &lt;span style=&quot;font-family:lucida sans unicode,lucida grande,sans-serif&quot;&gt; &lt;a href=&quot;https://iknowfirst.com/qw-quick-win-by-the-algorithm-nugt-moves-35-08-in-3-days&quot; target=&quot;_blank&quot;&gt;Quick Win by the Algorithm&lt;/a&gt;: &lt;span name=&quot;unlinkedTitle&quot;&gt;NUGT Moves 35.08% in 3 Days&lt;/span&gt;&amp;nbsp; &lt;/span&gt; &lt;/span&gt; &lt;/li&gt;     
+               &lt;li style=&quot;text-align: left;&quot;&gt; &lt;span style=&quot;font-size:14px&quot;&gt; &lt;span style=&quot;font-family:lucida sans unicode,lucida grande,sans-serif&quot;&gt; &lt;a href=&quot;https://iknowfirst.com/algar-i-know-first-reviews-weekly-algorithmic-performance-january-8-2017&quot; target=&quot;_blank&quot;&gt;I Know First Reviews Weekly Algorithmic Performance&lt;/a&gt;: &lt;span name=&quot;unlinkedTitle&quot;&gt;January 8, 2017&lt;/span&gt;&amp;nbsp; &lt;/span&gt; &lt;/span&gt; &lt;/li&gt;     
+               &lt;li style=&quot;text-align: left;&quot;&gt; &lt;span style=&quot;font-size:14px&quot;&gt; &lt;span style=&quot;font-family:lucida sans unicode,lucida grande,sans-serif&quot;&gt; &lt;a href=&quot;https://iknowfirst.com/fr-stock-market-prediction-algorithm-based-on-ai-returns-up-to-35-08-in-3-days&quot; target=&quot;_blank&quot;&gt;Stock Market Prediction Algorithm Based on AI&lt;/a&gt;: &lt;span name=&quot;unlinkedTitle&quot;&gt;Returns up to 35.08% in 3 Days&lt;/span&gt;&amp;nbsp; &lt;/span&gt; &lt;/span&gt; &lt;/li&gt;     
+               &lt;li style=&quot;text-align: left;&quot;&gt; &lt;span style=&quot;font-size:14px&quot;&gt; &lt;span style=&quot;font-family:lucida sans unicode,lucida grande,sans-serif&quot;&gt; &lt;a href=&quot;https://iknowfirst.com/qw-quick-win-by-the-algorithm-approval-from-epa-gives-tgb-green-light&quot; target=&quot;_blank&quot;&gt;Quick Win by the Algorithm&lt;/a&gt;: &lt;span name=&quot;unlinkedTitle&quot;&gt;Approval from EPA Gives TGB Green Light&lt;/span&gt;&amp;nbsp; &lt;/span&gt; &lt;/span&gt; &lt;/li&gt;     
+               &lt;li style=&quot;text-align: left;&quot;&gt; &lt;span style=&quot;font-size:14px&quot;&gt; &lt;span style=&quot;font-family:lucida sans unicode,lucida grande,sans-serif&quot;&gt; &lt;a href=&quot;https://iknowfirst.com/fr-quantitative-trading-based-on-a-self-learning-algorithm-returns-up-to-13-23-in-14-days&quot; target=&quot;_blank&quot;&gt;Quantitative Trading Based on a Self-learning Algorithm&lt;/a&gt;: &lt;span name=&quot;unlinkedTitle&quot;&gt;Returns up to 13.23% in 14 Days&lt;/span&gt;&amp;nbsp; &lt;/span&gt; &lt;/span&gt; &lt;/li&gt;     
+               &lt;li style=&quot;text-align: left;&quot;&gt; &lt;span style=&quot;font-size:14px&quot;&gt; &lt;span style=&quot;font-family:lucida sans unicode,lucida grande,sans-serif&quot;&gt; &lt;a href=&quot;https://iknowfirst.com/qw-quick-win-by-the-algorithm-imgn-press-release-fuels-22-06-returns-in-3-days&quot; target=&quot;_blank&quot;&gt;Quick Win by the Algorithm&lt;/a&gt;: &lt;span name=&quot;unlinkedTitle&quot;&gt;IMGN Press Release Fuels 22.06% Returns in 3 Days&lt;/span&gt;&amp;nbsp; &lt;/span&gt; &lt;/span&gt; &lt;/li&gt;     
+               &lt;li style=&quot;text-align: left;&quot;&gt; &lt;span style=&quot;font-size:14px&quot;&gt; &lt;span style=&quot;font-family:lucida sans unicode,lucida grande,sans-serif&quot;&gt; &lt;a href=&quot;https://iknowfirst.com/rsar-cbs-stock-analysis-rewarding-shareholders&quot; target=&quot;_blank&quot;&gt;CBS Stock Analysis&lt;/a&gt;: &lt;span name=&quot;unlinkedTitle&quot;&gt;Rewarding Shareholders&lt;/span&gt;&amp;nbsp; &lt;/span&gt; &lt;/span&gt; &lt;/li&gt;     
+               &lt;li style=&quot;text-align: left;&quot;&gt; &lt;span style=&quot;font-size:14px&quot;&gt; &lt;span style=&quot;font-family:lucida sans unicode,lucida grande,sans-serif&quot;&gt; &lt;a href=&quot;https://iknowfirst.com/fr-currency-predictor-based-on-algorithmic-trading-almost-74-07-hit-ratio-in-3-months&quot; target=&quot;_blank&quot;&gt;Currency Predictor Based on Algorithmic Trading&lt;/a&gt;: &lt;span name=&quot;unlinkedTitle&quot;&gt;Almost 74.07% Hit Ratio in 3 Months&lt;/span&gt;&amp;nbsp; &lt;/span&gt; &lt;/span&gt; &lt;/li&gt;     
+               &lt;li style=&quot;text-align: left;&quot;&gt; &lt;span style=&quot;font-size:14px&quot;&gt; &lt;span style=&quot;font-family:lucida sans unicode,lucida grande,sans-serif&quot;&gt; &lt;a href=&quot;https://iknowfirst.com/fr-swing-trading-based-on-a-self-learning-algorithm-returns-up-to-15-50-in-7-days&quot; target=&quot;_blank&quot;&gt;Swing Trading Based on a Self-learning Algorithm&lt;/a&gt;: &lt;span name=&quot;unlinkedTitle&quot;&gt;Returns up to 15.50% in 7 Days&lt;/span&gt;&amp;nbsp; &lt;/span&gt; &lt;/span&gt; &lt;/li&gt;     
+               &lt;li style=&quot;text-align: left;&quot;&gt; &lt;span style=&quot;font-size:14px&quot;&gt; &lt;span style=&quot;font-family:lucida sans unicode,lucida grande,sans-serif&quot;&gt; &lt;a href=&quot;https://iknowfirst.com/fr-short-term-stocks-to-buy-based-on-genetic-algorithms-returns-up-to-19-24-in-3-days&quot; target=&quot;_blank&quot;&gt;Short Term Stocks to Buy Based on Genetic Algorithms&lt;/a&gt;: &lt;span name=&quot;unlinkedTitle&quot;&gt;Returns up to 19.24% in 3 Days&lt;/span&gt;&amp;nbsp; &lt;/span&gt; &lt;/span&gt; &lt;/li&gt;     
+               &lt;li style=&quot;text-align: left;&quot;&gt; &lt;span style=&quot;font-size:14px&quot;&gt; &lt;span style=&quot;font-family:lucida sans unicode,lucida grande,sans-serif&quot;&gt; &lt;a href=&quot;https://iknowfirst.com/rsar-jpm-stock-analysis-jpmorgan-set-to-surge-in-2017&quot; target=&quot;_blank&quot;&gt;JPM Stock Analysis&lt;/a&gt;: &lt;span name=&quot;unlinkedTitle&quot;&gt;JPMorgan Set to Surge in 2017&lt;/span&gt;&amp;nbsp; &lt;/span&gt; &lt;/span&gt; &lt;/li&gt;     
+               &lt;li style=&quot;text-align: left;&quot;&gt; &lt;span style=&quot;font-size:14px&quot;&gt; &lt;span style=&quot;font-family:lucida sans unicode,lucida grande,sans-serif&quot;&gt; &lt;a href=&quot;https://iknowfirst.com/qw-quick-win-by-the-algorithm-uec-gains-19-27-returns-after-trump-tweet&quot; target=&quot;_blank&quot;&gt;Quick Win by the Algorithm&lt;/a&gt;: &lt;span name=&quot;unlinkedTitle&quot;&gt;UEC gains 19.27% Returns After Trump Tweet&lt;/span&gt;&amp;nbsp; &lt;/span&gt; &lt;/span&gt; &lt;/li&gt;     
+               &lt;li style=&quot;text-align: left;&quot;&gt; &lt;span style=&quot;font-size:14px&quot;&gt; &lt;span style=&quot;font-family:lucida sans unicode,lucida grande,sans-serif&quot;&gt; &lt;a href=&quot;https://iknowfirst.com/fr-market-predictions-based-on-genetic-algorithms-returns-up-to-10-62-in-7-days&quot; target=&quot;_blank&quot;&gt;Market Predictions Based on Genetic Algorithms&lt;/a&gt;: &lt;span name=&quot;unlinkedTitle&quot;&gt;Returns up to 10.62% in 7 Days&lt;/span&gt;&amp;nbsp; &lt;/span&gt; &lt;/span&gt; &lt;/li&gt;     
+               &lt;li style=&quot;text-align: left;&quot;&gt; &lt;span style=&quot;font-size:14px&quot;&gt; &lt;span style=&quot;font-family:lucida sans unicode,lucida grande,sans-serif&quot;&gt; &lt;a href=&quot;https://iknowfirst.com/rsar-top-performing-stocks-2016&quot; target=&quot;_blank&quot;&gt;Top Performing Stocks of 2016&lt;/a&gt;: &lt;span name=&quot;unlinkedTitle&quot;&gt;&lt;/span&gt;&amp;nbsp; &lt;/span&gt; &lt;/span&gt; &lt;/li&gt;     
+               &lt;li style=&quot;text-align: left;&quot;&gt; &lt;span style=&quot;font-size:14px&quot;&gt; &lt;span style=&quot;font-family:lucida sans unicode,lucida grande,sans-serif&quot;&gt; &lt;a href=&quot;https://iknowfirst.com/rsar-allergan-stock-analysis-renewing-confidence-in-2017&quot; target=&quot;_blank&quot;&gt;Allergan Stock Analysis&lt;/a&gt;: &lt;span name=&quot;unlinkedTitle&quot;&gt;Renewing Confidence in 2017&lt;/span&gt;&amp;nbsp; &lt;/span&gt; &lt;/span&gt; &lt;/li&gt;     
+               &lt;li style=&quot;text-align: left;&quot;&gt; &lt;span style=&quot;font-size:14px&quot;&gt; &lt;span style=&quot;font-family:lucida sans unicode,lucida grande,sans-serif&quot;&gt; &lt;a href=&quot;https://iknowfirst.com/algar-i-know-first-reviews-weekly-algorithmic-performance-january-1-2017&quot; target=&quot;_blank&quot;&gt;I Know First Reviews Weekly Algorithmic Performance&lt;/a&gt;: &lt;span name=&quot;unlinkedTitle&quot;&gt;January 1, 2017&lt;/span&gt;&amp;nbsp; &lt;/span&gt; &lt;/span&gt; &lt;/li&gt;     
+               &lt;li style=&quot;text-align: left;&quot;&gt; &lt;span style=&quot;font-size:14px&quot;&gt; &lt;span style=&quot;font-family:lucida sans unicode,lucida grande,sans-serif&quot;&gt; &lt;a href=&quot;https://iknowfirst.com/rsrar-verizon-stock-forecast-5g-developments-and-acquisition&quot; target=&quot;_blank&quot;&gt;Verizon Stock Forecast&lt;/a&gt;: &lt;span name=&quot;unlinkedTitle&quot;&gt;5G Developments and Acquisition&lt;/span&gt;&amp;nbsp; &lt;/span&gt; &lt;/span&gt; &lt;/li&gt;     
+               &lt;li style=&quot;text-align: left;&quot;&gt; &lt;span style=&quot;font-size:14px&quot;&gt; &lt;span style=&quot;font-family:lucida sans unicode,lucida grande,sans-serif&quot;&gt; &lt;a href=&quot;https://iknowfirst.com/fr-currency-forecast-based-on-a-self-learning-algorithm-almost-61-54-hit-ratio-in-3-months-2&quot; target=&quot;_blank&quot;&gt;Currency Forecast Based on a Self-learning Algorithm&lt;/a&gt;: &lt;span name=&quot;unlinkedTitle&quot;&gt;Almost 61.54% Hit Ratio in 3 Months&lt;/span&gt;&amp;nbsp; &lt;/span&gt; &lt;/span&gt; &lt;/li&gt;     
+               &lt;li style=&quot;text-align: left;&quot;&gt; &lt;span style=&quot;font-size:14px&quot;&gt; &lt;span style=&quot;font-family:lucida sans unicode,lucida grande,sans-serif&quot;&gt; &lt;a href=&quot;https://iknowfirst.com/quick-win-algorithm-2&quot; target=&quot;_blank&quot;&gt;Quick Win by the Algorithm&lt;/a&gt;: &lt;span name=&quot;unlinkedTitle&quot;&gt;&lt;/span&gt;&amp;nbsp; &lt;/span&gt; &lt;/span&gt; &lt;/li&gt;     
+               &lt;li style=&quot;text-align: left;&quot;&gt; &lt;span style=&quot;font-size:14px&quot;&gt; &lt;span style=&quot;font-family:lucida sans unicode,lucida grande,sans-serif&quot;&gt; &lt;a href=&quot;https://iknowfirst.com/qw-quick-win-algorithm-dxcm-returns-26-45-3-days&quot; target=&quot;_blank&quot;&gt;Quick Win by the Algorithm&lt;/a&gt;: &lt;span name=&quot;unlinkedTitle&quot;&gt;DXCM returns up to 26.45% in 3 Days&lt;/span&gt;&amp;nbsp; &lt;/span&gt; &lt;/span&gt; &lt;/li&gt;     
+               &lt;li style=&quot;text-align: left;&quot;&gt; &lt;span style=&quot;font-size:14px&quot;&gt; &lt;span style=&quot;font-family:lucida sans unicode,lucida grande,sans-serif&quot;&gt; &lt;a href=&quot;https://iknowfirst.com/rsar-fcx-stock-forecast-from-doubt-to-potential&quot; target=&quot;_blank&quot;&gt;FCX Stock Forecast&lt;/a&gt;: &lt;span name=&quot;unlinkedTitle&quot;&gt;From Doubt To Potential&lt;/span&gt;&amp;nbsp; &lt;/span&gt; &lt;/span&gt; &lt;/li&gt;     
+               &lt;li style=&quot;text-align: left;&quot;&gt; &lt;span style=&quot;font-size:14px&quot;&gt; &lt;span style=&quot;font-family:lucida sans unicode,lucida grande,sans-serif&quot;&gt; &lt;a href=&quot;https://iknowfirst.com/?p=93224&quot; target=&quot;_blank&quot;&gt;Apple Stock&lt;/a&gt;: &lt;span name=&quot;unlinkedTitle&quot;&gt;&lt;/span&gt;&amp;nbsp; &lt;/span&gt; &lt;/span&gt; &lt;/li&gt;     
+               &lt;li style=&quot;text-align: left;&quot;&gt; &lt;span style=&quot;font-size:14px&quot;&gt; &lt;span style=&quot;font-family:lucida sans unicode,lucida grande,sans-serif&quot;&gt; &lt;a href=&quot;https://iknowfirst.com/rsar-the-amazon-of-2017-new-jobs-new-tech-new-fashion-new-year&quot; target=&quot;_blank&quot;&gt;The Amazon of 2017&lt;/a&gt;: &lt;span name=&quot;unlinkedTitle&quot;&gt;New Jobs, New Fashion, New Year&lt;/span&gt;&amp;nbsp; &lt;/span&gt; &lt;/span&gt; &lt;/li&gt;     
+               &lt;li style=&quot;text-align: left;&quot;&gt; &lt;span style=&quot;font-size:14px&quot;&gt; &lt;span style=&quot;font-family:lucida sans unicode,lucida grande,sans-serif&quot;&gt; &lt;a href=&quot;https://iknowfirst.com/?p=93049&quot; target=&quot;_blank&quot;&gt;&lt;/a&gt;: &lt;span name=&quot;unlinkedTitle&quot;&gt;&lt;/span&gt;&amp;nbsp; &lt;/span&gt; &lt;/span&gt; &lt;/li&gt;     
+               &lt;li style=&quot;text-align: left;&quot;&gt; &lt;span style=&quot;font-size:14px&quot;&gt; &lt;span style=&quot;font-family:lucida sans unicode,lucida grande,sans-serif&quot;&gt; &lt;a href=&quot;https://iknowfirst.com/?p=93020&quot; target=&quot;_blank&quot;&gt;&lt;/a&gt;: &lt;span name=&quot;unlinkedTitle&quot;&gt;&lt;/span&gt;&amp;nbsp; &lt;/span&gt; &lt;/span&gt; &lt;/li&gt;     
+               &lt;li style=&quot;text-align: left;&quot;&gt; &lt;span style=&quot;font-size:14px&quot;&gt; &lt;span style=&quot;font-family:lucida sans unicode,lucida grande,sans-serif&quot;&gt; &lt;a href=&quot;https://iknowfirst.com/fr-daily-stock-market-predictions-based-on-machine-learning-returns-up-to-5-07-in-7-days&quot; target=&quot;_blank&quot;&gt;Daily Stock Market Predictions Based on Machine Learning&lt;/a&gt;: &lt;span name=&quot;unlinkedTitle&quot;&gt;Returns up to 5.07% in 7 Days&lt;/span&gt;&amp;nbsp; &lt;/span&gt; &lt;/span&gt; &lt;/li&gt;  
+              &lt;/ul&gt; &lt;/td&gt; 
+            &lt;/tr&gt; 
+           &lt;/tbody&gt;
+          &lt;/table&gt; &lt;/td&gt; 
+        &lt;/tr&gt; 
+       &lt;/tbody&gt;
+      &lt;/table&gt; 
+      &lt;!--[if gte mso 9]&gt;&#13;
+				&lt;/td&gt;&#13;
+				&lt;![endif]--&gt; 
+      &lt;!--[if gte mso 9]&gt;&#13;
+                &lt;/tr&gt;&#13;
+                &lt;/table&gt;&#13;
+				&lt;![endif]--&gt; &lt;/td&gt; 
+    &lt;/tr&gt; 
+   &lt;/tbody&gt; 
+  &lt;/table&gt;
+ &lt;/body&gt;
+&lt;/html&gt;</string>
+    </void>
+    <void property="title">
+     <string>&lt;html&gt;
+ &lt;head&gt;&lt;/head&gt;
+ &lt;body&gt;
+  &lt;div style=&quot;text-align:right;&quot;&gt;
+   &lt;span style=&quot;font-family:Vivaldi;&quot;&gt;Test text&lt;/span&gt;
+  &lt;/div&gt;
+ &lt;/body&gt;
+&lt;/html&gt;</string>
+    </void>
+    <void property="type">
+     <string>import</string>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="tab.layout.LayoutTableItem">
+    <void property="parametersNeeded">
+     <string>&lt;categoriesToExclude&gt;Gold News;Commodity Forecast&lt;/categoriesToExclude&gt;
+&lt;resourceName&gt;goldprediction_export_jan2017.xml&lt;/resourceName&gt;
+&lt;border&gt;&lt;/border&gt;
+&lt;background-color&gt;&lt;/background-color&gt;</string>
+    </void>
+    <void property="position">
+     <int>2</int>
+    </void>
+    <void property="preview">
+     <string>&lt;html&gt;
+ &lt;head&gt;&lt;/head&gt;
+ &lt;body&gt;
+  &lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; width=&quot;100%&quot; class=&quot;mcnBoxedTextBlock&quot; style=&quot;min-width:100%;&quot;&gt; 
+   &lt;!--[if gte mso 9]&gt;&#13;
+	&lt;table align=&quot;center&quot; border=&quot;0&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot; width=&quot;100%&quot;&gt;&#13;
+	&lt;![endif]--&gt; 
+   &lt;tbody class=&quot;mcnBoxedTextBlockOuter&quot;&gt; 
+    &lt;tr&gt; 
+     &lt;td valign=&quot;top&quot; class=&quot;mcnBoxedTextBlockInner&quot;&gt; 
+      &lt;!--[if gte mso 9]&gt;&#13;
+				&lt;td align=&quot;center&quot; valign=&quot;top&quot; &quot;&gt;&#13;
+				&lt;![endif]--&gt; 
+      &lt;table align=&quot;left&quot; border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; width=&quot;100%&quot; style=&quot;min-width:100%;&quot; class=&quot;mcnBoxedTextContentContainer&quot;&gt; 
+       &lt;tbody&gt;
+        &lt;tr&gt; 
+         &lt;td style=&quot;padding-top:9px; padding-left:18px; padding-bottom:9px; padding-right:18px;&quot;&gt; 
+          &lt;table name=&quot;mainBody&quot; border=&quot;0&quot; cellpadding=&quot;18&quot; cellspacing=&quot;0&quot; class=&quot;mcnTextContentContainer&quot; width=&quot;100%&quot; style=&quot;min-width: 100% !important;background-color: #FFFFFF;&quot;&gt; 
+           &lt;tbody&gt;
+            &lt;tr&gt; 
+             &lt;td valign=&quot;top&quot; class=&quot;mcnTextContent&quot; style=&quot;color: #000000;font-family: Helvetica;font-size: 14px;font-weight: normal;line-height: 18px;text-align: center;&quot;&gt; 
+              &lt;div name=&quot;title&quot;&gt;   
+               &lt;a href=&quot;http://www.iknowfirst.com&quot;&gt;Title 1&lt;/a&gt;: Title2  
+              &lt;/div&gt; 
+              &lt;ul name=&quot;ContentList&quot;&gt;   
+               &lt;li style=&quot;text-align: left;&quot;&gt; &lt;span style=&quot;font-size:14px&quot;&gt; &lt;span style=&quot;font-family:lucida sans unicode,lucida grande,sans-serif&quot;&gt; &lt;a href=&quot;https://gold-prediction.com/2017/01/24/fr-gold-price-prediction-based-on-genetic-algorithms-over-4-return-in-14-days/&quot; target=&quot;_blank&quot;&gt;Gold Price Prediction Based on Genetic Algorithms&lt;/a&gt;: &lt;span name=&quot;unlinkedTitle&quot;&gt;Over 4% Return In 14 Days&lt;/span&gt;&amp;nbsp; &lt;/span&gt; &lt;/span&gt; &lt;/li&gt;     
+               &lt;li style=&quot;text-align: left;&quot;&gt; &lt;span style=&quot;font-size:14px&quot;&gt; &lt;span style=&quot;font-family:lucida sans unicode,lucida grande,sans-serif&quot;&gt; &lt;a href=&quot;https://gold-prediction.com/2017/01/22/fr-gold-price-outlook-based-on-ai-over-3-return-in-14-days/&quot; target=&quot;_blank&quot;&gt;Gold Price Outlook Based on AI&lt;/a&gt;: &lt;span name=&quot;unlinkedTitle&quot;&gt;Over 3% Return In 14 Days&lt;/span&gt;&amp;nbsp; &lt;/span&gt; &lt;/span&gt; &lt;/li&gt;     
+               &lt;li style=&quot;text-align: left;&quot;&gt; &lt;span style=&quot;font-size:14px&quot;&gt; &lt;span style=&quot;font-family:lucida sans unicode,lucida grande,sans-serif&quot;&gt; &lt;a href=&quot;https://gold-prediction.com/2017/01/19/fr-gold-forecast-based-on-predictive-analytics-almost-5-return-in-14-days/&quot; target=&quot;_blank&quot;&gt;Gold Forecast Based on Predictive Analytics&lt;/a&gt;: &lt;span name=&quot;unlinkedTitle&quot;&gt;Almost 5% Return In 14 Days&lt;/span&gt;&amp;nbsp; &lt;/span&gt; &lt;/span&gt; &lt;/li&gt;     
+               &lt;li style=&quot;text-align: left;&quot;&gt; &lt;span style=&quot;font-size:14px&quot;&gt; &lt;span style=&quot;font-family:lucida sans unicode,lucida grande,sans-serif&quot;&gt; &lt;a href=&quot;https://gold-prediction.com/2017/01/18/gold-prediction-based-stock-prediction-algorithm-almost-4-return-7-days/&quot; target=&quot;_blank&quot;&gt;Gold Prediction Based on Stock Prediction Algorithm&lt;/a&gt;: &lt;span name=&quot;unlinkedTitle&quot;&gt;Almost 4% Return In 7 Days&lt;/span&gt;&amp;nbsp; &lt;/span&gt; &lt;/span&gt; &lt;/li&gt;     
+               &lt;li style=&quot;text-align: left;&quot;&gt; &lt;span style=&quot;font-size:14px&quot;&gt; &lt;span style=&quot;font-family:lucida sans unicode,lucida grande,sans-serif&quot;&gt; &lt;a href=&quot;https://gold-prediction.com/2017/01/16/fr-gold-outlook-based-on-deep-learning-almost-2-return-in-7-days/&quot; target=&quot;_blank&quot;&gt;Gold Outlook Based on Deep Learning&lt;/a&gt;: &lt;span name=&quot;unlinkedTitle&quot;&gt;Almost 2% Return In 7 Days&lt;/span&gt;&amp;nbsp; &lt;/span&gt; &lt;/span&gt; &lt;/li&gt;     
+               &lt;li style=&quot;text-align: left;&quot;&gt; &lt;span style=&quot;font-size:14px&quot;&gt; &lt;span style=&quot;font-family:lucida sans unicode,lucida grande,sans-serif&quot;&gt; &lt;a href=&quot;https://gold-prediction.com/2017/01/12/gold-price-forecast-based-ai/&quot; target=&quot;_blank&quot;&gt;Gold Price Forecast Based on AI&lt;/a&gt;: &lt;span name=&quot;unlinkedTitle&quot;&gt;Almost 3% Return In 7 Days&lt;/span&gt;&amp;nbsp; &lt;/span&gt; &lt;/span&gt; &lt;/li&gt;     
+               &lt;li style=&quot;text-align: left;&quot;&gt; &lt;span style=&quot;font-size:14px&quot;&gt; &lt;span style=&quot;font-family:lucida sans unicode,lucida grande,sans-serif&quot;&gt; &lt;a href=&quot;https://gold-prediction.com/2017/01/11/fr-gold-price-outlook-based-on-algorithmic-trading-almost-5-return-in-14-days/&quot; target=&quot;_blank&quot;&gt;Gold Price Outlook Based on Algorithmic Trading&lt;/a&gt;: &lt;span name=&quot;unlinkedTitle&quot;&gt;Almost 5% Return In 14 Days&lt;/span&gt;&amp;nbsp; &lt;/span&gt; &lt;/span&gt; &lt;/li&gt;     
+               &lt;li style=&quot;text-align: left;&quot;&gt; &lt;span style=&quot;font-size:14px&quot;&gt; &lt;span style=&quot;font-family:lucida sans unicode,lucida grande,sans-serif&quot;&gt; &lt;a href=&quot;https://gold-prediction.com/2017/01/08/fr-gold-outlook-based-on-pattern-recognition-over-3-return-in-7-days/&quot; target=&quot;_blank&quot;&gt;Gold Outlook Based on Pattern Recognition&lt;/a&gt;: &lt;span name=&quot;unlinkedTitle&quot;&gt;Over 3% Return In 7 Days&lt;/span&gt;&amp;nbsp; &lt;/span&gt; &lt;/span&gt; &lt;/li&gt;     
+               &lt;li style=&quot;text-align: left;&quot;&gt; &lt;span style=&quot;font-size:14px&quot;&gt; &lt;span style=&quot;font-family:lucida sans unicode,lucida grande,sans-serif&quot;&gt; &lt;a href=&quot;https://gold-prediction.com/2017/01/05/fr-gold-forecast-based-on-big-data-almost-3-return-in-7-days/&quot; target=&quot;_blank&quot;&gt;Gold Forecast Based on Big Data&lt;/a&gt;: &lt;span name=&quot;unlinkedTitle&quot;&gt;Almost 3% Return In 7 Days&lt;/span&gt;&amp;nbsp; &lt;/span&gt; &lt;/span&gt; &lt;/li&gt;     
+               &lt;li style=&quot;text-align: left;&quot;&gt; &lt;span style=&quot;font-size:14px&quot;&gt; &lt;span style=&quot;font-family:lucida sans unicode,lucida grande,sans-serif&quot;&gt; &lt;a href=&quot;https://gold-prediction.com/2017/01/04/fr-gold-prediction-based-on-algorithmic-trading-over-2-return-in-7-days/&quot; target=&quot;_blank&quot;&gt;Gold Prediction Based on Algorithmic Trading&lt;/a&gt;: &lt;span name=&quot;unlinkedTitle&quot;&gt;Over 2% Return In 7 Days&lt;/span&gt;&amp;nbsp; &lt;/span&gt; &lt;/span&gt; &lt;/li&gt;     
+               &lt;li style=&quot;text-align: left;&quot;&gt; &lt;span style=&quot;font-size:14px&quot;&gt; &lt;span style=&quot;font-family:lucida sans unicode,lucida grande,sans-serif&quot;&gt; &lt;a href=&quot;https://gold-prediction.com/2017/01/03/gold-price-prediction-based-deep-learning/&quot; target=&quot;_blank&quot;&gt;Gold Price Prediction Based on Deep Learning&lt;/a&gt;: &lt;span name=&quot;unlinkedTitle&quot;&gt;Over 4% Return In 1 Month&lt;/span&gt;&amp;nbsp; &lt;/span&gt; &lt;/span&gt; &lt;/li&gt;  
+              &lt;/ul&gt; &lt;/td&gt; 
+            &lt;/tr&gt; 
+           &lt;/tbody&gt;
+          &lt;/table&gt; &lt;/td&gt; 
+        &lt;/tr&gt; 
+       &lt;/tbody&gt;
+      &lt;/table&gt; 
+      &lt;!--[if gte mso 9]&gt;&#13;
+				&lt;/td&gt;&#13;
+				&lt;![endif]--&gt; 
+      &lt;!--[if gte mso 9]&gt;&#13;
+                &lt;/tr&gt;&#13;
+                &lt;/table&gt;&#13;
+				&lt;![endif]--&gt; &lt;/td&gt; 
+    &lt;/tr&gt; 
+   &lt;/tbody&gt; 
+  &lt;/table&gt;
+ &lt;/body&gt;
+&lt;/html&gt;</string>
+    </void>
+    <void property="title">
+     <string>&lt;html&gt;
+ &lt;head&gt;&lt;/head&gt;
+ &lt;body&gt;
+  &lt;a href=&quot;http://www.iknowfirst.com&quot;&gt;Title 1&lt;/a&gt;: Title2
+ &lt;/body&gt;
+&lt;/html&gt;</string>
+    </void>
+    <void property="type">
+     <string>import</string>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="tab.layout.LayoutTableItem">
+    <void property="parametersNeeded">
+     <string>&lt;buttonLink&gt;www.iknowfirst.com&lt;/buttonLink&gt;
+&lt;buttonTitle&gt;I know First&lt;/buttonTitle&gt;
+&lt;background-color&gt;&lt;/background-color&gt;</string>
+    </void>
+    <void property="position">
+     <int>3</int>
+    </void>
+    <void property="preview">
+     <string>&lt;html&gt;
+ &lt;head&gt;&lt;/head&gt;
+ &lt;body&gt;
+  &lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; width=&quot;100%&quot; class=&quot;mcnButtonBlock&quot; style=&quot;min-width:100%;&quot;&gt; 
+   &lt;tbody class=&quot;mcnButtonBlockOuter&quot;&gt; 
+    &lt;tr&gt; 
+     &lt;td style=&quot;padding-top:0; padding-right:18px; padding-bottom:18px; padding-left:18px;&quot; valign=&quot;top&quot; align=&quot;center&quot; class=&quot;mcnButtonBlockInner&quot;&gt; 
+      &lt;table name=&quot;mainBody&quot; border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; width=&quot;100%&quot; class=&quot;mcnButtonContentContainer&quot; style=&quot;border-collapse: separate !important;border: 2px solid #707070;border-radius: 5px;background-color: #210EF1;&quot;&gt; 
+       &lt;tbody&gt; 
+        &lt;tr&gt; 
+         &lt;td align=&quot;center&quot; valign=&quot;middle&quot; class=&quot;mcnButtonContent&quot; style=&quot;font-family: &amp;quot;Lucida Sans Unicode&amp;quot;, &amp;quot;Lucida Grande&amp;quot;, sans-serif; font-size: 24px; padding: 24px;&quot;&gt; &lt;a class=&quot;mcnButton &quot; title=&quot;I know First&quot; href=&quot;www.iknowfirst.com&quot; target=&quot;_blank&quot; style=&quot;font-weight: bold;letter-spacing: 0px;line-height: 100%;text-align: center;text-decoration: none;color: #FFFFFF;&quot;&gt;I know First&lt;/a&gt; &lt;/td&gt; 
+        &lt;/tr&gt; 
+       &lt;/tbody&gt; 
+      &lt;/table&gt; &lt;/td&gt; 
+    &lt;/tr&gt; 
+   &lt;/tbody&gt; 
+  &lt;/table&gt;
+ &lt;/body&gt;
+&lt;/html&gt;</string>
+    </void>
+    <void property="title">
+     <string>&lt;html&gt;
+ &lt;head&gt;&lt;/head&gt; 
+ &lt;body&gt;  
+ &lt;/body&gt;
+&lt;/html&gt;</string>
+    </void>
+    <void property="type">
+     <string>button</string>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="tab.layout.LayoutTableItem">
+    <void property="parametersNeeded">
+     <string>&lt;buttonLink&gt;www.naver.com&lt;/buttonLink&gt;
+&lt;buttonTitle&gt;Naver&lt;/buttonTitle&gt;
+&lt;background-color&gt;&lt;/background-color&gt;</string>
+    </void>
+    <void property="position">
+     <int>4</int>
+    </void>
+    <void property="preview">
+     <string>&lt;html&gt;
+ &lt;head&gt;&lt;/head&gt;
+ &lt;body&gt;
+  &lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; width=&quot;100%&quot; class=&quot;mcnButtonBlock&quot; style=&quot;min-width:100%;&quot;&gt; 
+   &lt;tbody class=&quot;mcnButtonBlockOuter&quot;&gt; 
+    &lt;tr&gt; 
+     &lt;td style=&quot;padding-top:0; padding-right:18px; padding-bottom:18px; padding-left:18px;&quot; valign=&quot;top&quot; align=&quot;center&quot; class=&quot;mcnButtonBlockInner&quot;&gt; 
+      &lt;table name=&quot;mainBody&quot; border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; width=&quot;100%&quot; class=&quot;mcnButtonContentContainer&quot; style=&quot;border-collapse: separate !important;border: 2px solid #707070;border-radius: 5px;background-color: #210EF1;&quot;&gt; 
+       &lt;tbody&gt; 
+        &lt;tr&gt; 
+         &lt;td align=&quot;center&quot; valign=&quot;middle&quot; class=&quot;mcnButtonContent&quot; style=&quot;font-family: &amp;quot;Lucida Sans Unicode&amp;quot;, &amp;quot;Lucida Grande&amp;quot;, sans-serif; font-size: 24px; padding: 24px;&quot;&gt; &lt;a class=&quot;mcnButton &quot; title=&quot;Naver&quot; href=&quot;www.naver.com&quot; target=&quot;_blank&quot; style=&quot;font-weight: bold;letter-spacing: 0px;line-height: 100%;text-align: center;text-decoration: none;color: #FFFFFF;&quot;&gt;Naver&lt;/a&gt; &lt;/td&gt; 
+        &lt;/tr&gt; 
+       &lt;/tbody&gt; 
+      &lt;/table&gt; &lt;/td&gt; 
+    &lt;/tr&gt; 
+   &lt;/tbody&gt; 
+  &lt;/table&gt;
+ &lt;/body&gt;
+&lt;/html&gt;</string>
+    </void>
+    <void property="title">
+     <string>&lt;html&gt;
+ &lt;head&gt;&lt;/head&gt; 
+ &lt;body&gt;  
+ &lt;/body&gt;
+&lt;/html&gt;</string>
+    </void>
+    <void property="type">
+     <string>button</string>
+    </void>
+   </object>
+  </void>
+ </object>
+</java>

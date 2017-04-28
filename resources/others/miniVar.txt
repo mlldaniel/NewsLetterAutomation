@@ -1,0 +1,25 @@
+    position
+	
+	String title;
+    String link;
+    String positionType;
+    String packageName;
+	String subpackageName;
+    String csvFilePath;
+    String timeFrame;
+    String forecastDate;
+    String targetDate;
+    Double topReturn1;
+    String topStockName1;
+	Double topReturn2;
+	String topStockName2;
+	Double topReturn3;
+	String topStockName3;
+    Double avgReturn1;
+    Double avgReturn2;
+    Double snp500Return;
+    Double marketPremium1;
+    Double marketPremium2;
+    int accuracy;
+	int totalNumber;
+	

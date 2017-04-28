@@ -1,0 +1,1 @@
+"position","title","link","positionType","packageName","subpackageName","csvFilePath","timeFrame","forecastDate","targetDate","topReturn1","topStockName1","topReturn2","topStockName2","topReturn3","topStockName3","avgReturn1","avgReturn2","snp500Return","marketPremium1","marketPremium2","accuracy","totalNumber"

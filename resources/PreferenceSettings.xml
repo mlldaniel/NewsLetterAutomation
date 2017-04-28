@@ -1,0 +1,235 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<settings>	
+	<ForecastDB>
+		
+		<baseDir><![CDATA[/Users/danielhwang/Documents/OneDrive/Projects/netbeans/ForecastAutomation(Test)/output/]]></baseDir>
+		
+		
+		<!--
+			<baseDir><![CDATA[/Users/danielhwang/Dropbox/Forecast Generation/Forecast Automation(dist)/output/]]></baseDir>
+		
+			
+			-->
+	</ForecastDB>
+	
+	<optionParameters>
+		
+			<optionParameter typeName="forecastTable">
+				<![CDATA[<blockGeneration>false</blockGeneration>]]>
+			</optionParameter>
+		
+		<optionParameter typeName="miniStory">
+			<![CDATA[<timeFrame></timeFrame>
+<blockGeneration>false</blockGeneration>
+<number></number>]]>
+		</optionParameter>
+		<optionParameter typeName="button">
+			<![CDATA[<buttonLink></buttonLink>
+<buttonTitle></buttonTitle>
+<background-color></background-color>
+<number></number>
+			]]>
+		</optionParameter>
+		<optionParameter typeName="import">
+			<![CDATA[<categoriesToExclude></categoriesToExclude>
+<resourceName></resourceName>
+<sortByAvg>true</sortByAvg>
+<border></border>
+<background-color></background-color>
+<limitNumber></limitNumber>
+<blockGeneration>false</blockGeneration>
+<number></number>]]>
+			
+		</optionParameter>
+		<optionParameter typeName="custom">
+			<![CDATA[<border></border>
+<background-color></background-color>
+			]]>
+		</optionParameter>
+	</optionParameters>
+	
+	<Language name="English">
+		<locale>en_US</locale>
+		<dateFormat><![CDATA[MMMM dd, yyyy]]></dateFormat>
+		
+	</Language>
+	
+	<Language name="Hebrew">
+		<locale>iw</locale>
+		<dateFormat><![CDATA[yyyy MMMM dd]]></dateFormat>
+	</Language>
+
+	<Language name="French">
+		<locale>fr</locale>
+		<dateFormat><![CDATA[dd MMMM yyyy]]></dateFormat>
+	</Language>
+	
+	<!--
+	<Language name="Korean">
+		<test>안</test>
+	</Language>
+	-->
+
+</settings>
+
+
+<!--
+Java Locale List
+Sr.	Locale	Language	Country
+1	ms_MY	Malay (Malaysia)	Malaysia
+2	ar_QA	Arabic (Qatar)	Qatar
+3	is_IS	Icelandic (Iceland)	Iceland
+4	fi_FI	Finnish (Finland)	Finland
+5	pl	Polish	
+6	en_MT	English (Malta)	Malta
+7	it_CH	Italian (Switzerland)	Switzerland
+8	nl_BE	Dutch (Belgium)	Belgium
+9	ar_SA	Arabic (Saudi Arabia)	Saudi Arabia
+10	ar_IQ	Arabic (Iraq)	Iraq
+11	es_PR	Spanish (Puerto Rico)	Puerto Rico
+12	es_CL	Spanish (Chile)	Chile
+13	fi	Finnish	
+14	de_AT	German (Austria)	Austria
+15	da	Danish	
+16	en_GB	English (United Kingdom)	United Kingdom
+17	es_PA	Spanish (Panama)	Panama
+18	sr	Serbian	
+19	ar_YE	Arabic (Yemen)	Yemen
+20	mk_MK	Macedonian (Macedonia)	Macedonia
+21	mk	Macedonian	
+22	en_CA	English (Canada)	Canada
+23	vi_VN	Vietnamese (Vietnam)	Vietnam
+24	nl_NL	Dutch (Netherlands)	Netherlands
+25	es_US	Spanish (United States)	United States
+26	zh_CN	Chinese (China)	China
+27	es_HN	Spanish (Honduras)	Honduras
+28	en_US	English (United States)	United States
+29	fr	French	
+30	th	Thai	
+31	ar	Arabic	
+32	ar_MA	Arabic (Morocco)	Morocco
+33	lv	Latvian	
+34	de	German	
+35	in_ID	Indonesian (Indonesia)	Indonesia
+36	hr	Croatian	
+37	en_ZA	English (South Africa)	South Africa
+38	ko_KR	Korean (South Korea)	South Korea
+39	ar_TN	Arabic (Tunisia)	Tunisia
+40	in	Indonesian	
+41	ja	Japanese	
+42	sr_RS	Serbian (Serbia)	Serbia
+43	be_BY	Belarusian (Belarus)	Belarus
+44	zh_TW	Chinese (Taiwan)	Taiwan
+45	ar_SD	Arabic (Sudan)	Sudan
+46	pt	Portuguese	
+47	is	Icelandic	
+48	ja_JP_JP_#u-ca-japanese	Japanese (Japan,JP)	Japan
+49	es_BO	Spanish (Bolivia)	Bolivia
+50	ar_DZ	Arabic (Algeria)	Algeria
+51	ms	Malay	
+52	es_AR	Spanish (Argentina)	Argentina
+53	ar_AE	Arabic (United Arab Emirates)	United Arab Emirates
+54	fr_CA	French (Canada)	Canada
+55	sl	Slovenian	
+56	es	Spanish	
+57	lt_LT	Lithuanian (Lithuania)	Lithuania
+58	sr_ME_#Latn	Serbian (Latin,Montenegro)	Montenegro
+59	ar_SY	Arabic (Syria)	Syria
+60	ru_RU	Russian (Russia)	Russia
+61	fr_BE	French (Belgium)	Belgium
+62	es_ES	Spanish (Spain)	Spain
+63	bg	Bulgarian	
+64	iw_IL	Hebrew (Israel)	Israel
+65	sv	Swedish	
+66	en	English	
+67	iw	Hebrew	
+68	da_DK	Danish (Denmark)	Denmark
+69	es_CR	Spanish (Costa Rica)	Costa Rica
+70	zh_HK	Chinese (Hong Kong)	Hong Kong
+71	zh	Chinese	
+72	ca_ES	Catalan (Spain)	Spain
+73	th_TH	Thai (Thailand)	Thailand
+74	uk_UA	Ukrainian (Ukraine)	Ukraine
+75	es_DO	Spanish (Dominican Republic)	Dominican Republic
+76	es_VE	Spanish (Venezuela)	Venezuela
+77	pl_PL	Polish (Poland)	Poland
+78	ar_LY	Arabic (Libya)	Libya
+79	ar_JO	Arabic (Jordan)	Jordan
+80	it	Italian	
+81	uk	Ukrainian	
+82	hu_HU	Hungarian (Hungary)	Hungary
+83	ga	Irish	
+84	es_GT	Spanish (Guatemala)	Guatemala
+85	es_PY	Spanish (Paraguay)	Paraguay
+86	bg_BG	Bulgarian (Bulgaria)	Bulgaria
+87	hr_HR	Croatian (Croatia)	Croatia
+88	sr_BA_#Latn	Serbian (Latin,Bosnia and Herzegovina)	Bosnia and Herzegovina
+89	ro_RO	Romanian (Romania)	Romania
+90	fr_LU	French (Luxembourg)	Luxembourg
+91	no	Norwegian	
+92	lt	Lithuanian	
+93	en_SG	English (Singapore)	Singapore
+94	es_EC	Spanish (Ecuador)	Ecuador
+95	sr_BA	Serbian (Bosnia and Herzegovina)	Bosnia and Herzegovina
+96	es_NI	Spanish (Nicaragua)	Nicaragua
+97	sk	Slovak	
+98	ru	Russian	
+99	mt	Maltese	
+100	es_SV	Spanish (El Salvador)	El Salvador
+101	nl	Dutch	
+102	hi_IN	Hindi (India)	India
+103	et	Estonian	
+104	el_GR	Greek (Greece)	Greece
+105	sl_SI	Slovenian (Slovenia)	Slovenia
+106	it_IT	Italian (Italy)	Italy
+107	ja_JP	Japanese (Japan)	Japan
+108	de_LU	German (Luxembourg)	Luxembourg
+109	fr_CH	French (Switzerland)	Switzerland
+110	mt_MT	Maltese (Malta)	Malta
+111	ar_BH	Arabic (Bahrain)	Bahrain
+112	sq	Albanian	
+113	vi	Vietnamese	
+114	sr_ME	Serbian (Montenegro)	Montenegro
+115	pt_BR	Portuguese (Brazil)	Brazil
+116	no_NO	Norwegian (Norway)	Norway
+117	el	Greek	
+118	de_CH	German (Switzerland)	Switzerland
+119	zh_SG	Chinese (Singapore)	Singapore
+120	ar_KW	Arabic (Kuwait)	Kuwait
+121	ar_EG	Arabic (Egypt)	Egypt
+122	ga_IE	Irish (Ireland)	Ireland
+123	es_PE	Spanish (Peru)	Peru
+124	cs_CZ	Czech (Czech Republic)	Czech Republic
+125	tr_TR	Turkish (Turkey)	Turkey
+126	cs	Czech	
+127	es_UY	Spanish (Uruguay)	Uruguay
+128	en_IE	English (Ireland)	Ireland
+129	en_IN	English (India)	India
+130	ar_OM	Arabic (Oman)	Oman
+131	sr_CS	Serbian (Serbia and Montenegro)	Serbia and Montenegro
+132	ca	Catalan	
+133	be	Belarusian	
+134	sr__#Latn	Serbian (Latin)	
+135	ko	Korean	
+136	sq_AL	Albanian (Albania)	Albania
+137	pt_PT	Portuguese (Portugal)	Portugal
+138	lv_LV	Latvian (Latvia)	Latvia
+139	sr_RS_#Latn	Serbian (Latin,Serbia)	Serbia
+140	sk_SK	Slovak (Slovakia)	Slovakia
+141	es_MX	Spanish (Mexico)	Mexico
+142	en_AU	English (Australia)	Australia
+143	no_NO_NY	Norwegian (Norway,Nynorsk)	Norway
+144	en_NZ	English (New Zealand)	New Zealand
+145	sv_SE	Swedish (Sweden)	Sweden
+146	ro	Romanian	
+147	ar_LB	Arabic (Lebanon)	Lebanon
+148	de_DE	German (Germany)	Germany
+149	th_TH_TH_#u-nu-thai	Thai (Thailand,TH)	Thailand
+150	tr	Turkish	
+151	es_CO	Spanish (Colombia)	Colombia
+152	en_PH	English (Philippines)	Philippines
+153	et_EE	Estonian (Estonia)	Estonia
+154	el_CY	Greek (Cyprus)	Cyprus
+155	hu	Hungarian	
+156	fr_FR	French (France)	France
+-->
