@@ -6,6 +6,8 @@
 package resources.ForecastDB;
 
 import exceptions.DataNotAvailableException;
+import java.io.File;
+import java.io.IOException;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -14,6 +16,9 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import org.apache.commons.io.FileUtils;
 import tab.forecast.ForecastTableItem;
 import static tab.forecast.ForecastTableItem.*;
 
@@ -51,15 +56,51 @@ public class ForecastDataManager {
         //findForecastItem(LINK,"http://iknowfirst.com/fr-commodity-prediction-based-on-algo-trading-returns-up-to-7-99-in-7-days");
     }
 
+    private String makeDBbackUP(String dbLocation) {
+        String backupLoc = dbLocation + "BACKUPFROMPROGRAM";
+        try {
+            FileUtils.copyFile(new File(dbLocation), new File(backupLoc));
+        } catch (IOException ex) {
+            Logger.getLogger(ForecastDataManager.class.getName()).log(Level.SEVERE, null, ex);
+            System.out.println("Back UP Failed for : " + dbLocation);
+        }
+
+        return backupLoc;
+    }
+
+    private void checkNRestoreDB(String dbLocation, String backupLoc) {
+        File backupFile = new File(backupLoc);
+        File file = new File(dbLocation);
+
+        try {
+            long backupCSUM = FileUtils.checksumCRC32(backupFile);
+            long csum = FileUtils.checksumCRC32(file);
+            if (csum == backupCSUM) {//No Problem
+                System.out.println("No Prob");
+            } else {
+                System.out.println("Something is wrong with your file both doesn't match");
+                //Resotre file
+                FileUtils.copyFile(backupFile, file);
+                
+            }
+
+        } catch (IOException ex) {
+            Logger.getLogger(ForecastDataManager.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
+
     public ForecastTableItem findForecastItem(int columnNumb, String key) {
-            String col = colName[columnNumb];
-            System.out.println("Looking for " + key + "  from Column: " + col + " in " + dbLocation);
-            ForecastTableItem row = null;
-        try{
+        //Making BackUP
+        String backupLoc = makeDBbackUP(dbLocation);
+
+        String col = colName[columnNumb];
+        System.out.println("Looking for " + key + "  from Column: " + col + " in " + dbLocation);
+        ForecastTableItem row = null;
+        try {
             //Select Row From Main Table of DB
             //row = (ForecastTableItem) selectItem(mainTable, col, key);
             row = selectItemPrepareStatement(mainTable, col, key);
-            
+
             List<CsvTable> csvTableList = (List<CsvTable>) (Object) selectItemListPrepareStatement(csvTable, "mainTableId", String.valueOf(row.getId()));
             row.setCsvTableList(csvTableList);
 
@@ -73,39 +114,38 @@ public class ForecastDataManager {
                 System.out.println("Sucess! : Title is " + row.toString());
                 return row;
             } else if (columnNumb == CSVFILEPATH) {
-                System.out.println("Unable to Find CSV File Path "+key);
+                System.out.println("Unable to Find CSV File Path " + key);
                 return new ForecastTableItem("", key);
             } else {
-                System.out.println("Unable to Find Link "+ key);
+                System.out.println("Unable to Find Link " + key);
                 return new ForecastTableItem(key, "");
             }
-        }catch(NullPointerException ex){
+        } catch (NullPointerException ex) {
             if (columnNumb == CSVFILEPATH) {
                 System.out.println(ex.getMessage());
-                System.out.println("Unable to Find CSV File Path "+key);
+                System.out.println("Unable to Find CSV File Path " + key);
             } else {
                 System.out.println(ex.getMessage());
-                System.out.println("Unable to Find Link "+ key);
+                System.out.println("Unable to Find Link " + key);
             }
-        }finally{
+        } finally {
+            checkNRestoreDB(dbLocation,backupLoc);
             if (row != null) {
                 System.out.println("Sucess! : Title is " + row.toString());
                 return row;
-            }else if (columnNumb == CSVFILEPATH) {
+            } else if (columnNumb == CSVFILEPATH) {
                 return new ForecastTableItem("", key);
             } else {
                 return new ForecastTableItem(key, "");
             }
         }
-        
+
     }
-    
-    
 
     public void checkDataAvailability() {
         System.out.println("Checking DataBase Availability on " + dbLocation);
         //ForecastTableItem row = selectRowWith("ID","1");
-        String sql = "SELECT * FROM "+ mainTable;
+        String sql = "SELECT * FROM " + mainTable;
         ForecastTableItem mtRow = (ForecastTableItem) doQuery(sql, dbLocation, mainTable);
         List<Object> cTObjList = selectItemList(csvTable, "mainTableId", String.valueOf(mtRow.getId()));
 
@@ -131,11 +171,11 @@ public class ForecastDataManager {
         Connection conn = null;
         PreparedStatement pstmt = null;
         ResultSet rs = null;
-        
+
         try {
             Class.forName("org.sqlite.JDBC");
             conn = DriverManager.getConnection("jdbc:sqlite:" + dbLocation);
-            System.out.println("Selecting item from tableName: "+tableName + " of col: "+columnName + " : "+name);
+            System.out.println("Selecting item from tableName: " + tableName + " of col: " + columnName + " : " + name);
 
             String query = "SELECT * FROM " + tableName + " WHERE " + columnName + "= ? COLLATE NOCASE;";
             pstmt = conn.prepareStatement(query);
@@ -159,21 +199,35 @@ public class ForecastDataManager {
                 }
 
             }
-                      
-                      
+
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         } catch (SQLException e) {
             e.printStackTrace();
-        } finally{
-            if(pstmt != null) try{ pstmt.close();} catch(SQLException e){};                   
-            if(rs != null) try{ rs.close();} catch(SQLException e){};
-            if(conn != null) try{ conn.close();} catch(SQLException e){};
+        } finally {
+            if (pstmt != null) {
+                try {
+                    pstmt.close();
+                } catch (SQLException e) {
+                }
+            };
+            if (rs != null) {
+                try {
+                    rs.close();
+                } catch (SQLException e) {
+                }
+            };
+            if (conn != null) {
+                try {
+                    conn.close();
+                } catch (SQLException e) {
+                }
+            };
         }
-        
 
         return item;
     }
+
     private Object selectItem(String tableName, String columnName, String name) {
         Object item = null;
         String sql = "SELECT * FROM " + tableName + " WHERE " + columnName + "='" + name + "';";
@@ -181,7 +235,6 @@ public class ForecastDataManager {
 
         return item;
     }
-    
 
     private List<Object> selectItemList(String tableName, String columnName, String name) {
         List<Object> itemList = null;
@@ -190,7 +243,7 @@ public class ForecastDataManager {
 
         return itemList;
     }
-    
+
     private List<Object> selectItemListPrepareStatement(String tableName, String columnName, String name) {
         List<Object> returnItemList = new ArrayList();
         Connection conn = null;
@@ -199,13 +252,13 @@ public class ForecastDataManager {
         try {
             Class.forName("org.sqlite.JDBC");
             conn = DriverManager.getConnection("jdbc:sqlite:" + dbLocation);
-            System.out.println("Selecting item List from tableName: "+tableName + " of col: "+columnName + " : "+name);
+            System.out.println("Selecting item List from tableName: " + tableName + " of col: " + columnName + " : " + name);
             //conn.setAutoCommit(false);
             //System.out.println("Opened database successfully");
             String query = "SELECT * FROM " + tableName + " WHERE " + columnName + "=?";// + name + "';";
             pstmt = conn.prepareStatement(query);
-            
-            pstmt.setInt(1 , Integer.parseInt(name));
+
+            pstmt.setInt(1, Integer.parseInt(name));
             rs = pstmt.executeQuery();
             //stmt.executeUpdate(sql);
 
@@ -243,10 +296,25 @@ public class ForecastDataManager {
             e.printStackTrace();
         } catch (SQLException e) {
             e.printStackTrace();
-        } finally{
-            if(pstmt != null) try{ pstmt.close();} catch(SQLException e){};                   
-            if(rs != null) try{ rs.close();} catch(SQLException e){};
-            if(conn != null) try{ conn.close();} catch(SQLException e){};
+        } finally {
+            if (pstmt != null) {
+                try {
+                    pstmt.close();
+                } catch (SQLException e) {
+                }
+            };
+            if (rs != null) {
+                try {
+                    rs.close();
+                } catch (SQLException e) {
+                }
+            };
+            if (conn != null) {
+                try {
+                    conn.close();
+                } catch (SQLException e) {
+                }
+            };
         }
 
         //System.out.println("Records created successfully");
@@ -309,8 +377,9 @@ public class ForecastDataManager {
         //System.out.println("Records created successfully");
         return returnItemList;
     }
-    private static double parseDoubleAllLang(String numbStr){
-        if(numbStr.contains(",")){
+
+    private static double parseDoubleAllLang(String numbStr) {
+        if (numbStr.contains(",")) {
             numbStr = numbStr.replace(",", ".");
         }
         return Double.parseDouble(numbStr);
