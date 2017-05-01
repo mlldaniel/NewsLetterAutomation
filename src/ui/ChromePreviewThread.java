@@ -59,12 +59,11 @@ public class ChromePreviewThread implements Runnable {
         //Keep Load/Convert & Refresh
         WebDriver driver = new ChromeDriver();
         Wait<WebDriver> wait = new WebDriverWait(driver, 30);
-        
-        driver.get("file://"+fileName);
+
+        driver.get("file://" + fileName);
         //new WebDriverBackedSelenium(driver, "file:///D:/folder/abcd.html");
 
         //driver.get("http://www.naver.com");
-
         while (true) {
             if (frame.isVisible() == false) {
                 System.out.println("Stopping Thread/Chrome");
@@ -77,10 +76,10 @@ public class ChromePreviewThread implements Runnable {
                 //Get the Text, Save and Refresh
                 editorText = editor.getText(); // get
                 System.out.println("Thread Running@");
-                
+
                 //Convert PT to Px
                 String convertedText = ResourceHTML.convertPtToPxStr(editorText);
-                
+
                 //Inser to BaseHtml and Save
                 baseHtml.insertContent(convertedText, "td[class=bodyContainer]", HTML);
                 HTMLManager.saveHTML(baseHtml.getDoc(), fileName);

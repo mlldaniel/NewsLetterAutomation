@@ -306,6 +306,22 @@ public class FormManaqer {
 
         previewHtmlEditor.open(html);
     }
+    
+    public static void openPreviewHtmlEditor2() {
+        //Get current HTML 
+        Tab curTab = tabManager.getCurrentTab();
+        LayoutSection ls = curTab.getLayoutSection();
+        int selectedRow = ls.getJTable().getSelectedRow();
+        if (selectedRow < 0) {
+            System.out.println("Select a Row");
+            return;
+        }
+        LayoutTableItem lsItem = ls.getLayoutTableModel().getItemAt(selectedRow);
+        String html = lsItem.getPreview();
+
+        previewHtmlEditor.open(html);
+        
+    }
 
     public static void closePreviewHtmlEditor(boolean save) {
         if (save) {
