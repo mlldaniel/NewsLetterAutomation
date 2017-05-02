@@ -14,6 +14,7 @@ import static tab.layout.LayoutTableItem.POSITION;
 import static tab.layout.LayoutTableItem.PREVIEW;
 import static tab.layout.LayoutTableItem.TITLE;
 import tab.layout.LayoutTableModel;
+import test.TinyMce;
 import static ui.NewsLetterUI.*;
 
 public class FormManaqer {
@@ -304,7 +305,11 @@ public class FormManaqer {
         LayoutTableItem lsItem = ls.getLayoutTableModel().getItemAt(selectedRow);
         String html = lsItem.getPreview();
 
-        previewHtmlEditor.open(html);
+        TinyMce mce = new TinyMce(lsItem,true);
+        Thread t = new Thread(mce);
+        t.start();
+        
+        //previewHtmlEditor.open(html);
     }
     
     public static void openPreviewHtmlEditor2() {
