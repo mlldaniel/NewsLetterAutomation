@@ -34,7 +34,12 @@ public class ResourceHTML {
         this.filePath = rHTML.getFilePath();
         this.doc = rHTML.getDoc().clone();
     }
-
+    public ResourceHTML(String htmlStr){
+        this.name = "notChoosen";
+        this.filePath = "notChoosen";
+        
+        this.doc = Jsoup.parse(htmlStr);
+    }
     public ResourceHTML(String resourcePath, String fileName) {
 
         this.name = fileName;

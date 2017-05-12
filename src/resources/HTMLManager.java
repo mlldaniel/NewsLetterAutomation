@@ -79,6 +79,15 @@ public class HTMLManager {
             e.printStackTrace();
         }
     }
+    
+    public static void saveHTML(String docStr, String savingLocation) {
+        try {
+            saveFinalHtml(docStr, savingLocation);
+            System.out.println(savingLocation + "Saved!");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 
     /////////////////// TEST END
     public Document generateHTML(List<Item> docList) {
@@ -107,6 +116,12 @@ public class HTMLManager {
         //System.out.println(doc.outerHtml());
         final File f = new File(fileName);
         FileUtils.writeStringToFile(f, doc.outerHtml(), "UTF-8");
+
+    }
+    private static void saveFinalHtml(String docStr, String fileName) throws IOException {
+        //System.out.println(doc.outerHtml());
+        final File f = new File(fileName);
+        FileUtils.writeStringToFile(f, docStr, "UTF-8");
 
     }
 

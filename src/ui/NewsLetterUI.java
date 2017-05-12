@@ -913,19 +913,19 @@ public class NewsLetterUI extends javax.swing.JFrame {
     }//GEN-LAST:event_jButtonEditLayoutTitleActionPerformed
 
     private void jButtonTitleOkActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonTitleOkActionPerformed
-        closeTitleHtmlEditor(true);
+        //closeTitleHtmlEditor(true);
     }//GEN-LAST:event_jButtonTitleOkActionPerformed
 
     private void jButtonTitleCancelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonTitleCancelActionPerformed
-        closeTitleHtmlEditor(false);
+        //closeTitleHtmlEditor(false);
     }//GEN-LAST:event_jButtonTitleCancelActionPerformed
 
     private void jButtonPreviewOkActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonPreviewOkActionPerformed
-        closePreviewHtmlEditor(true);
+        //closePreviewHtmlEditor(true);
     }//GEN-LAST:event_jButtonPreviewOkActionPerformed
 
     private void jButtonPreviewCancelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonPreviewCancelActionPerformed
-        closePreviewHtmlEditor(false);
+        //closePreviewHtmlEditor(false);
     }//GEN-LAST:event_jButtonPreviewCancelActionPerformed
 
     private void jButtonLayoutSectionSaveLayoutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonLayoutSectionSaveLayoutActionPerformed

@@ -34,21 +34,21 @@ public class FormManaqer {
         if (selecteRows.length > 0) {// if something has been selected, it will generate specific Item(s)
             //Generate & Return the first Item in selected Item List
             LayoutTableItem firstItem = tabManager.generateNewsletter(curTab, selecteRows, jXDatePicker.getDate());
-            
+
             //Selected the first one
             setEnabledLayoutForm(true);
             layoutFormUpdate(firstItem);
-            
+
         } else if (selecteRows.length == 0) {// if nothing is selected, it will generate all of them
             //Generate Everything
             int[] allRows = new int[totalRowCount];
             IntStream.range(0, totalRowCount).forEach(val -> allRows[val] = val);
             LayoutTableItem firstItem = tabManager.generateNewsletter(curTab, allRows, jXDatePicker.getDate());
-            
+
             //Selected the first one
             setEnabledLayoutForm(true);
             layoutFormUpdate(firstItem);
-        } 
+        }
     }
 
     //Save Newsletter
@@ -56,8 +56,8 @@ public class FormManaqer {
         Tab curTab = tabManager.getCurrentTab();
         tabManager.saveNewsletter(curTab, jXDatePicker.getDate());
     }
-    
-    public static void previewNewsletter(){
+
+    public static void previewNewsletter() {
         Tab curTab = tabManager.getCurrentTab();
         tabManager.previewNewsletter(curTab, jXDatePicker.getDate());
     }
@@ -132,15 +132,14 @@ public class FormManaqer {
 //
 //        editAllow = true;
 //    }
-
     //Layout Section Add & Delete
     public static void addLayoutItem() {
         String selectedType = (String) jComboBoxLayoutTypeChoice.getSelectedItem();
         LayoutTableItem newItem = new LayoutTableItem(selectedType);
-        
+
         //Add to the Layout Table and also Select it
         LayoutTableItem addedItem = tabManager.addLayoutItem(newItem);
-        
+
         //update forma
         setEnabledLayoutForm(true);
         layoutFormUpdate(addedItem);
@@ -172,8 +171,7 @@ public class FormManaqer {
         //changedItem.setTitle(jEditorPaneLayoutTitle.getText());
         changedItem.setParametersNeeded((String) jTextAreaParameters.getText());
         //changedItem.setPreview(jEditorPaneLayoutPreview.getText());
-        
-        
+
         boolean success = tabManager.changeLayoutItem(changedItem);
         if (success == false) {
             setEnabledLayoutForm(false);
@@ -200,8 +198,7 @@ public class FormManaqer {
     public static void saveLoadCurrentLayout(java.awt.event.ActionEvent evt, boolean regenerateNewsletter) {
         Tab curTab = tabManager.getCurrentTab();
         LayoutTableModel ltModel = curTab.getLayoutSection().getLayoutTableModel();
-        
-        
+
         //Load Layout
         if (evt.getSource() == jButtonLayoutSectionLoadLayout || evt.getSource() == jButtonLayoutSectionLoadLayoutNPreview) {
             int returnVal = jFileChooserLayout.showOpenDialog(new javax.swing.JPanel());
@@ -257,40 +254,58 @@ public class FormManaqer {
             return;
         }
         LayoutTableItem lsItem = ls.getLayoutTableModel().getItemAt(selectedRow);
-        String html = lsItem.getTitle();
-
+        //String html = lsItem.getTitle();
+        TinyMce mce = new TinyMce(lsItem, false);
+        Thread t = new Thread(mce);
+        t.start();
+        
         //Open with html editor
-        titleHtmlEditor.open(html);
+        //titleHtmlEditor.open(html);
     }
+//    //Title HTML Editor
+//    public static void openTitleHtmlEditor2() {
+//        //Get current HTML 
+//        Tab curTab = tabManager.getCurrentTab();
+//        LayoutSection ls = curTab.getLayoutSection();
+//        int selectedRow = ls.getJTable().getSelectedRow();
+//        if (selectedRow < 0) {
+//            System.out.println("Select a Row");
+//            return;
+//        }
+//        LayoutTableItem lsItem = ls.getLayoutTableModel().getItemAt(selectedRow);
+//        String html = lsItem.getTitle();
+//
+//        //Open with html editor
+//        titleHtmlEditor.open(html);
+//    }
 
-    public static void closeTitleHtmlEditor(boolean save) {
-        if (save) {
-            //Get current HTML 
-            Tab curTab = tabManager.getCurrentTab();
-            LayoutSection ls = curTab.getLayoutSection();
-            int selectedRow = ls.getJTable().getSelectedRow();
-            if (selectedRow < 0) {
-                System.out.println("Select a Row");
-                return;
-            }
-            LayoutTableItem lsItem = ls.getLayoutTableModel().getItemAt(selectedRow);
-            String html = titleHtmlEditor.saveNClose();
-            //Change
-            lsItem.setTitle(html);
-            
-            //Change Ready Status
-            lsItem.setReady(false);
-            
-            //Fire Change TO Model
-            ls.getLayoutTableModel().fireTableCellUpdated(selectedRow, TITLE);
-            ls.getLayoutTableModel().fireTableCellUpdated(selectedRow, POSITION);
-            
-            
-            //ls.getLayoutTableModel().updateRow(selectedRow, lsItem);
-        } else {
-            titleHtmlEditor.discardNclose();
-        }
-    }
+//    public static void closeTitleHtmlEditor(boolean save) {
+//        if (save) {
+//            //Get current HTML 
+//            Tab curTab = tabManager.getCurrentTab();
+//            LayoutSection ls = curTab.getLayoutSection();
+//            int selectedRow = ls.getJTable().getSelectedRow();
+//            if (selectedRow < 0) {
+//                System.out.println("Select a Row");
+//                return;
+//            }
+//            LayoutTableItem lsItem = ls.getLayoutTableModel().getItemAt(selectedRow);
+//            String html = titleHtmlEditor.saveNClose();
+//            //Change
+//            lsItem.setTitle(html);
+//
+//            //Change Ready Status
+//            lsItem.setReady(false);
+//
+//            //Fire Change TO Model
+//            ls.getLayoutTableModel().fireTableCellUpdated(selectedRow, TITLE);
+//            ls.getLayoutTableModel().fireTableCellUpdated(selectedRow, POSITION);
+//
+//            //ls.getLayoutTableModel().updateRow(selectedRow, lsItem);
+//        } else {
+//            titleHtmlEditor.discardNclose();
+//        }
+//    }
 
     //Preview HTML Editor
     public static void openPreviewHtmlEditor() {
@@ -303,54 +318,55 @@ public class FormManaqer {
             return;
         }
         LayoutTableItem lsItem = ls.getLayoutTableModel().getItemAt(selectedRow);
-        String html = lsItem.getPreview();
+        //String html = lsItem.getPreview();
 
-        TinyMce mce = new TinyMce(lsItem,true);
+        TinyMce mce = new TinyMce(lsItem, true);
         Thread t = new Thread(mce);
         t.start();
         
+        
         //previewHtmlEditor.open(html);
     }
-    
-    public static void openPreviewHtmlEditor2() {
-        //Get current HTML 
-        Tab curTab = tabManager.getCurrentTab();
-        LayoutSection ls = curTab.getLayoutSection();
-        int selectedRow = ls.getJTable().getSelectedRow();
-        if (selectedRow < 0) {
-            System.out.println("Select a Row");
-            return;
-        }
-        LayoutTableItem lsItem = ls.getLayoutTableModel().getItemAt(selectedRow);
-        String html = lsItem.getPreview();
 
-        previewHtmlEditor.open(html);
-        
-    }
+//    public static void openPreviewHtmlEditor2() {
+//        //Get current HTML 
+//        Tab curTab = tabManager.getCurrentTab();
+//        LayoutSection ls = curTab.getLayoutSection();
+//        int selectedRow = ls.getJTable().getSelectedRow();
+//        if (selectedRow < 0) {
+//            System.out.println("Select a Row");
+//            return;
+//        }
+//        LayoutTableItem lsItem = ls.getLayoutTableModel().getItemAt(selectedRow);
+//        String html = lsItem.getPreview();
+//
+//        previewHtmlEditor.open(html);
+//
+//    }
 
-    public static void closePreviewHtmlEditor(boolean save) {
-        if (save) {
-            //Get current HTML 
-            Tab curTab = tabManager.getCurrentTab();
-            LayoutSection ls = curTab.getLayoutSection();
-            int selectedRow = ls.getJTable().getSelectedRow();
-            if (selectedRow < 0) {
-                System.out.println("Select a Row");
-                return;
-            }
-            LayoutTableItem lsItem = ls.getLayoutTableModel().getItemAt(selectedRow);
-            String html = previewHtmlEditor.saveNClose();
-            lsItem.setPreview(html);
-            
-            //Change Ready Status
-            lsItem.setReady(true);
-            
-            ls.getLayoutTableModel().fireTableCellUpdated(selectedRow, PREVIEW);
-            //ls.getLayoutTableModel().updateRow(selectedRow, lsItem);
-        } else {
-            previewHtmlEditor.discardNclose();
-        }
-    }
+//    public static void closePreviewHtmlEditor(boolean save) {
+//        if (save) {
+//            //Get current HTML 
+//            Tab curTab = tabManager.getCurrentTab();
+//            LayoutSection ls = curTab.getLayoutSection();
+//            int selectedRow = ls.getJTable().getSelectedRow();
+//            if (selectedRow < 0) {
+//                System.out.println("Select a Row");
+//                return;
+//            }
+//            LayoutTableItem lsItem = ls.getLayoutTableModel().getItemAt(selectedRow);
+//            String html = previewHtmlEditor.saveNClose();
+//            lsItem.setPreview(html);
+//
+//            //Change Ready Status
+//            lsItem.setReady(true);
+//
+//            ls.getLayoutTableModel().fireTableCellUpdated(selectedRow, PREVIEW);
+//            //ls.getLayoutTableModel().updateRow(selectedRow, lsItem);
+//        } else {
+//            previewHtmlEditor.discardNclose();
+//        }
+//    }
 
     //Color Picker
     public static void colorChooser() {

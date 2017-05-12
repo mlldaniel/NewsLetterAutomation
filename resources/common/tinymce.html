@@ -26,34 +26,22 @@
  });</script>
 </head>
 <body>
-  <textarea>
-	<table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnButtonBlock" style="min-width:100%;">
-	    <tbody class="mcnButtonBlockOuter">
-	        <tr>
-	            <td style="padding-top:0; padding-right:18px; padding-bottom:18px; padding-left:18px;" valign="top" align="center" class="mcnButtonBlockInner">
-	                <table name="mainBody" border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnButtonContentContainer" style="border-collapse: separate !important;border: 2px solid #707070;border-radius: 5px;background-color: #210EF1;">
-	                    <tbody>
-	                        <tr>
-	                            <td align="center" valign="middle" class="mcnButtonContent" style="font-family: &quot;Lucida Sans Unicode&quot;, &quot;Lucida Grande&quot;, sans-serif; font-size: 18pt; padding: 24px;">
-	                                <a class="mcnButton " title="WOWOWOW good LUCK" href="http://lpage.iknowfirst.com/" target="_blank" style="font-weight: bold;letter-spacing: 0px;line-height: 100%;text-align: center;text-decoration: none;color: #FFFFFF;">WOWOWOW good LUCK</a>
-	                            </td>
-	                        </tr>
-	                    </tbody>
-	                </table>
-	            </td>
-	        </tr>
-	    </tbody>
-	</table>
+  <textarea id="textArea">
+	  
   </textarea>
-  <input type="button" onclick="onOpenSessionClick()" value="Open device access">     
+  <button onclick="saveClick()">SAVE</button>
+  <button onclick="closeClick()">CLOSE</button>
   <script>
-	  var saved = "false";
-	  function onOpenSessionClick(){
-		  foo ="true";
+	  var saved = "idle";
+	  function saveClick(){
+		  saved ="save";
 	  }
-	  function isSaved(){
+	  function closeClick(){
+		  saved ="close";
+	  }
+	  function nextState(){
 		  var beforeChanging = saved;
-		  saved = "false";
+		  saved = "idle";
 		  return beforeChanging;
 	  }
   </script>
