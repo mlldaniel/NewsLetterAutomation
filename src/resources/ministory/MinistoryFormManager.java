@@ -42,8 +42,7 @@ public class MinistoryFormManager {
     List<MinistoryFormItem> miniFormList;
     String filePath;
     Map<String, MinistoryVar> varMap;
-    
-    
+
     public MinistoryFormManager(String filePath) {
         this.filePath = filePath;
         miniFormList = loadAllFromExcel(filePath);
@@ -79,17 +78,18 @@ public class MinistoryFormManager {
         varMap.put("accuracy", new MinistoryVar("accuracy"));
         varMap.put("totalNumber", new MinistoryVar("totalNumber"));
     }
-    public void updateMiniFormList(List<Integer> usedMiniFormList, Date curDate){
+
+    public void updateMiniFormList(List<Integer> usedMiniFormList, Date curDate) {
         //Updating Date of the used one
-        miniFormList.forEach(item ->{
-            if(usedMiniFormList.contains(item.getNumber())){
+        miniFormList.forEach(item -> {
+            if (usedMiniFormList.contains(item.getNumber())) {
                 item.setLastUsed(curDate);
-                System.out.println("wow Updated "+item.getNumber());
+                System.out.println("wow Updated " + item.getNumber());
             }
         });
-        
+
     }
-    
+
     public Date updateUsedFormDate(List<Integer> usedMiniFormList) {
         FileInputStream fileInStream = null;
         FileOutputStream fileOutStream = null;
@@ -98,20 +98,21 @@ public class MinistoryFormManager {
             System.out.println("Updating Used Ministory Form");
             String filePath = this.filePath;
             fileInStream = checkFileExist(filePath);
-            
-            
+
             //Get the workbook instance for XLSX file 
             XSSFWorkbook workbook = new XSSFWorkbook(fileInStream);
             XSSFSheet spreadsheet = workbook.getSheetAt(0);
-            
+
             final int MY_MINIMUM_COLUMN_COUNT = 12;
             int rowStart = 1;
             int rowEnd = spreadsheet.getLastRowNum();//Math.max(1400, spreadsheet.getLastRowNum());
             int writeCount = usedMiniFormList.size();
             for (int rowNum = rowStart; rowNum < rowEnd; rowNum++) {
-                if(writeCount <= 0 )// if no more thing to write
+                if (writeCount <= 0)// if no more thing to write
+                {
                     break;
-                
+                }
+
                 Row row = spreadsheet.getRow(rowNum);
                 if (row == null) {
                     // This whole row is empty
@@ -119,40 +120,37 @@ public class MinistoryFormManager {
                 }
                 Cell cell = row.getCell(0, Row.RETURN_BLANK_AS_NULL);
                 //Cell dateCell = row.getCell(11, Row.RETURN_BLANK_AS_NULL);
-                if(cell != null){
+                if (cell != null) {
                     Double numb = cell.getNumericCellValue();
                     Integer number = numb.intValue();
-                    
-                    for(int containNumb : usedMiniFormList){
-                        if(containNumb == number){
+
+                    for (int containNumb : usedMiniFormList) {
+                        if (containNumb == number) {
                             Cell dateCell = row.getCell(11, Row.RETURN_BLANK_AS_NULL);
-                            if(dateCell == null)
+                            if (dateCell == null) {
                                 dateCell = row.createCell(11);
+                            }
                             dateCell.setCellType(CELL_TYPE_NUMERIC);
                             dateCell.setCellValue(curDate);
                             writeCount--;
                         }
                     }
-                    
+
 //                    if(usedMiniFormList.contains(number)){// Set Date
 //                        if(dateCell == null)
 //                            dateCell = row.createCell(11);
 //                        dateCell.setCellType(CELL_TYPE_NUMERIC);
 //                        dateCell.setCellValue(curDate);
 //                    }
-                    
-                    
-                    
-                    
-                }else{// If cell is NULL skip
+                } else {// If cell is NULL skip
                     continue;
                 }
-                
+
             }
-            
+
             fileOutStream = new FileOutputStream(filePath);
             workbook.write(fileOutStream);
-            
+
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {
@@ -169,7 +167,7 @@ public class MinistoryFormManager {
             return curDate;
         }
     }
-    
+
     private List<MinistoryFormItem> loadAllFromExcel(String filePath) {
         System.out.println("Loading MiniStory Form Excel Database");
         List<MinistoryFormItem> miniFormList = new ArrayList();
@@ -250,12 +248,12 @@ public class MinistoryFormManager {
         //filter Time Frame
         miniFormTemp = miniFormList.stream()
                 .filter(item -> (item.getTimeFrame().equalsIgnoreCase(timeFrame)
-                        ||item.getTimeFrame().equalsIgnoreCase("ANY")))
+                || item.getTimeFrame().equalsIgnoreCase("ANY")))
                 .collect(Collectors.toList());
 
         //filter with ForecastNr equal or less
         miniFormTemp = miniFormTemp.stream()
-                .filter(item -> (item.getForecastNr() == itemList.size() || item.getForecastNr() == itemList.size()-1) )
+                .filter(item -> (item.getForecastNr() == itemList.size() || item.getForecastNr() == itemList.size() - 1))
                 .collect(Collectors.toList());
 
         //filter Position Type => ANY + PostionType of Item (exclude what doesn't match)
@@ -264,37 +262,40 @@ public class MinistoryFormManager {
         miniFormTemp = miniFormTemp.stream()
                 .filter(itemForm -> (itemForm.getParametersMap().get("positionType") == null) || (itemForm.getParametersMap().get("positionType").equalsIgnoreCase(positionTypeVal)))
                 .collect(Collectors.toList());
-        
+
         //Sort With Rank
         miniFormTemp = miniFormTemp.stream()
                 .sorted((f1, f2) -> Integer.compare(f1.getRank(), f2.getRank()))
                 .collect(Collectors.toList());
-        
+
         //Sort With  Last Used
         Collections.sort(miniFormTemp, new Comparator<MinistoryFormItem>() {
             public int compare(MinistoryFormItem o1, MinistoryFormItem o2) {
-                if (o1.getLastUsed() == null || o2.getLastUsed() == null) 
+                if (o1.getLastUsed() == null || o2.getLastUsed() == null) {
                     return 0;
-                else
+                } else {
                     return o1.getLastUsed().compareTo(o2.getLastUsed());
+                }
             }
         });
 
-        
-
         return miniFormTemp;
     }
-    public String makeLink(String content, String link){
-        return "<a href="+"'"+link+"'>"+content+"</a>";
+
+    public String makeLink(String content, String link) {
+        return "<a href=" + "'" + link + "'>" + content + "</a>";
     }
+
     public MinistoryFormItem replaceSharpVar(int miniNumber, MinistoryFormItem miniForm, List<ForecastTableItem> itemList, String urlTagStr) {
         String title = miniForm.getCodeTitle();
         String titleNumbering = String.valueOf(miniNumber) + ". ";
         String text = miniForm.getText();
 
+        boolean replaceTitle = true;
         //replace Title Tag
         if (title.isEmpty()) {
             title = titleNumbering + "[ENTER TITLE HERE PLEASE]";
+            replaceTitle = false;
         } else {//Replace Title Tags
             title = titleNumbering + title;
             title = title.replace(varMap.get("topReturn1").getVar(1), itemList.get(0).stockReturnStringRankOf(0));
@@ -309,7 +310,7 @@ public class MinistoryFormManager {
                 text = text.replace(varMap.get("title").getVar(i), item.getTitle())
                         .replace(varMap.get("link").getVar(i), item.getLink())
                         .replace(varMap.get("positionType").getVar(i), item.getPositionType())
-                        .replace(varMap.get("packageName").getVar(i), makeLink(item.getPackageName(),item.getLink() + urlTagStr))
+                        .replace(varMap.get("packageName").getVar(i), makeLink(item.getPackageName(), item.getLink() + urlTagStr))
                         .replace(varMap.get("subpackageName").getVar(i), item.getSubpackageName())
                         .replace(varMap.get("timePeriod").getVar(i), item.getTimeFrame())
                         .replace(varMap.get("forecastDate").getVar(i), item.getForecastDate())
@@ -329,7 +330,31 @@ public class MinistoryFormManager {
                         .replace(varMap.get("marketPremium2").getVar(i), item.getPremiumTabNumb(1))
                         .replace(varMap.get("accuracy").getVar(i), item.getTotalAccuracyNumb()) // Count accuray
                         .replace(varMap.get("totalNumber").getVar(i), item.getTotalNumb()); //count total number
-
+                if (replaceTitle) {
+                    title = title.replace(varMap.get("title").getVar(i), item.getTitle())
+                        .replace(varMap.get("link").getVar(i), item.getLink())
+                        .replace(varMap.get("positionType").getVar(i), item.getPositionType())
+                        .replace(varMap.get("packageName").getVar(i), makeLink(item.getPackageName(), item.getLink() + urlTagStr))
+                        .replace(varMap.get("subpackageName").getVar(i), item.getSubpackageName())
+                        .replace(varMap.get("timePeriod").getVar(i), item.getTimeFrame())
+                        .replace(varMap.get("forecastDate").getVar(i), item.getForecastDate())
+                        .replace(varMap.get("targetDate").getVar(i), item.getTargetDate())
+                        .replace(varMap.get("topReturn1").getVar(i), item.stockRankOf(0).getRow().getReturnValueStr())
+                        .replace(varMap.get("topStockName1").getVar(i), item.stockRankOf(0).getRow().getSymbol())
+                        .replace(varMap.get("topReturn2").getVar(i), item.stockRankOf(1).getRow().getReturnValueStr())
+                        .replace(varMap.get("topStockName2").getVar(i), item.stockRankOf(1).getRow().getSymbol())
+                        .replace(varMap.get("topReturn3").getVar(i), item.stockRankOf(2).getRow().getReturnValueStr())
+                        .replace(varMap.get("topStockName3").getVar(i), item.stockRankOf(2).getRow().getSymbol())
+                        .replace(varMap.get("topReturn4").getVar(i), item.stockRankOf(3).getRow().getReturnValueStr())
+                        .replace(varMap.get("topStockName4").getVar(i), item.stockRankOf(3).getRow().getSymbol())
+                        .replace(varMap.get("avgReturn1").getVar(i), item.getAvgReturnTabNumb(0))
+                        .replace(varMap.get("avgReturn2").getVar(i), item.getAvgReturnTabNumb(1))
+                        .replace(varMap.get("snp500Return").getVar(i), item.getSNPReturn())
+                        .replace(varMap.get("marketPremium1").getVar(i), item.getPremiumTabNumb(0))
+                        .replace(varMap.get("marketPremium2").getVar(i), item.getPremiumTabNumb(1))
+                        .replace(varMap.get("accuracy").getVar(i), item.getTotalAccuracyNumb()) // Count accuray
+                        .replace(varMap.get("totalNumber").getVar(i), item.getTotalNumb()); //count total number
+                }
             }
 
         }
@@ -346,12 +371,12 @@ public class MinistoryFormManager {
 
         //Select Form List From What was load from DB
         miniFormListTemp = selectFormList(timeFrame, itemList);
-        
+
         if (miniFormListTemp.size() > 0) {
             //Get the first Form of the Selected List
             miniFormSelected = miniFormListTemp.get(0);
             MinistoryFormItem clonedForm = new MinistoryFormItem(miniFormSelected);
-            miniFormSelected = replaceSharpVar(miniNumber,clonedForm, itemList, urlTagStr);
+            miniFormSelected = replaceSharpVar(miniNumber, clonedForm, itemList, urlTagStr);
 
             return miniFormSelected;
         } else {
@@ -359,7 +384,6 @@ public class MinistoryFormManager {
         }
     }
 
-    
 }
 
 class MinistoryVar {
