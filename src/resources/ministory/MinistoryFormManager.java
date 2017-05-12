@@ -292,6 +292,8 @@ public class MinistoryFormManager {
         String text = miniForm.getText();
 
         boolean replaceTitle = true;
+        String boldTagS = "<em>";
+        String boldTagE = "</em>";
         //replace Title Tag
         if (title.isEmpty()) {
             title = titleNumbering + "[ENTER TITLE HERE PLEASE]";
@@ -315,14 +317,14 @@ public class MinistoryFormManager {
                         .replace(varMap.get("timePeriod").getVar(i), item.getTimeFrame())
                         .replace(varMap.get("forecastDate").getVar(i), item.getForecastDate())
                         .replace(varMap.get("targetDate").getVar(i), item.getTargetDate())
-                        .replace(varMap.get("topReturn1").getVar(i), item.stockRankOf(0).getRow().getReturnValueStr())
-                        .replace(varMap.get("topStockName1").getVar(i), item.stockRankOf(0).getRow().getSymbol())
-                        .replace(varMap.get("topReturn2").getVar(i), item.stockRankOf(1).getRow().getReturnValueStr())
-                        .replace(varMap.get("topStockName2").getVar(i), item.stockRankOf(1).getRow().getSymbol())
-                        .replace(varMap.get("topReturn3").getVar(i), item.stockRankOf(2).getRow().getReturnValueStr())
-                        .replace(varMap.get("topStockName3").getVar(i), item.stockRankOf(2).getRow().getSymbol())
-                        .replace(varMap.get("topReturn4").getVar(i), item.stockRankOf(3).getRow().getReturnValueStr())
-                        .replace(varMap.get("topStockName4").getVar(i), item.stockRankOf(3).getRow().getSymbol())
+                        .replace(varMap.get("topReturn1").getVar(i), boldTagS + item.stockRankOf(0).getRow().getReturnValueStr() + boldTagE)
+                        .replace(varMap.get("topStockName1").getVar(i), boldTagS + item.stockRankOf(0).getRow().getSymbol() + boldTagE)
+                        .replace(varMap.get("topReturn2").getVar(i), boldTagS + item.stockRankOf(1).getRow().getReturnValueStr() + boldTagE)
+                        .replace(varMap.get("topStockName2").getVar(i), boldTagS + item.stockRankOf(1).getRow().getSymbol() + boldTagE)
+                        .replace(varMap.get("topReturn3").getVar(i), boldTagS + item.stockRankOf(2).getRow().getReturnValueStr() + boldTagE)
+                        .replace(varMap.get("topStockName3").getVar(i), boldTagS + item.stockRankOf(2).getRow().getSymbol() + boldTagE)
+                        .replace(varMap.get("topReturn4").getVar(i), boldTagS + item.stockRankOf(3).getRow().getReturnValueStr() + boldTagE)
+                        .replace(varMap.get("topStockName4").getVar(i), boldTagS + item.stockRankOf(3).getRow().getSymbol() + boldTagE)
                         .replace(varMap.get("avgReturn1").getVar(i), item.getAvgReturnTabNumb(0))
                         .replace(varMap.get("avgReturn2").getVar(i), item.getAvgReturnTabNumb(1))
                         .replace(varMap.get("snp500Return").getVar(i), item.getSNPReturn())
@@ -332,28 +334,28 @@ public class MinistoryFormManager {
                         .replace(varMap.get("totalNumber").getVar(i), item.getTotalNumb()); //count total number
                 if (replaceTitle) {
                     title = title.replace(varMap.get("title").getVar(i), item.getTitle())
-                        .replace(varMap.get("link").getVar(i), item.getLink())
-                        .replace(varMap.get("positionType").getVar(i), item.getPositionType())
-                        .replace(varMap.get("packageName").getVar(i), makeLink(item.getPackageName(), item.getLink() + urlTagStr))
-                        .replace(varMap.get("subpackageName").getVar(i), item.getSubpackageName())
-                        .replace(varMap.get("timePeriod").getVar(i), item.getTimeFrame())
-                        .replace(varMap.get("forecastDate").getVar(i), item.getForecastDate())
-                        .replace(varMap.get("targetDate").getVar(i), item.getTargetDate())
-                        .replace(varMap.get("topReturn1").getVar(i), item.stockRankOf(0).getRow().getReturnValueStr())
-                        .replace(varMap.get("topStockName1").getVar(i), item.stockRankOf(0).getRow().getSymbol())
-                        .replace(varMap.get("topReturn2").getVar(i), item.stockRankOf(1).getRow().getReturnValueStr())
-                        .replace(varMap.get("topStockName2").getVar(i), item.stockRankOf(1).getRow().getSymbol())
-                        .replace(varMap.get("topReturn3").getVar(i), item.stockRankOf(2).getRow().getReturnValueStr())
-                        .replace(varMap.get("topStockName3").getVar(i), item.stockRankOf(2).getRow().getSymbol())
-                        .replace(varMap.get("topReturn4").getVar(i), item.stockRankOf(3).getRow().getReturnValueStr())
-                        .replace(varMap.get("topStockName4").getVar(i), item.stockRankOf(3).getRow().getSymbol())
-                        .replace(varMap.get("avgReturn1").getVar(i), item.getAvgReturnTabNumb(0))
-                        .replace(varMap.get("avgReturn2").getVar(i), item.getAvgReturnTabNumb(1))
-                        .replace(varMap.get("snp500Return").getVar(i), item.getSNPReturn())
-                        .replace(varMap.get("marketPremium1").getVar(i), item.getPremiumTabNumb(0))
-                        .replace(varMap.get("marketPremium2").getVar(i), item.getPremiumTabNumb(1))
-                        .replace(varMap.get("accuracy").getVar(i), item.getTotalAccuracyNumb()) // Count accuray
-                        .replace(varMap.get("totalNumber").getVar(i), item.getTotalNumb()); //count total number
+                            .replace(varMap.get("link").getVar(i), item.getLink())
+                            .replace(varMap.get("positionType").getVar(i), item.getPositionType())
+                            .replace(varMap.get("packageName").getVar(i), makeLink(item.getPackageName(), item.getLink() + urlTagStr))
+                            .replace(varMap.get("subpackageName").getVar(i), item.getSubpackageName())
+                            .replace(varMap.get("timePeriod").getVar(i), item.getTimeFrame())
+                            .replace(varMap.get("forecastDate").getVar(i), item.getForecastDate())
+                            .replace(varMap.get("targetDate").getVar(i), item.getTargetDate())
+                            .replace(varMap.get("topReturn1").getVar(i), item.stockRankOf(0).getRow().getReturnValueStr())
+                            .replace(varMap.get("topStockName1").getVar(i), item.stockRankOf(0).getRow().getSymbol())
+                            .replace(varMap.get("topReturn2").getVar(i), item.stockRankOf(1).getRow().getReturnValueStr())
+                            .replace(varMap.get("topStockName2").getVar(i), item.stockRankOf(1).getRow().getSymbol())
+                            .replace(varMap.get("topReturn3").getVar(i), item.stockRankOf(2).getRow().getReturnValueStr())
+                            .replace(varMap.get("topStockName3").getVar(i), item.stockRankOf(2).getRow().getSymbol())
+                            .replace(varMap.get("topReturn4").getVar(i), item.stockRankOf(3).getRow().getReturnValueStr())
+                            .replace(varMap.get("topStockName4").getVar(i), item.stockRankOf(3).getRow().getSymbol())
+                            .replace(varMap.get("avgReturn1").getVar(i), item.getAvgReturnTabNumb(0))
+                            .replace(varMap.get("avgReturn2").getVar(i), item.getAvgReturnTabNumb(1))
+                            .replace(varMap.get("snp500Return").getVar(i), item.getSNPReturn())
+                            .replace(varMap.get("marketPremium1").getVar(i), item.getPremiumTabNumb(0))
+                            .replace(varMap.get("marketPremium2").getVar(i), item.getPremiumTabNumb(1))
+                            .replace(varMap.get("accuracy").getVar(i), item.getTotalAccuracyNumb()) // Count accuray
+                            .replace(varMap.get("totalNumber").getVar(i), item.getTotalNumb()); //count total number
                 }
             }
 
