@@ -780,13 +780,13 @@
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" attributes="0">
                                       <Component id="jPanelLayoutSectionTop" min="-2" pref="1003" max="-2" attributes="0"/>
-                                      <EmptySpace min="0" pref="19" max="32767" attributes="0"/>
+                                      <EmptySpace min="0" pref="72" max="32767" attributes="0"/>
                                   </Group>
                                   <Group type="102" alignment="1" attributes="0">
                                       <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                                       <Component id="jPanelLayoutSectionBottom" min="-2" max="-2" attributes="0"/>
                                   </Group>
-                                  <Component id="jPanelLayoutSectionBody" pref="1050" max="32767" attributes="0"/>
+                                  <Component id="jPanelLayoutSectionBody" pref="1075" max="32767" attributes="0"/>
                               </Group>
                               <EmptySpace max="-2" attributes="0"/>
                           </Group>
@@ -928,27 +928,30 @@
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" attributes="0">
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="jLabel10" pref="197" max="32767" attributes="0"/>
                                       <Group type="102" attributes="0">
-                                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                              <Component id="jLabel6" pref="197" max="32767" attributes="0"/>
-                                              <Component id="jLabel5" max="32767" attributes="0"/>
-                                              <Group type="102" alignment="1" attributes="0">
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Component id="jLabel10" linkSize="16" min="-2" pref="121" max="-2" attributes="0"/>
+                                              <Group type="102" alignment="0" attributes="0">
                                                   <EmptySpace max="-2" attributes="0"/>
                                                   <Component id="jButtonColorPicker" min="-2" max="-2" attributes="0"/>
-                                                  <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
                                               </Group>
                                           </Group>
                                           <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                                       </Group>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Component id="jLabel5" linkSize="16" alignment="0" min="-2" pref="121" max="-2" attributes="0"/>
+                                              <Component id="jLabel6" linkSize="16" alignment="0" min="-2" pref="121" max="-2" attributes="0"/>
+                                          </Group>
+                                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Component id="jScrollPane2" alignment="1" max="32767" attributes="0"/>
+                                              <Component id="jButtonEditLayoutTitle" max="32767" attributes="0"/>
+                                              <Component id="jSpinnerPosition" max="32767" attributes="0"/>
+                                          </Group>
+                                      </Group>
                                   </Group>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="jScrollPane2" linkSize="13" min="-2" pref="281" max="-2" attributes="0"/>
-                                      <Component id="jSpinnerPosition" linkSize="13" max="32767" attributes="0"/>
-                                      <Component id="jButtonEditLayoutTitle" linkSize="13" pref="269" max="32767" attributes="0"/>
-                                  </Group>
-                                  <EmptySpace min="-2" pref="58" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" max="-2" attributes="0">
                                       <Component id="jButtonLayoutSectionSaveLayout" max="32767" attributes="0"/>
                                       <Component id="jButtonSaveNewsletter" alignment="0" max="32767" attributes="0"/>
@@ -959,9 +962,9 @@
                                       </Group>
                                       <Component id="jButtonEditLayoutPreview" alignment="0" max="32767" attributes="0"/>
                                       <Component id="jButtonLayoutSectionGenerateNewsletter" alignment="0" max="32767" attributes="0"/>
-                                      <Component id="jButtonEditLayoutPreviewNewsletter" alignment="1" max="32767" attributes="0"/>
+                                      <Component id="jButtonEditLayoutPreviewNewsletter" alignment="1" min="-2" pref="426" max="-2" attributes="0"/>
                                   </Group>
-                                  <EmptySpace min="-2" pref="54" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
                               </Group>
                               <Component id="jSeparator1" alignment="0" max="32767" attributes="0"/>
                           </Group>
@@ -986,7 +989,7 @@
                                           <EmptySpace max="-2" attributes="0"/>
                                           <Group type="103" groupAlignment="0" attributes="0">
                                               <Group type="102" attributes="0">
-                                                  <Component id="jLabel10" min="-2" pref="27" max="-2" attributes="0"/>
+                                                  <Component id="jLabel10" linkSize="11" min="-2" pref="27" max="-2" attributes="0"/>
                                                   <EmptySpace min="-2" pref="62" max="-2" attributes="0"/>
                                                   <Component id="jButtonColorPicker" min="-2" max="-2" attributes="0"/>
                                                   <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
