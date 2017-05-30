@@ -210,6 +210,9 @@ public class MinistoryFormItem {
                 String a = cell.getStringCellValue();
                 int returnNum;
                 try {
+                    if(a.contains(","))
+                        a = a.split(",")[0];
+                    
                     returnNum = Integer.parseInt(a);
                 } catch (NumberFormatException ex) {
                     System.out.println(ex.toString());

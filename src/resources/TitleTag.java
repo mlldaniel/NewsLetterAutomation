@@ -18,9 +18,24 @@ import org.apache.commons.csv.CSVPrinter;
  */
 public class TitleTag{
 
-    public TitleTag(String title, String tag) {
+    /**
+     * @return the dbID
+     */
+    public String getDbID() {
+        return dbID;
+    }
+
+    /**
+     * @param dbID the dbID to set
+     */
+    public void setDbID(String dbID) {
+        this.dbID = dbID;
+    }
+
+    public TitleTag(String title, String tag, String dbID) {
         this.title = title;
         this.tag = tag;
+        this.dbID = dbID;
     }
 
     /**
@@ -50,17 +65,22 @@ public class TitleTag{
     public void setTag(String tag) {
         this.tag = tag;
     }
+    private String dbID;
     private String title;
     private String tag;
     private final static String DELIMITER = "\n";
-    private static final Object [] FILE_HEADER = {"Title","Tag"};
+    private static final Object [] FILE_HEADER = {"Ministory dbID","Title/TimeFrame","Tag"};
+    
+    //Write Tag to file
     public static boolean writeAsCsvTitleTagList(String fileName,List<TitleTag> titleTagList){
         
         FileWriter fileWriter = null;
         CSVPrinter csvFilePrinter = null;
         
-        CSVFormat csvFileFormat = CSVFormat.DEFAULT.withRecordSeparator(DELIMITER);
         
+//        CSVFormat csvFileFormat = CSVFormat.DEFAULT.withRecordSeparator(DELIMITER);
+        CSVFormat csvFileFormat = CSVFormat.DEFAULT.withDelimiter('\t');
+                
         boolean err = false;
         try{
             fileWriter = new FileWriter(fileName);// Open File with fileWriter
@@ -69,6 +89,7 @@ public class TitleTag{
             
             for(TitleTag tag: titleTagList){
                 List tagRecord = new ArrayList();
+                tagRecord.add(tag.getDbID());
                 tagRecord.add(tag.getTitle());
                 tagRecord.add(tag.getTag());
                 csvFilePrinter.printRecord(tagRecord);

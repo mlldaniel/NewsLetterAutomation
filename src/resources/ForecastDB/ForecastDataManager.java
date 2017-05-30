@@ -100,10 +100,12 @@ public class ForecastDataManager {
             //Select Row From Main Table of DB
             //row = (ForecastTableItem) selectItem(mainTable, col, key);
             row = selectItemPrepareStatement(mainTable, col, key);
-
+            
+            //Get List of csvTable related to mainTable row
             List<CsvTable> csvTableList = (List<CsvTable>) (Object) selectItemListPrepareStatement(csvTable, "mainTableId", String.valueOf(row.getId()));
             row.setCsvTableList(csvTableList);
-
+            
+            //Get List of csvRow related to csvTables this row own
             for (CsvTable table : csvTableList) {
                 List<CsvRow> cRList = new ArrayList();
                 cRList = (List<CsvRow>) (Object) selectItemListPrepareStatement(csvRow, "csvTableId", String.valueOf(table.getId()));
@@ -265,27 +267,30 @@ public class ForecastDataManager {
             while (rs.next()) {
                 switch (tableName) {
                     case "csvTable":
-                        CsvTable item2 = new CsvTable();
-                        item2.setId(rs.getInt("Id"));
-                        item2.setPositionNumber(rs.getInt("positionNumber"));
-                        item2.setForecastDate(rs.getString("forecastDate"));
-                        item2.setTargetDate(rs.getString("targetDate"));
-                        item2.setSnp500Return(rs.getString("snp500Return"));
-                        item2.setiKnowFirstAvgReturn(rs.getString("iKnowFirstAvgReturn"));
-                        item2.setMainTableId(rs.getString("mainTableId"));
+                        Double snp500Ret = parseDoubleAllLang(rs.getString("snp500Return"));
+                        Double ikfAvgRet = parseDoubleAllLang(rs.getString("iKnowFirstAvgReturn"));
+                        
+                        CsvTable itemCSVTab = new CsvTable();
+                        itemCSVTab.setId(rs.getInt("Id"));
+                        itemCSVTab.setPositionNumber(rs.getInt("positionNumber"));
+                        itemCSVTab.setForecastDate(rs.getString("forecastDate"));
+                        itemCSVTab.setTargetDate(rs.getString("targetDate"));
+                        itemCSVTab.setSnp500Return(snp500Ret.toString());
+                        itemCSVTab.setiKnowFirstAvgReturn(ikfAvgRet.toString());
+                        itemCSVTab.setMainTableId(rs.getString("mainTableId"));
 
-                        returnItemList.add(item2);
+                        returnItemList.add(itemCSVTab);
                         break;
                     case "csvRow":
-                        CsvRow item3 = new CsvRow();
-                        item3.setId(rs.getInt("Id"));
-                        item3.setSymbol(rs.getString("symbol"));
-                        item3.setPrediction(Integer.parseInt(rs.getString("prediction")));
-                        item3.setReturnValue(parseDoubleAllLang(rs.getString("returnValue")));
-                        item3.setAccuracy(Integer.parseInt(rs.getString("accuracy")));
-                        item3.setCsvTableId(rs.getInt("csvTableId"));
+                        CsvRow itemCSVRow = new CsvRow();
+                        itemCSVRow.setId(rs.getInt("Id"));
+                        itemCSVRow.setSymbol(rs.getString("symbol"));
+                        itemCSVRow.setPrediction(Integer.parseInt(rs.getString("prediction")));
+                        itemCSVRow.setReturnValue(parseDoubleAllLang(rs.getString("returnValue")));
+                        itemCSVRow.setAccuracy(Integer.parseInt(rs.getString("accuracy")));
+                        itemCSVRow.setCsvTableId(rs.getInt("csvTableId"));
 
-                        returnItemList.add(item3);
+                        returnItemList.add(itemCSVRow);
 
                         break;
 

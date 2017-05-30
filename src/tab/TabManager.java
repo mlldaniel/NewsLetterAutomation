@@ -447,7 +447,7 @@ public class TabManager {
 
     private int generateMinistory(LayoutTableItem item, ForecastSection fSection, ResourceManager resourceManager) {
         //Used Form Number
-        int usedFormNumb = -1;
+        Integer usedFormNumb = -1;
         
         //Html Form
         HTMLManager miniHtmlManager = resourceManager.getHtmlManager();
@@ -502,14 +502,17 @@ public class TabManager {
         
         //Exist
         MinistoryFormItem dressForm = miniFormManager.dressItemWithForm(number, timeFrame, itemList, urlTagStr);
-        
         if(dressForm == null){
             System.out.println("Error No MinistoryForm for this timeFrame: "+timeFrame);
             return -1;
         }
         //Keep record of the id(number) that is was used
         usedFormNumb = dressForm.getNumber();
-
+        
+        //Update Parameters with DB ID
+        parameters = parameters.concat("\n<dbID>"+usedFormNumb.toString()+"</dbID>");
+        item.setParametersNeeded(parameters);
+        
         //Insert Title
         miniHtml.insertContent(dressForm.getCodeTitle(), "strong[id=miniTitle]", HTML);
 
@@ -604,7 +607,6 @@ public class TabManager {
         return layoutTableItemList;
     }
 
-
     public LayoutTableItem  generateNewsletter(Tab tab, int[] selectedRows, Date date) {
         this.dateUrl = date;
         //Prepare Resources
@@ -678,8 +680,9 @@ public class TabManager {
 
         //Numbering Again in case User had change order put not Generated
         layoutTableItemList = numberingEachType(layoutTableItemList);
+        
         //Update links with the re-Numbered system and save as CSV
-        layoutTableItemList = updateLinks(layoutTableItemList,tab.getTabName());
+        //layoutTableItemList = updateLinks(layoutTableItemList,tab.getTabName());
 
         //Check if Nothing is red
         long notReadyNumber = layoutTableItemList.stream().filter(item->!item.isReady()).count();
@@ -946,10 +949,11 @@ public class TabManager {
         Document previewDoc= null;
         Elements allLinks=null; 
         for(LayoutTableItem item : layoutTableItemList){
+            String dbID = "";
             String urlTagStr ="";
             String title = item.getTitleDoc().text().trim();
-            if(title.length()>50)
-                title = title.substring(0, 49);
+            if(title.length()>150)
+                title = title.substring(0, 149);
             
             //parameter Hasing
             String parameters = item.getParametersNeeded();
@@ -982,6 +986,7 @@ public class TabManager {
                     break;
                 case "miniStory":
                     String timeFrame = paramHashed.get("timeFrame");
+                    dbID = paramHashed.get("dbID");
                     title = timeFrame==null ? "timeFrameNULL" : timeFrame;
 //                case "button":
 //                case "import":
@@ -1022,7 +1027,7 @@ public class TabManager {
             }
             
             //add to the List
-            titleTagList.add(new TitleTag(title,urlTagStr.substring(12)));
+            titleTagList.add(new TitleTag(title,urlTagStr.substring(12),dbID));
             
         }
         
