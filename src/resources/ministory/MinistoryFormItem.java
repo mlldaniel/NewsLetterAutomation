@@ -92,7 +92,7 @@ public class MinistoryFormItem {
                 setTimeFrame("");
                 break;
             case RANK:
-                setRank(-1);
+                setRank(9999);
                 break;
             case PARAMETERSMAP:
                 Map<String, String> paramTempMap = new HashMap();

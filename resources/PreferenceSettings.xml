@@ -2,12 +2,12 @@
 <settings>	
 	<ForecastDB>
 		
-		<baseDir><![CDATA[/Users/danielhwang/Documents/OneDrive/Projects/netbeans/ForecastAutomation(Test)/output/]]></baseDir>
+		<baseDir><![CDATA[/Users/danielhwang/Dropbox/Forecast Generation/Forecast Automation(dist)/output/]]></baseDir>
 		
 		
 		<!--
-			<baseDir><![CDATA[/Users/danielhwang/Dropbox/Forecast Generation/Forecast Automation(dist)/output/]]></baseDir>
-		
+			
+		<baseDir><![CDATA[/Users/danielhwang/Documents/OneDrive/Projects/netbeans/ForecastAutomation(Test)/output/]]></baseDir>
 			
 			-->
 	</ForecastDB>
@@ -64,6 +64,10 @@
 		<dateFormat><![CDATA[dd MMMM yyyy]]></dateFormat>
 	</Language>
 	
+	<Language name="Portuguese">
+		<locale>pt</locale>
+		<dateFormat><![CDATA[dd MMMM yyyy]]></dateFormat>
+	</Language>
 	<!--
 	<Language name="Korean">
 		<test>안</test>

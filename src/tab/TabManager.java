@@ -62,13 +62,13 @@ public class TabManager {
     private int currentRowNumber;
 
     private int ministoryNumber;
-    
+
     private Date dateUrl;
     private int ministoryOrder;
     private int buttonOrder = 1;
     private int wpImportOrder = 1;
     private int customOrder = 1;
-        
+
     public TabManager(JTabbedPane jTabbedPane) {
         this.jTabbedPane = jTabbedPane;
 
@@ -138,13 +138,13 @@ public class TabManager {
         //parameter Hasing
         String parameters = item.getParametersNeeded();
         Map<String, String> paramHashed = hashingParam(parameters);
-        
+
         String blockGenStr = paramHashed.get("blockGeneration");
-        if(blockGenStr != null && blockGenStr.equalsIgnoreCase("true")){
+        if (blockGenStr != null && blockGenStr.equalsIgnoreCase("true")) {
             System.out.println("blockGeneration param True, this won't be generated");
             return;
         }
-        
+
         //Location List: name = ForecastTableTitle ForecastTableContent
         ResourceHTML forecastTableHTML
                 = new ResourceHTML(htmlManager.getForecastTableHTML());
@@ -158,10 +158,10 @@ public class TabManager {
             item.setTitle(titleHtml.child(0).toString());
             System.out.println(item.getTitle());
         }
-        
+
         //UrlTagString
         String urlTagStr = UrlTagger.tag(dateUrl, item.getType());
-        
+
         //Input the content 
         boolean first = true;
         List<LinkMap> reverseLinkMap = fSection.getForecastLinkMapList();
@@ -179,7 +179,6 @@ public class TabManager {
                 forecastTableHTML.insertContent(li.getDoc(), "ul[name=ForecastTableContent]", PREPPEND);
             }
         }
-        
 
         //set to the preview
         item.setPreview(forecastTableHTML.getDoc());
@@ -195,7 +194,7 @@ public class TabManager {
         String buttonTitle = paramHashed.get("buttonTitle");
         String buttonLink = paramHashed.get("buttonLink");
         String backgroundColor = paramHashed.get("background-color");
-        
+
         //Integer Get Current Story Number
         String numberStr = paramHashed.get("number");
         Integer number = 0;
@@ -208,8 +207,8 @@ public class TabManager {
             }
         }
         //UrlTagString
-        String urlTagStr = UrlTagger.tag(dateUrl, item.getType() , number);
-        
+        String urlTagStr = UrlTagger.tag(dateUrl, item.getType(), number);
+
         //Apply parameters
         if (buttonTitle != null && buttonTitle.isEmpty() == false) {
             buttonHtml.insertContent(buttonTitle, "a", HTML);//between tag <a></a>
@@ -220,18 +219,16 @@ public class TabManager {
             buttonHtml.insertAttrContent(buttonLink + urlTagStr, "a", "href");
         }
 
-        
-        
         if (backgroundColor != null && backgroundColor.isEmpty() == false) {
             String styleAttr = buttonHtml.getDoc().select("table[name=mainBody]").attr("style");
             String changedAttr = changeStyleAttr(styleAttr, "background-color", backgroundColor);
             buttonHtml.insertAttrContent(changedAttr, "table[name=mainBody]", "style");
         }
-        
-        
-        if(item.getTitleDoc() != null)
+
+        if (item.getTitleDoc() != null) {
             item.setTitle(buttonHtml.getDoc());
-        
+        }
+
         item.setPreview(buttonHtml.getDoc());
 
     }
@@ -246,9 +243,9 @@ public class TabManager {
         //parameter Hasing
         String parameters = item.getParametersNeeded();
         Map<String, String> paramHashed = hashingParam(parameters);
-        
+
         String blockGenStr = paramHashed.get("blockGeneration");
-        if(blockGenStr != null && blockGenStr.equalsIgnoreCase("true")){
+        if (blockGenStr != null && blockGenStr.equalsIgnoreCase("true")) {
             System.out.println("blockGeneration param True, this won't be generated");
             return;
         }
@@ -264,8 +261,8 @@ public class TabManager {
             }
         }
         //UrlTagString
-        String urlTagStr = UrlTagger.tag(dateUrl, item.getType() , number);
-        
+        String urlTagStr = UrlTagger.tag(dateUrl, item.getType(), number);
+
         //Perapare Categories To Exclude Filtering
         String catToExclude = paramHashed.get("categoriesToExclude");
         String[] categoryList = catToExclude.split(";");
@@ -287,7 +284,7 @@ public class TabManager {
 
         //Prepare file Name (resource Name)
         String resourceName = paramHashed.get("resourceName");
-        if (resourceName==null || resourceName.isEmpty()) {
+        if (resourceName == null || resourceName.isEmpty()) {
             System.out.println("Please Insert resource Name fo this Row: " + item.getPosition());
             return;
         }
@@ -308,23 +305,23 @@ public class TabManager {
 
         //Generate LinkMapList From Resource Manager
         List<LinkMapImport> linkMapList = resourceManager.readWpExportFixed(resourceName, catListToExclude);
-        
-        
+
         //Get Sorting Policy
         String sortByAvgStr = paramHashed.get("sortByAvg");
         boolean sortByAvg = false;
         //If User had entered something
-        if(sortByAvgStr != null){
-            if(sortByAvgStr.equalsIgnoreCase("true"))
+        if (sortByAvgStr != null) {
+            if (sortByAvgStr.equalsIgnoreCase("true")) {
                 sortByAvg = true;
+            }
         }
-        
+
         //Sort it according to Avg
-        if(sortByAvg){
+        if (sortByAvg) {
             linkMapList = linkMapList.stream()
                     .sorted((v1, v2) -> Double.compare(v2.iKnowFirstAvg, v1.iKnowFirstAvg))
                     .collect(Collectors.toList());
-        }else{//sort From New to old
+        } else {//sort From New to old
             Collections.reverse(linkMapList);
         }
 //        System.out.println("List reodered according to I know firs Avg");
@@ -360,7 +357,7 @@ public class TabManager {
         for (LinkMap linkMap : linkMapList) {
             ResourceHTML li = new ResourceHTML(htmlManager.getImportListItemHTML());
             li.insertContent((linkMap.linkedTitle), "a", HTML);
-            li.insertAttrContent(linkMap.link+ urlTagStr, "a", "href");
+            li.insertAttrContent(linkMap.link + urlTagStr, "a", "href");
             li.insertContent((linkMap.unlinkedTitle), "span[name=unlinkedTitle]", HTML);
             //System.out.println(li.getDoc().toString());
             if (first) {
@@ -381,7 +378,7 @@ public class TabManager {
         HTMLManager htmlManager = resourceManager.getHtmlManager();
 
         ResourceHTML customHtml = new ResourceHTML(htmlManager.getCustomHTML());
-        Document finalOutput =null;
+        Document finalOutput = null;
         //parameter Hasing
         String parameters = item.getParametersNeeded();
         Map<String, String> paramHashed = hashingParam(parameters);
@@ -397,12 +394,12 @@ public class TabManager {
 //            customHtml.insertContent(content, "span[id=customContent]", HTML);
 //        }
         //Check if Title(Content for Custom) Exist
-        if(item.getTitleDoc()== null){
+        if (item.getTitleDoc() == null) {
             //fill with the EMPTY DOC
             item.setTitle(new Document(""));
         }
         //If It is Emtpy Make new
-        if(item.getTitleDoc().text().isEmpty()){
+        if (item.getTitleDoc().text().isEmpty()) {
             //Prepare border
             String border = paramHashed.get("border");
             if (border != null && border.isEmpty() == false) {
@@ -417,7 +414,7 @@ public class TabManager {
                 customHtml.insertAttrContent(changedAttr, "table[name=mainBody]", "style");
             }
             finalOutput = customHtml.getDoc();
-        }else{//If there is something Just change border/BG Color
+        } else {//If there is something Just change border/BG Color
             Document updatedDoc = item.getTitleDoc();
             //Update border
             String borderVal = paramHashed.get("border");
@@ -436,8 +433,7 @@ public class TabManager {
             }
             finalOutput = updatedDoc;
         }
-        
-        
+
         //Set Title
         item.setTitle(finalOutput);
         //set to the preview
@@ -448,7 +444,7 @@ public class TabManager {
     private int generateMinistory(LayoutTableItem item, ForecastSection fSection, ResourceManager resourceManager) {
         //Used Form Number
         Integer usedFormNumb = -1;
-        
+
         //Html Form
         HTMLManager miniHtmlManager = resourceManager.getHtmlManager();
         ResourceHTML miniHtml = new ResourceHTML(miniHtmlManager.getMiniHTML());
@@ -464,13 +460,13 @@ public class TabManager {
         //Parameter Hashing
         String parameters = item.getParametersNeeded();
         Map<String, String> paramHashed = hashingParam(parameters);
-        
+
         String blockGenStr = paramHashed.get("blockGeneration");
-        if(blockGenStr != null && blockGenStr.equalsIgnoreCase("true")){
+        if (blockGenStr != null && blockGenStr.equalsIgnoreCase("true")) {
             System.out.println("blockGeneration param True, this won't be generated");
             return -1;
         }
-        
+
         //Get Current Ministory Item timeframe
         String timeFrame = paramHashed.get("timeFrame");
         if (timeFrame == null || timeFrame.isEmpty()) {//Error and Return if empty
@@ -498,19 +494,25 @@ public class TabManager {
             return -1;
         }
         //UrlTagString
-        String urlTagStr = UrlTagger.tag(dateUrl, item.getType() , number);
-        
+        String urlTagStr = UrlTagger.tag(dateUrl, item.getType(), number);
+
         //Exist
         MinistoryFormItem dressForm = miniFormManager.dressItemWithForm(number, timeFrame, itemList, urlTagStr);
-        if(dressForm == null){
-            System.out.println("Error No MinistoryForm for this timeFrame: "+timeFrame);
+        if (dressForm == null) {
+            System.out.println("Error No MinistoryForm for this timeFrame: " + timeFrame);
             return -1;
         }
         //Keep record of the id(number) that is was used
         usedFormNumb = dressForm.getNumber();
-        
-        //Update Parameters with DB ID
-        parameters = parameters.concat("\n<dbID>"+usedFormNumb.toString()+"</dbID>");
+
+        //Check if There is Parameter
+        String dbIDStr = paramHashed.get("dbID");
+        if (dbIDStr == null) {
+            //Add Parameters with DB ID
+            parameters = parameters.concat("\n<dbID>" + usedFormNumb.toString() + "</dbID>");
+        }else{//Update Parameters with DB ID
+            parameters = parameters.replaceAll("<dbID>.+</dbID>","<dbID>"+usedFormNumb.toString()+"</dbID>");
+        }
         item.setParametersNeeded(parameters);
         
         //Insert Title
@@ -521,7 +523,7 @@ public class TabManager {
 
         //Set to the preview
         item.setPreview(miniHtml.getDoc());
-        
+
         return usedFormNumb;
     }
 
@@ -550,51 +552,52 @@ public class TabManager {
 //
 //        return layoutTableItemList;
 //    }
-    private String numberingParameter(String curParameters, int number){
-        
+    private String numberingParameter(String curParameters, int number) {
+
         String miniNumberingParam = "<number>" + number + "</number>";
         if (curParameters.contains("<number></number>")) {
             curParameters = curParameters.replace("<number></number>", miniNumberingParam);
         } else if (curParameters.contains("<number>")) {//has something between <number>CCCC</number>
-            curParameters = curParameters.replaceAll("<number>.</number>", miniNumberingParam);
+            curParameters = curParameters.replaceAll("<number>.+</number>", miniNumberingParam);
         } else {
             curParameters += "\n" + miniNumberingParam;
         }
-        
+
         return curParameters;
     }
+
     private List<LayoutTableItem> numberingEachType(List<LayoutTableItem> layoutTableItemList) {
         ministoryOrder = 1;
         buttonOrder = 1;
         wpImportOrder = 1;
         customOrder = 1;
-        
+
         layoutTableItemList.stream().forEach(item -> {
             System.out.println(item.getParametersNeeded());
             String curParameters = item.getParametersNeeded();
             String changedParameters = "";
-            
-            switch (item.getType()){
+
+            switch (item.getType()) {
                 case "miniStory":
-                    changedParameters = numberingParameter(curParameters,ministoryOrder);
+                    changedParameters = numberingParameter(curParameters, ministoryOrder);
                     item.setParametersNeeded(changedParameters);
 
                     ministoryOrder++;
                     break;
                 case "button":
-                    changedParameters = numberingParameter(curParameters,buttonOrder);
+                    changedParameters = numberingParameter(curParameters, buttonOrder);
                     item.setParametersNeeded(changedParameters);
 
                     buttonOrder++;
                     break;
                 case "import":
-                    changedParameters = numberingParameter(curParameters,wpImportOrder);
+                    changedParameters = numberingParameter(curParameters, wpImportOrder);
                     item.setParametersNeeded(changedParameters);
 
                     wpImportOrder++;
                     break;
                 case "custom":
-                    changedParameters = numberingParameter(curParameters,customOrder);
+                    changedParameters = numberingParameter(curParameters, customOrder);
                     item.setParametersNeeded(changedParameters);
 
                     customOrder++;
@@ -607,7 +610,7 @@ public class TabManager {
         return layoutTableItemList;
     }
 
-    public LayoutTableItem  generateNewsletter(Tab tab, int[] selectedRows, Date date) {
+    public LayoutTableItem generateNewsletter(Tab tab, int[] selectedRows, Date date) {
         this.dateUrl = date;
         //Prepare Resources
         //Forecast
@@ -625,7 +628,6 @@ public class TabManager {
 
         //Used Ministory Form List to keep record
         List<Integer> usedMiniFormList = new ArrayList();
-        
 
         for (int i = 0; i < selectedRows.length; i++) {
             LayoutTableItem item = layoutTableItemList.get(selectedRows[i]);
@@ -654,23 +656,24 @@ public class TabManager {
                 default:
 
             }
-            
+
         }
         //Update Things
         ltModel.fireTableDataChanged();
         //Update UsedMiniForm Number List
         tab.setUsedMiniFormList(usedMiniFormList);
-        
+
         //selecte row and return first generated row(Item)
-        if(selectedRows != null && selectedRows.length > 0){
+        if (selectedRows != null && selectedRows.length > 0) {
             lSection.selectRow(selectedRows[0]);
             return lSection.getLayoutTableModel().getItemAt(selectedRows[0]);
-        }else{// not possible but if nothing is been generated
+        } else {// not possible but if nothing is been generated
             return null;
         }
     }
-    public void previewNewsletter(Tab tab, Date date){
-        dateUrl = (date==null) ? new Date() : date;
+
+    public void previewNewsletter(Tab tab, Date date) {
+        dateUrl = (date == null) ? new Date() : date;
         System.out.println("Previewing Newsletter : " + tab.getPeferenceSetting().getLanguageName());
         //if (tab.getGenerateThis()) {
         HTMLManager htmlManager = tab.getResourceManager().getHtmlManager();
@@ -680,14 +683,14 @@ public class TabManager {
 
         //Numbering Again in case User had change order put not Generated
         layoutTableItemList = numberingEachType(layoutTableItemList);
-        
+
         //Update links with the re-Numbered system and save as CSV
         //layoutTableItemList = updateLinks(layoutTableItemList,tab.getTabName());
-
         //Check if Nothing is red
-        long notReadyNumber = layoutTableItemList.stream().filter(item->!item.isReady()).count();
-        if(notReadyNumber>0)
+        long notReadyNumber = layoutTableItemList.stream().filter(item -> !item.isReady()).count();
+        if (notReadyNumber > 0) {
             JOptionPane.showMessageDialog(null, "Warning: Some of the Row Might not have been (re)Generated after a change");
+        }
 
         //Get Base HTML
         ResourceHTML baseHtml = new ResourceHTML(htmlManager.getBasedHTML());
@@ -705,20 +708,20 @@ public class TabManager {
         }
         //Output File Location and File Name
         String workingDir = System.getProperty("user.dir");
-        String outputFile = workingDir+"/temp/previewNewsletter.html";
+        String outputFile = workingDir + "/temp/previewNewsletter.html";
 
         //Temporarely Saving File to view it
         HTMLManager.saveHTML(baseHtml.getDoc(), outputFile);
-        
+
         //open with with with with with with with chrome
         WebDriver driver = new ChromeDriver();
         Wait<WebDriver> wait = new WebDriverWait(driver, 30);
-        
-        driver.get("file://"+outputFile);
+
+        driver.get("file://" + outputFile);
     }
 
     public void saveNewsletter(Tab tab, Date date) {
-        dateUrl = (date==null) ? new Date() : date;
+        dateUrl = (date == null) ? new Date() : date;
         System.out.println("Saving Newsletter : " + tab.getPeferenceSetting().getLanguageName());
         //if (tab.getGenerateThis()) {
         HTMLManager htmlManager = tab.getResourceManager().getHtmlManager();
@@ -729,12 +732,13 @@ public class TabManager {
         //Numbering Again in case User had change order put not Generated
         layoutTableItemList = numberingEachType(layoutTableItemList);
         //Update links with the re-Numbered system and save as CSV
-        layoutTableItemList = updateLinks(layoutTableItemList,tab.getTabName());
+        layoutTableItemList = updateLinks(layoutTableItemList, tab.getTabName());
 
         //Check if Nothing is red
-        long notReadyNumber = layoutTableItemList.stream().filter(item->!item.isReady()).count();
-        if(notReadyNumber>0)
+        long notReadyNumber = layoutTableItemList.stream().filter(item -> !item.isReady()).count();
+        if (notReadyNumber > 0) {
             JOptionPane.showMessageDialog(null, "Warning: Some of the Row Might not have been (re)Generated after a change");
+        }
 
         //Get Base HTML
         ResourceHTML baseHtml = new ResourceHTML(htmlManager.getBasedHTML());
@@ -753,7 +757,7 @@ public class TabManager {
         SimpleDateFormat dateFormat = new SimpleDateFormat("yyyyMMMMdd'T'HH-mm-ss");
         String todaysDate = dateFormat.format(new Date());
         //Output File Location and File Name
-        String outputFile = tab.getPeferenceSetting().getSaveDir() + "output"+todaysDate+".html";
+        String outputFile = tab.getPeferenceSetting().getSaveDir() + "output" + todaysDate + ".html";
 
         //Saving File
         HTMLManager.saveHTML(baseHtml.getDoc(), outputFile);
@@ -761,10 +765,9 @@ public class TabManager {
         //Post Process for Ministory
         tab.updateUsedMinistoryFormDate();
 
-        System.out.println(tab.getTabName()+") Done Generating File : "+outputFile);
-        JOptionPane.showMessageDialog(null, tab.getTabName()+") Done Generating File : "+outputFile);
-        
-        
+        System.out.println(tab.getTabName() + ") Done Generating File : " + outputFile);
+        JOptionPane.showMessageDialog(null, tab.getTabName() + ") Done Generating File : " + outputFile);
+
     }
 
     //Forecast
@@ -814,7 +817,7 @@ public class TabManager {
             //Forecast Table(Same variable as ui)
             ForecastTableModel ftModel = tab.getForecastSection().getForecastTableModel();
             ftModel.clearRows();
-            
+
             //Get Row from DB using CSV Link Path as Key
             List<ForecastTableItem> itemList = csvPathLinkList
                     .stream()
@@ -870,7 +873,7 @@ public class TabManager {
             layoutSection.getJTable().getSelectionModel().setSelectionInterval(updatePosition, updatePosition);
             //update the form
             FormManaqer.layoutFormUpdate(layoutSection.getLayoutTableModel().getItemAt(updatePosition));
-            
+
         } else { //Failed go back
             //layoutSection.getJTable().getSelectionModel().setSelectionInterval(updatePosition, updatePosition);
             //FormManaqer.layoutFormUpdate(layoutSection.getLayoutTableModel().getItemAt(updatePosition));
@@ -945,21 +948,22 @@ public class TabManager {
 
     private List<LayoutTableItem> updateLinks(List<LayoutTableItem> layoutTableItemList, String langName) {
         List<TitleTag> titleTagList = new ArrayList();
-        
-        Document previewDoc= null;
-        Elements allLinks=null; 
-        for(LayoutTableItem item : layoutTableItemList){
+
+        Document previewDoc = null;
+        Elements allLinks = null;
+        for (LayoutTableItem item : layoutTableItemList) {
             String dbID = "";
-            String urlTagStr ="";
+            String urlTagStr = "";
             String title = item.getTitleDoc().text().trim();
-            if(title.length()>150)
+            if (title.length() > 150) {
                 title = title.substring(0, 149);
-            
+            }
+
             //parameter Hasing
             String parameters = item.getParametersNeeded();
             Map<String, String> paramHashed = hashingParam(parameters);
 
-            switch(item.getType()){
+            switch (item.getType()) {
                 case "forecastTable":
                     // Forecast Table
                     //UrlTagString
@@ -968,15 +972,15 @@ public class TabManager {
                     previewDoc = item.getPreviewDoc();
                     allLinks = previewDoc.select("a");
 
-                    for(int linkIndex = 0; linkIndex < allLinks.size(); linkIndex++){
+                    for (int linkIndex = 0; linkIndex < allLinks.size(); linkIndex++) {
                         Element a = allLinks.get(linkIndex);
                         String linkStr = a.attr("href");
-                        if(linkStr.contains("?utm_source")){
+                        if (linkStr.contains("?utm_source")) {
                             //update link
                             int replacePoint = linkStr.indexOf("?utm_source");
                             linkStr = linkStr.substring(0, replacePoint);
                             linkStr = linkStr + urlTagStr;
-                        }else{
+                        } else {
                             //add behind if it doesn't exist
                             linkStr = linkStr + urlTagStr;
                         }
@@ -987,7 +991,7 @@ public class TabManager {
                 case "miniStory":
                     String timeFrame = paramHashed.get("timeFrame");
                     dbID = paramHashed.get("dbID");
-                    title = timeFrame==null ? "timeFrameNULL" : timeFrame;
+                    title = timeFrame == null ? "timeFrameNULL" : timeFrame;
 //                case "button":
 //                case "import":
 //                case "custom":
@@ -1004,20 +1008,20 @@ public class TabManager {
                         }
                     }
                     //UrlTagString
-                    urlTagStr = UrlTagger.tag(dateUrl, item.getType() , number);
+                    urlTagStr = UrlTagger.tag(dateUrl, item.getType(), number);
 
                     previewDoc = item.getPreviewDoc();
                     allLinks = previewDoc.select("a");
 
-                    for(int linkIndex = 0; linkIndex < allLinks.size(); linkIndex++){
+                    for (int linkIndex = 0; linkIndex < allLinks.size(); linkIndex++) {
                         Element a = allLinks.get(linkIndex);
                         String linkStr = a.attr("href");
-                        if(linkStr.contains("?utm_source")){
+                        if (linkStr.contains("?utm_source")) {
                             //update link
                             int replacePoint = linkStr.indexOf("?utm_source");
                             linkStr = linkStr.substring(0, replacePoint);
                             linkStr = linkStr + urlTagStr;
-                        }else{
+                        } else {
                             //add behind if it doesn't exist
                             linkStr = linkStr + urlTagStr;
                         }
@@ -1025,24 +1029,23 @@ public class TabManager {
 
                     }
             }
-            
+
             //add to the List
-            titleTagList.add(new TitleTag(title,urlTagStr.substring(12),dbID));
-            
+            titleTagList.add(new TitleTag(title, urlTagStr.substring(12), dbID));
+
         }
-        
+
         SimpleDateFormat dateFormat = new SimpleDateFormat("yyyyMMMMdd'T'HH-mm-ss");
         String dateStr = dateFormat.format(dateUrl);
         //Logging title - Tag pair as CSV
-        Boolean success = TitleTag.writeAsCsvTitleTagList("output/"+langName+"/urlTag/"+dateStr+".csv", titleTagList);
-        if(!success)
+        Boolean success = TitleTag.writeAsCsvTitleTagList("output/" + langName + "/urlTag/" + dateStr + ".csv", titleTagList);
+        if (!success) {
             System.out.println("There was error Saving CSV Title/tab ");
-        else
+        } else {
             System.out.println("CSV Title/Tab successfully saved");
-        
+        }
+
         return layoutTableItemList;
     }
 
 }
-
-
